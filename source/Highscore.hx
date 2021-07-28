@@ -98,7 +98,7 @@ class Highscore
 
 		if (diff == 0)
 			daSong += '-easy';
-		else if (diff == 2)
+		else if (diff == 2 || diff == 6)
 			daSong += '-hard';
 		else if (diff == 3)
 			daSong += '-alt';

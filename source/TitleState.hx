@@ -184,9 +184,23 @@ class TitleState extends MusicBeatState
 		}
 
 		gfDance = new FlxSprite(FlxG.width * 0.4, FlxG.height * 0.07);
-		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
-		gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-		gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+		switch (FlxG.random.int(0, 1))
+		{
+			case 0:
+					// GIRLFRIEND CODE
+					var tex = Paths.getSparrowAtlas('characters/ROBO_assets', 'shared');
+					gfDance.frames = tex;
+					gfDance.animation.addByIndices('danceLeft', 'robo Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+					gfDance.animation.addByIndices('danceRight', 'robo Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+
+			case 1:
+				// GIRLFRIEND CODE
+				var tex = Paths.getSparrowAtlas('characters/ROBO-TIKY', 'shared');
+				gfDance.frames = tex;
+				gfDance.animation.addByIndices('danceLeft', 'robo Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				gfDance.animation.addByIndices('danceRight', 'robo Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+				gfDance.y += 100;
+		}
 		gfDance.antialiasing = true;
 		add(gfDance);
 		add(logoBl);

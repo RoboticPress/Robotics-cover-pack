@@ -27,6 +27,7 @@ class Character extends FlxSprite
 
 		var tex:FlxAtlasFrames;
 		antialiasing = true;
+		trace(curCharacter);
 
 		switch (curCharacter)
 		{
@@ -76,6 +77,32 @@ class Character extends FlxSprite
 				addOffset('danceRight', 0, 0);
 				addOffset('sad', 0, 0);
 
+				playAnim('danceRight');
+
+			case 'ROBO-TIKY':
+				// GIRLFRIEND CODE
+				tex = Paths.getSparrowAtlas('characters/ROBO-TIKY');
+				trace(tex);
+				frames = tex;
+				animation.addByIndices('danceLeft', 'robo Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'robo Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+
+				addOffset('danceLeft', 0, 0);
+				addOffset('danceRight', 0, 0);
+				playAnim('danceRight');
+
+			case '86lol':
+				// GIRLFRIEND CODE
+				tex = Paths.getSparrowAtlas('characters/rose');
+				trace(tex);
+				frames = tex;
+				animation.addByIndices('danceLeft', 'rose Dancing Beat', [0, 1, 2, 3, 4, 5, 6, 7, 8], "", 12, false);
+				animation.addByIndices('danceRight', 'rose Dancing Beat', [9, 10, 11, 12, 13, 14, 15], "", 12, false);
+
+				addOffset('danceLeft', 0, 0);
+				addOffset('danceRight', 0, 0);
+
+				setGraphicSize(Std.int(width * 2));
 				playAnim('danceRight');
 
 			case 'gf-christmas':
@@ -548,6 +575,66 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+			
+			case 'exTricky':
+				frames = Paths.getSparrowAtlas('fourth/EXTRICKY','shared');
+				setGraphicSize(Std.int(width * 2));
+				updateHitbox();
+
+				animation.addByPrefix('idle', 'Idle', 24);
+				animation.addByPrefix('singUP', 'Sing Up', 24);
+				animation.addByPrefix('singLEFT', 'Sing Left', 24);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24);
+				animation.addByPrefix('Hank', 'Hank', 24, true);
+
+				addOffset('idle');
+				addOffset('Hank');
+				addOffset("singUP", 0, 100);
+				addOffset("singRIGHT", -209,-29);
+				addOffset("singLEFT",127,20);
+				addOffset("singDOWN",-100,-340);
+
+				playAnim('idle');
+			case 'hat-kid':
+				var tex = Paths.getSparrowAtlas('HATKID_HATTED');
+				frames = tex;
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+				animation.addByPrefix('peck', 'BF HEY', 24, false);
+
+				animation.addByPrefix('firstDeath', "BF dies", 24, false);
+				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+
+				animation.addByPrefix('scared', 'BF idle shaking', 24);
+
+				addOffset('idle', -4, 5);
+				addOffset("singUP", 191, 17);
+				addOffset("singRIGHT", 45, 1);
+				addOffset("singLEFT", 4, -6);
+				addOffset("singDOWN", -10, -50);
+				addOffset("singUPmiss", 194, 17);
+				addOffset("singRIGHTmiss", 50, 11);
+				addOffset("singLEFTmiss", 12, 16);
+				addOffset("singDOWNmiss", -15, -10);
+				addOffset("peck", 1, 6);
+				addOffset('firstDeath', 29, 11);
+				addOffset('deathLoop', 29, 11);
+				addOffset('deathConfirm', 29, 70);
+				addOffset('scared', 16, 1);
+
+				playAnim('idle');
+
+				flipX = true;
+	
 		}
 
 		dance();
@@ -577,7 +664,7 @@ class Character extends FlxSprite
 
 	override function update(elapsed:Float)
 	{
-		if (!curCharacter.startsWith('bf') && !curCharacter.startsWith('lav'))
+		if (!curCharacter.startsWith('bf') && !curCharacter.startsWith('lav') && !curCharacter.startsWith('hat-kid'))
 		{
 			if (animation.curAnim.name.startsWith('sing'))
 			{
@@ -615,7 +702,6 @@ class Character extends FlxSprite
 	{
 		if (!debugMode)
 		{
-			trace(curCharacter);
 			switch (curCharacter)
 			{
 				case 'gf':
@@ -629,6 +715,28 @@ class Character extends FlxSprite
 							playAnim('danceLeft');
 					}
 				case 'robo-gf':
+					if (!animation.curAnim.name.startsWith('hair'))
+					{
+						danced = !danced;
+
+						if (danced)
+							playAnim('danceRight');
+						else
+							playAnim('danceLeft');
+					}
+
+				case 'ROBO-TIKY':
+					if (!animation.curAnim.name.startsWith('hair'))
+					{
+						danced = !danced;
+
+						if (danced)
+							playAnim('danceRight');
+						else
+							playAnim('danceLeft');
+					}
+
+				case '86lol':
 					if (!animation.curAnim.name.startsWith('hair'))
 					{
 						danced = !danced;

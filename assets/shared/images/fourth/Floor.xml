@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Floor.png">
+    <SubTexture name="Floor Spikes0000" x="0" y="0" width="644" height="644" frameX="0" frameY="0" frameWidth="644" frameHeight="644" />
+    <SubTexture name="Floor Spikes0001" x="644" y="0" width="644" height="644" frameX="0" frameY="0" frameWidth="644" frameHeight="644" />
+    <SubTexture name="Floor Spikes0002" x="1288" y="0" width="644" height="644" frameX="0" frameY="0" frameWidth="644" frameHeight="644" />
+    <SubTexture name="Floor Spikes0003" x="1932" y="0" width="644" height="644" frameX="0" frameY="0" frameWidth="644" frameHeight="644" />
+    <SubTexture name="Floor Spikes0004" x="0" y="644" width="644" height="644" frameX="0" frameY="0" frameWidth="644" frameHeight="644" />
+    <SubTexture name="Floor Spikes0005" x="644" y="644" width="644" height="644" frameX="0" frameY="0" frameWidth="644" frameHeight="644" />
+</TextureAtlas>

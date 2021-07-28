@@ -26,6 +26,7 @@ class Note extends FlxSprite
 	public var modifiedByLua:Bool = false;
 	public var sustainLength:Float = 0;
 	public var isSustainNote:Bool = false;
+	public var burning:Bool = false;
 
 	public var noteScore:Float = 1;
 
@@ -37,7 +38,7 @@ class Note extends FlxSprite
 
 	public var rating:String = "shit";
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false)
+	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?burning = false)
 	{
 		super();
 
@@ -56,6 +57,17 @@ class Note extends FlxSprite
 			this.strumTime = 0;
 
 		this.noteData = noteData;
+		if (isSustainNote && prevNote.noteData > 7)
+		{
+			burning = true;
+			noteData = -99;
+		}
+
+		if (isSustainNote && FlxG.save.data.downscroll)
+			flipY = true;
+		this.burning = burning;
+
+		noteData = noteData % 4;
 
 		var daStage:String = PlayState.curStage;
 
@@ -134,10 +146,47 @@ class Note extends FlxSprite
 				animation.addByPrefix('redhold', 'red hold piece');
 				animation.addByPrefix('bluehold', 'blue hold piece');
 
+				if (burning)
+				{
+					if (PlayState.curStage == 'auditorHell')
+					{
+						frames = Paths.getSparrowAtlas('fourth/mech/ALL_deathnotes', "shared");
+						animation.addByPrefix('greenScroll', 'Green Arrow');
+						animation.addByPrefix('redScroll', 'Red Arrow');
+						animation.addByPrefix('blueScroll', 'Blue Arrow');
+						animation.addByPrefix('purpleScroll', 'Purple Arrow');
+						x -= 165;
+					}
+					else
+					{
+						frames = Paths.getSparrowAtlas('NOTE_fire', "shared");
+						if (!FlxG.save.data.downscroll)
+						{
+							animation.addByPrefix('blueScroll', 'blue fire');
+							animation.addByPrefix('greenScroll', 'green fire');
+						}
+						else
+						{
+							animation.addByPrefix('greenScroll', 'blue fire');
+							animation.addByPrefix('blueScroll', 'green fire');
+						}
+						animation.addByPrefix('redScroll', 'red fire');
+						animation.addByPrefix('purpleScroll', 'purple fire');
+
+						if (FlxG.save.data.downscroll)
+							flipY = true;
+
+						x -= 50;
+					}
+				}
+
 				setGraphicSize(Std.int(width * 0.7));
 				updateHitbox();
 				antialiasing = true;
 		}
+
+		if (burning)
+			setGraphicSize(Std.int(width * 0.86));
 
 		switch (noteData)
 		{
@@ -212,18 +261,23 @@ class Note extends FlxSprite
 				// prevNote.setGraphicSize();
 			}
 		}
+		x -= 165;
+		if (burning)
+			x -= 165;
 	}
 
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
 
+		
+
 		if (mustPress)
 		{
-			// ass
-			if (isSustainNote)
+			// The * 0.5 is so that it's easier to hit them too late, instead of too early
+			if (!burning)
 			{
-				if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * 1.5)
+				if (strumTime > Conductor.songPosition - Conductor.safeZoneOffset
 					&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))
 					canBeHit = true;
 				else
@@ -231,14 +285,25 @@ class Note extends FlxSprite
 			}
 			else
 			{
-				if (strumTime > Conductor.songPosition - Conductor.safeZoneOffset
-					&& strumTime < Conductor.songPosition + Conductor.safeZoneOffset)
-					canBeHit = true;
+				if (PlayState.curStage == 'auditorHell') // these though, REALLY hard to hit.
+				{
+					if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * 0.3)
+						&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.2)) // also they're almost impossible to hit late!
+						canBeHit = true;
+					else
+						canBeHit = false;
+				}
 				else
-					canBeHit = false;
+				{
+					// make burning notes a lot harder to accidently hit because they're weirdchamp!
+					if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * 0.6)
+						&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.4)) // also they're almost impossible to hit late!
+						canBeHit = true;
+					else
+						canBeHit = false;
+				}
 			}
-
-			if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset * Conductor.timeScale && !wasGoodHit)
+			if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset && !wasGoodHit)
 				tooLate = true;
 		}
 		else

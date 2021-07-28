@@ -245,6 +245,10 @@ class FreeplayState extends MusicBeatState
 			if (curDifficulty > 5)
 				curDifficulty = 2;
 		}
+		else if (songs[curSelected].songName == 'Expurgation')
+		{
+			curDifficulty = 6;
+		}
 		else
 		{
 			if (curDifficulty < 0)
@@ -280,6 +284,8 @@ class FreeplayState extends MusicBeatState
 				diffText.text = "HARD-a";
 			case 5:
 				diffText.text = "ALT-a";
+			case 6:
+				diffText.text = "UNFAIR";
 		}
 	}
 
