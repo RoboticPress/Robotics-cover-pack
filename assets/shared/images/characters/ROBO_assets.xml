@@ -1,46 +1,58 @@
 <?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="robo.png">
-<SubTexture name="robo Dancing Beat0000" x="0" y="0" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0001" x="707" y="0" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0002" x="1414" y="0" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0003" x="2121" y="0" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0004" x="0" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0005" x="707" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0006" x="1414" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0007" x="2121" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0008" x="2121" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0009" x="2121" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0010" x="0" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0011" x="0" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0012" x="0" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0013" x="707" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0014" x="707" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0015" x="1414" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0016" x="2121" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0017" x="0" y="1956" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0018" x="707" y="1956" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0019" x="1414" y="1956" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0020" x="2121" y="1956" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0021" x="0" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0022" x="707" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0023" x="707" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0024" x="707" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0025" x="1414" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0026" x="1414" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0027" x="1414" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0028" x="2121" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo Dancing Beat0029" x="2121" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0000" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0001" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0002" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0003" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0004" x="707" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0005" x="1414" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0006" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0007" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0008" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0009" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0010" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0011" x="707" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
-<SubTexture name="robo sad0012" x="1414" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0000" x="0" y="0" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0001" x="707" y="0" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0002" x="1414" y="0" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0003" x="2121" y="0" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0004" x="0" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0005" x="707" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0006" x="1414" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0007" x="2121" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0008" x="2121" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0009" x="2121" y="652" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0010" x="0" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0011" x="0" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0012" x="0" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0013" x="707" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0014" x="707" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0015" x="1414" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0016" x="2121" y="1304" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0017" x="0" y="1956" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0018" x="707" y="1956" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0019" x="1414" y="1956" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0020" x="2121" y="1956" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0021" x="0" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0022" x="707" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0023" x="707" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0024" x="707" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0025" x="1414" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0026" x="1414" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0027" x="1414" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0028" x="2121" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo Dancing Beat0029" x="2121" y="2608" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0000" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0001" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0002" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0003" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0004" x="707" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0005" x="1414" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0006" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0007" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0008" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0009" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0010" x="0" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0011" x="707" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo sad0012" x="1414" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo left0000" x="2121" y="3260" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo left0001" x="0" y="3912" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo left0002" x="707" y="3912" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo right0000" x="1414" y="3912" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo right0001" x="2121" y="3912" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo right0002" x="0" y="4564" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo up0000" x="707" y="4564" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo up0001" x="1414" y="4564" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo up0002" x="2121" y="4564" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo down0000" x="0" y="5216" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo down0001" x="707" y="5216" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
+    <SubTexture name="robo down0002" x="1414" y="5216" width="707" height="652" frameX="0" frameY="0" frameWidth="707" frameHeight="652" />
 </TextureAtlas>
