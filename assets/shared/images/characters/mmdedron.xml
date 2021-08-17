@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="mmdedron.png">
+<SubTexture name="mmdedron Idle0000" x="0" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0001" x="0" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0002" x="724" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0003" x="724" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0004" x="1448" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0005" x="1448" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0006" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0007" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0008" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0009" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0010" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0011" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0012" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0013" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0014" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0015" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0016" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0017" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0018" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Idle0019" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0000" x="0" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0001" x="0" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0002" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0003" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0004" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0005" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0006" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0007" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0008" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0009" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0010" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0011" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0012" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0013" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0014" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0015" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0016" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0017" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0018" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0019" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0020" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0021" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0022" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Down'0023" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0000" x="1508" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0001" x="1508" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0002" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0003" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0004" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0005" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0006" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0007" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0008" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0009" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0010" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0011" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0012" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0013" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0014" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0015" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0016" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0017" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0018" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0019" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0020" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0021" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0022" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Down0023" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0000" x="0" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0001" x="0" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0002" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0003" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0004" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0005" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0006" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0007" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0008" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0009" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0010" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0011" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0012" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0013" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0014" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0015" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0016" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0017" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0018" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0019" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0020" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0021" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0022" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Left0023" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Left0000" x="1508" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0001" x="1508" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0002" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0003" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0004" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0005" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0006" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0007" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0008" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0009" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0010" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0011" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0012" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0013" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0014" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0015" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0016" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0017" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0018" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0019" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0020" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0021" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0022" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Left0023" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0000" x="0" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0001" x="0" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0002" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0003" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0004" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0005" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0006" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0007" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0008" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0009" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0010" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0011" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0012" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0013" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0014" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0015" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0016" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0017" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0018" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0019" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0020" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0021" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0022" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Right0023" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Right0000" x="1508" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0001" x="1508" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0002" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0003" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0004" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0005" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0006" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0007" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0008" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0009" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0010" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0011" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0012" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0013" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0014" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0015" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0016" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0017" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0018" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0019" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0020" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0021" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0022" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Right0023" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0000" x="0" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0001" x="0" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0002" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0003" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0004" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0005" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0006" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0007" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0008" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0009" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0010" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0011" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0012" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0013" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0014" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0015" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0016" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0017" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0018" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0019" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0020" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0021" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0022" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Miss Up0023" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0000" x="1508" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0001" x="1508" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0002" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0003" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0004" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0005" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0006" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0007" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0008" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0009" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0010" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0011" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0012" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0013" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0014" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0015" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0016" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0017" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0018" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0019" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0020" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0021" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0022" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmdedron Up0023" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+</TextureAtlas>

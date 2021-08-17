@@ -77,6 +77,8 @@ class Character extends FlxSprite
 				animation.addByIndices('danceLeft', 'robo Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
 				animation.addByIndices('danceRight', 'robo Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 				animation.addByIndices('sad', 'robo sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+				animation.addByIndices('help', 'robo help', [0], "", 24, false);
+				animation.addByIndices('please help', 'robo help', [0, 1, 1, 2, 3, 3, 3, 4, 4, 4, 2, 4, 4, 5, 5, 5, 3, 3, 2, 2, 1, 1, 6, 6, 6, 6, 6, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 20, 20], "", 24, false);
 
 				addOffset('singLEFT', 0, 0);
 				addOffset('singRIGHT', 0, 0);
@@ -1219,6 +1221,71 @@ class Character extends FlxSprite
 				addOffset("singLEFT-alt", 133, -75);
 				addOffset("singRIGHT-alt", 16, -135);
 
+			case 'ded-ron':
+				// Ded admtion looding cod
+				// *anmtion
+				hasFail = true;
+				tex = Paths.getSparrowAtlas('characters/mmdedron', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'mmdedron Idle', 24, false);
+				animation.addByPrefix('dedlol', 'mmdedron Idle', 24, true);
+				animation.addByPrefix('singUP', 'mmdedron Up', 24, false);
+				animation.addByPrefix('singLEFT', 'mmdedron Left', 24, false);
+				animation.addByPrefix('singDOWN', 'mmdedron Down', 24, false);
+				animation.addByPrefix('singRIGHT', 'mmdedron Right', 24, false);
+
+				animation.addByPrefix('singUPmiss', 'mmdedron Miss Up', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'mmdedron Miss Left', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'mmdedron Miss Down', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'mmdedron Miss Right', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+
+				addOffset("singUPmiss", 0, 0);
+				addOffset("singRIGHTmiss", 0, 0);
+				addOffset("singLEFTmiss", 0, 0);
+				addOffset("singDOWNmiss", 0, 0);
+
+				playAnim('idle');
+
+				flipX = true;
+
+
+			case 'pizza':
+				tex = Paths.getSparrowAtlas('characters/PizzaMan');
+				frames = tex;
+				animation.addByPrefix('idle', "PizzasHere", 29);
+				animation.addByPrefix('fall', "PizzasHere", 29);
+				animation.addByPrefix('singUP', 'Up', 29, false);
+				animation.addByPrefix('singDOWN', 'Down', 29, false);
+				animation.addByPrefix('singLEFT', 'Left', 29, false);
+				animation.addByPrefix('singRIGHT', 'Right', 29, false);
+				addOffset('idle');
+
+			case 'garcellodead':
+				// GARCELLO DEAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/garcellodead_assets');
+				frames = tex;
+				animation.addByPrefix('idle', 'garcello idle dance', 24);
+				animation.addByPrefix('singUP', 'garcello Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'garcello Sing Note RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'garcello Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'garcello Sing Note LEFT', 24);
+
+				animation.addByPrefix('garTightBars', 'garcello coolguy', 15);
+
+				addOffset('idle');
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+				addOffset("garTightBars", 0, 0);
+
+				playAnim('idle');
 		}
 
 		dance();
@@ -1234,7 +1301,8 @@ class Character extends FlxSprite
 				!curCharacter.startsWith('kapi') &&
 				!curCharacter.startsWith('pico') &&
 				!curCharacter.startsWith('cass') &&
-				!curCharacter.startsWith('whitty'))
+				!curCharacter.startsWith('whitty') &&
+				!curCharacter.startsWith('ded-ron'))
 			{
 				// var animArray
 				var oldRight = animation.getByName('singRIGHT').frames;
@@ -1269,7 +1337,8 @@ class Character extends FlxSprite
 			!curCharacter.startsWith('pico') &&
 			!curCharacter.startsWith('cass') &&
 			!curCharacter.startsWith('whitty') &&
-			!curCharacter.startsWith('carol'))
+			!curCharacter.startsWith('carol') &&
+			!curCharacter.startsWith('ded-ron'))
 		{
 			if (animation.curAnim.name.startsWith('sing'))
 			{

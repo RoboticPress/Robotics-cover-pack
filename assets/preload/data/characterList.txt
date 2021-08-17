@@ -37,3 +37,5 @@ ruv
 qt-kb
 whitty
 carol
+ded-ron
+garcellodead

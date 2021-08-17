@@ -39,6 +39,7 @@ class OutdatedSubState extends MusicBeatState
 			+ '\n- VS Hex Mod'
 			+ '\n- Vs Tord'
 			+ '\n- Vs. Tord Mod LEGACY EDITION'
+			+ '\n- literally every fnf mod ever (Vs Bob Week)'
 			+ '\n- VS Sunday [Remastered]'
 			+ '\n- Vs Annie'
 			+ '\n- Playable Tankman'
@@ -58,6 +59,8 @@ class OutdatedSubState extends MusicBeatState
 			+ '\n- Whitty full week'
 			+ '\n- Carol V2'
 		];
+			case 'release':
+				creditsthingy = ['Smoke em Out Struggle', 'literally every fnf mod ever (Vs Bob Week)\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- LadMcLad for the idea of the cover, the heaven BG, and ghost ron sprites (i exist ig)'];
 		}
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
 			"YO! It'd be great if you credit these mods\\people if you showcase this cover:\n"
@@ -66,7 +69,7 @@ class OutdatedSubState extends MusicBeatState
 			+ "- And of course this mod!\n"
 			+ "\n\nPress Any key to continue",
 			32);
-		txt.setFormat("VCR OSD Mono", 26, FlxColor.WHITE, CENTER);
+		txt.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, CENTER);
 		txt.screenCenter();
 		add(txt);
 	}
@@ -76,7 +79,13 @@ class OutdatedSubState extends MusicBeatState
 		if (FlxG.keys.justPressed.ANY)
 		{
 			leftState = true;
-			FlxG.switchState(new PlayState());
+			switch (PlayState.SONG.song.toLowerCase())
+			{
+				case 'release':
+					FlxG.switchState(new VideoState('assets/videos/ronlease/mmcutscene.webm', new PlayState()));
+				default:
+					FlxG.switchState(new PlayState());
+			}
 		}
 		super.update(elapsed);
 	}

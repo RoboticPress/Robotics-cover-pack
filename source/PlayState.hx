@@ -236,6 +236,7 @@ class PlayState extends MusicBeatState
 	var boyfriendAgainSinging:Bool = false;
 	var dadAgainSinging:Bool = false;
 	var totalDamageTaken:Float = 0;
+	var amogos:FlxSprite;
 
 	function doGremlin(hpToTake:Int, duration:Int, persist:Bool = false)
 	{
@@ -583,6 +584,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('expurgation/expurgationDialogue'));
 			case 'headache':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('headache/headacheDialogue'));
+			case 'release':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('release/releasecoverdialogue'));
 		}
 
 		//defaults if no stage was found in chart
@@ -1199,6 +1202,29 @@ class PlayState extends MusicBeatState
 					trace("added " + i);
 				}*/
 			}
+			case 'heaven':
+				{
+					FlxG.bitmap.add(Paths.image("characters/PizzaMan"));
+					defaultCamZoom = 0.9;
+					curStage = 'heaven';
+
+					var bg:FlxSprite = new FlxSprite(-250, -300).loadGraphic(Paths.image('heaven'));
+					bg.antialiasing = true;
+					bg.setGraphicSize(Std.int(bg.width * 1.2));
+					bg.updateHitbox();
+					bg.scrollFactor.set(0.7, 0.7);
+					bg.active = false;
+					add(bg);
+
+					amogos = new FlxSprite(-250, -300).loadGraphic(Paths.image('amogos'));
+					amogos.antialiasing = true;
+					amogos.setGraphicSize(Std.int(amogos.width * 1.2));
+					amogos.updateHitbox();
+					amogos.scrollFactor.set(0.7, 0.7);
+					amogos.alpha = 0;
+					add(amogos);
+
+			  }
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -1271,6 +1297,12 @@ class PlayState extends MusicBeatState
 				dad.y -= 365 - 100;
 				gf.x += 345 + 100;
 				gf.y -= 25 - 50;
+		}
+
+		switch (SONG.player1)
+		{
+			case 'ded-ron':
+				boyfriend.y -= 200;
 		}
 
 		// REPOSITIONING PER STAGE
@@ -1579,6 +1611,8 @@ class PlayState extends MusicBeatState
 					add(doofus);
 				case 'headache':
 					add(doofus);
+				case 'release':
+					add(doofus);
 				default:
 					startCountdown();
 			}
@@ -1592,6 +1626,8 @@ class PlayState extends MusicBeatState
 				case 'expurgation':
 					add(doofus);
 				case 'headache':
+					add(doofus);
+				case 'release':
 					add(doofus);
 				default:
 					startCountdown();
@@ -2609,6 +2645,32 @@ class PlayState extends MusicBeatState
 		iconP1.updateHitbox();
 		iconP2.updateHitbox();
 
+		if (SONG.song.toLowerCase() == 'release') {
+			if (curStep == 0 || curStep == 206 || curStep == 318 || curStep == 334 || curStep == 378 || curStep == 382 || curStep == 1040 || curStep == 1120)
+			{
+				FlxTween.tween(FlxG.camera, {zoom: 1.5}, 0.4, {ease: FlxEase.expoOut,});
+			}
+			else if (curStep == 592)
+				changeBf('pizza');
+			else if (curStep == 632)
+				changeBf('ded-ron');
+			if (dad.curCharacter == 'garcellodead' && curStep == 838)
+				dad.playAnim('garTightBars', true);
+			if (dad.curCharacter == 'garcellodead' && curStep == 843)
+			{
+				dad.animation.stop();
+				gf.playAnim('help', true);
+				amogos.alpha = 1;
+				FlxTween.tween(amogos, {alpha: 0}, 4, {
+					ease: FlxEase.quadInOut
+				});
+			}
+			if (curStep == 883)
+				gf.playAnim('please help', true);
+		}
+
+		// robotic screams for help at 884
+
 		var iconOffset:Int = 26;
 
 		iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset);
@@ -2943,10 +3005,12 @@ class PlayState extends MusicBeatState
 			vocals.stop();
 			FlxG.sound.music.stop();
 
-			if (curStage != 'auditorHell')
-				openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
-			else
+			if (curStage == 'auditorHell')
 				openSubState(new GameOverSubstateTiky());
+			else if (curStage == 'heaven')
+				openSubState(new GameOverSubstateRon(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y, boyfriend.animation.name, boyfriend.animation.curAnim.curFrame));
+			else
+				openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
 			#if windows
 			// Game Over doesn't get his own variable because it's only used here
 			DiscordClient.changePresence("GAME OVER -- " + SONG.song + " (" + storyDifficultyText + ") " + Ratings.GenerateLetterRank(accuracy),"\nAcc: " + HelperFunctions.truncateFloat(accuracy, 2) + "% | Score: " + songScore + " | Misses: " + misses  , iconRPC);
@@ -4201,7 +4265,8 @@ class PlayState extends MusicBeatState
 			health -= 0.04;
 			if (combo > 5 && gf.animOffsets.exists('sad'))
 			{
-				gf.playAnim('sad');
+				if (!gf.animation.curAnim.name.startsWith('help') && !gf.animation.curAnim.name.startsWith('please'))
+					gf.playAnim('sad');
 			}
 			combo = 0;
 			interupt = true;
@@ -5260,7 +5325,7 @@ class PlayState extends MusicBeatState
 
 		if (curBeat % gfSpeed == 0)
 		{
-			if (!roboturn)
+			if (!roboturn && !gf.animation.curAnim.name.startsWith('help') && !gf.animation.curAnim.name.startsWith('please'))
 				gf.dance();
 			if (curStage == 'auditorHell')
 				lol86.dance();

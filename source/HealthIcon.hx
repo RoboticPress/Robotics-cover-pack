@@ -72,6 +72,9 @@ class HealthIcon extends FlxSprite
 		animation.add('whitty', [68, 69], 0, false, isPlayer); // nice
 		animation.add('carol', [68, 69], 0, false, isPlayer); // nice
 		animation.add('whitty-carol', [68, 69], 0, false, isPlayer); // nice
+		animation.add('garcellodead', [70, 71], 0, false, isPlayer);
+		animation.add('ded-ron', [72, 73], 0, false, isPlayer);
+		animation.add('pizza', [74, 75], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)

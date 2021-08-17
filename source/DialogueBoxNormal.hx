@@ -17,6 +17,8 @@ import sys.FileSystem;
 
 using StringTools;
 
+// NO COSE I AM NOT DRAWING GARCELLO PORN HERE USING ASCII
+
 class DialogueBoxNormal extends FlxSpriteGroup
 {
 	var box:FlxSprite;
@@ -70,6 +72,9 @@ class DialogueBoxNormal extends FlxSpriteGroup
 			case 'headache':
 				hasDialog = true;
 				box.loadGraphic(Paths.image('robo/robo_text'));
+			case 'release':
+				hasDialog = true;
+				box.loadGraphic(Paths.image('robo/robo_text'));
 		}
 
 		this.dialogueList = dialogueList;
@@ -85,6 +90,8 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitLeft.animation.addByPrefix('pegmepleaseuwu', 'port pegmepleaseuwu', 24, false);
 		portraitLeft.animation.addByPrefix('lav3', 'port lav3', 24, false);
 		portraitLeft.animation.addByPrefix('rose', 'port rose', 24, false);
+		portraitLeft.animation.addByPrefix('gardead', 'port gardead', 24, false);
+		portraitLeft.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
 		portraitLeft.updateHitbox();
 		portraitLeft.scrollFactor.set();
 		portraitLeft.flipX = true;
@@ -99,6 +106,8 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitRight.animation.addByPrefix('pegmepleaseuwu', 'port pegmepleaseuwu', 24, false);
 		portraitRight.animation.addByPrefix('lav3', 'port lav3', 24, false);
 		portraitRight.animation.addByPrefix('rose', 'port rose', 24, false);
+		portraitRight.animation.addByPrefix('gardead', 'port gardead', 24, false);
+		portraitRight.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
 		portraitRight.updateHitbox();
 		portraitRight.scrollFactor.set();
 		add(portraitRight);
@@ -112,6 +121,8 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitMiddle.animation.addByPrefix('pegmepleaseuwu', 'port pegmepleaseuwu', 24, false);
 		portraitMiddle.animation.addByPrefix('lav3', 'port lav3', 24, false);
 		portraitMiddle.animation.addByPrefix('rose', 'port rose', 24, false);
+		portraitMiddle.animation.addByPrefix('gardead', 'port gardead', 24, false);
+		portraitMiddle.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
 		portraitMiddle.updateHitbox();
 		portraitMiddle.scrollFactor.set();
 		portraitMiddle.flipX = true;
@@ -278,6 +289,22 @@ class DialogueBoxNormal extends FlxSpriteGroup
 					portraitLeft.visible = true;
 					portraitLeft.animation.play('rose');
 				}
+			case 'gardead':
+				portraitRight.visible = false;
+				portraitMiddle.visible = false;
+				if (!portraitLeft.visible)
+				{
+					portraitLeft.visible = true;
+					portraitLeft.animation.play('gardead');
+				}
+			case 'ded-ron':
+				portraitRight.visible = false;
+				portraitMiddle.visible = false;
+				if (!portraitLeft.visible)
+				{
+					portraitLeft.visible = true;
+					portraitLeft.animation.play('ded-ron');
+				}
 
 			// ON THE LEFT
 			case 'garcello-left':
@@ -328,6 +355,22 @@ class DialogueBoxNormal extends FlxSpriteGroup
 					portraitRight.visible = true;
 					portraitRight.animation.play('rose');
 				}
+			case 'gardead-left':
+				portraitLeft.visible = false;
+				portraitMiddle.visible = false;
+				if (!portraitRight.visible)
+				{
+					portraitRight.visible = true;
+					portraitRight.animation.play('gardead');
+				}
+			case 'ded-ron-left':
+				portraitLeft.visible = false;
+				portraitMiddle.visible = false;
+				if (!portraitRight.visible)
+				{
+					portraitRight.visible = true;
+					portraitRight.animation.play('ded-ron');
+				}
 
 			// MIDDLE
 			case 'garcello-middle':
@@ -377,6 +420,22 @@ class DialogueBoxNormal extends FlxSpriteGroup
 				{
 					portraitMiddle.visible = true;
 					portraitMiddle.animation.play('rose');
+				}
+			case 'gardead-middle':
+				portraitLeft.visible = false;
+				portraitRight.visible = false;
+				if (!portraitMiddle.visible)
+				{
+					portraitMiddle.visible = true;
+					portraitMiddle.animation.play('gardead');
+				}
+			case 'ded-ron-middle':
+				portraitLeft.visible = false;
+				portraitRight.visible = false;
+				if (!portraitMiddle.visible)
+				{
+					portraitMiddle.visible = true;
+					portraitMiddle.animation.play('ded-ron');
 				}
 		}
 	}
