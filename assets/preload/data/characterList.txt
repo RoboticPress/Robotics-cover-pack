@@ -39,3 +39,9 @@ whitty
 carol
 ded-ron
 garcellodead
+qt-kb-night
+robo-gf-night
+bf-night
+qt-kb-404
+robo-gf-404
+bf-404

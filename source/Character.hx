@@ -77,8 +77,14 @@ class Character extends FlxSprite
 				animation.addByIndices('danceLeft', 'robo Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
 				animation.addByIndices('danceRight', 'robo Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 				animation.addByIndices('sad', 'robo sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+
 				animation.addByIndices('help', 'robo help', [0], "", 24, false);
 				animation.addByIndices('please help', 'robo help', [0, 1, 1, 2, 3, 3, 3, 4, 4, 4, 2, 4, 4, 5, 5, 5, 3, 3, 2, 2, 1, 1, 6, 6, 6, 6, 6, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 20, 20], "", 24, false);
+
+				animation.addByIndices('OI', 'robo saw come', [0], "", 30, false);
+				animation.addByPrefix('come saw', 'robo saw come', 30, false);
+				animation.addByPrefix('GET THE BITCH', 'robo GET THE BITCH', 30, false);
+				// animation.addByPrefix('go saw', 'robo go saw', 30, false);
 
 				addOffset('singLEFT', 0, 0);
 				addOffset('singRIGHT', 0, 0);
@@ -87,6 +93,92 @@ class Character extends FlxSprite
 				addOffset('danceLeft', 0, 0);
 				addOffset('danceRight', 0, 0);
 				addOffset('sad', 0, 0);
+
+				addOffset('help', 0, 0);
+				addOffset('please help', 0, 0);
+
+				addOffset('OI', 0, 0);
+				addOffset('come saw', 0, 0);
+				addOffset('GET THE BITCH', 0, 0);
+				// addOffset('go saw', 0, 0);
+
+				playAnim('danceRight');
+
+			case 'robo-gf-night':
+				// GIRLFRIEND CODE
+				tex = Paths.getSparrowAtlas('characters/ROBO_assets-night');
+				trace(tex);
+				frames = tex;
+				animation.addByPrefix('singLEFT', 'robo left', 24, false);
+				animation.addByPrefix('singRIGHT', 'robo right', 24, false);
+				animation.addByPrefix('singUP', 'robo up', 24, false);
+				animation.addByPrefix('singDOWN', 'robo down', 24, false);
+				animation.addByIndices('danceLeft', 'robo Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'robo Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+				animation.addByIndices('sad', 'robo sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+
+				animation.addByIndices('help', 'robo help', [0], "", 24, false);
+				animation.addByIndices('please help', 'robo help', [0, 1, 1, 2, 3, 3, 3, 4, 4, 4, 2, 4, 4, 5, 5, 5, 3, 3, 2, 2, 1, 1, 6, 6, 6, 6, 6, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 20, 20], "", 24, false);
+
+				animation.addByIndices('OI', 'robo saw come', [0], "", 30, false);
+				animation.addByPrefix('come saw', 'robo saw come', 30, false);
+				animation.addByPrefix('GET THE BITCH', 'robo GET THE BITCH', 30, false);
+				// animation.addByPrefix('go saw', 'robo go saw', 30, false);
+
+				addOffset('singLEFT', 0, 0);
+				addOffset('singRIGHT', 0, 0);
+				addOffset('singUP', 0, 0);
+				addOffset('singDOWN', 0, 0);
+				addOffset('danceLeft', 0, 0);
+				addOffset('danceRight', 0, 0);
+				addOffset('sad', 0, 0);
+
+				addOffset('help', 0, 0);
+				addOffset('please help', 0, 0);
+
+				addOffset('OI', 0, 0);
+				addOffset('come saw', 0, 0);
+				addOffset('GET THE BITCH', 0, 0);
+				// addOffset('go saw', 0, 0);
+
+				playAnim('danceRight');
+
+			case 'robo-gf-404':
+				// GIRLFRIEND CODE
+				tex = Paths.getSparrowAtlas('characters/ROBO_assets-404');
+				trace(tex);
+				frames = tex;
+				animation.addByPrefix('singLEFT', 'robo left', 24, false);
+				animation.addByPrefix('singRIGHT', 'robo right', 24, false);
+				animation.addByPrefix('singUP', 'robo up', 24, false);
+				animation.addByPrefix('singDOWN', 'robo down', 24, false);
+				animation.addByIndices('danceLeft', 'robo Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'robo Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+				animation.addByIndices('sad', 'robo sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+
+				animation.addByIndices('help', 'robo help', [0], "", 24, false);
+				animation.addByIndices('please help', 'robo help', [0, 1, 1, 2, 3, 3, 3, 4, 4, 4, 2, 4, 4, 5, 5, 5, 3, 3, 2, 2, 1, 1, 6, 6, 6, 6, 6, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 20, 20], "", 24, false);
+
+				animation.addByIndices('OI', 'robo saw come', [0], "", 30, false);
+				animation.addByPrefix('come saw', 'robo saw come', 30, false);
+				animation.addByPrefix('GET THE BITCH', 'robo GET THE BITCH', 30, false);
+				// animation.addByPrefix('go saw', 'robo go saw', 30, false);
+
+				addOffset('singLEFT', 0, 0);
+				addOffset('singRIGHT', 0, 0);
+				addOffset('singUP', 0, 0);
+				addOffset('singDOWN', 0, 0);
+				addOffset('danceLeft', 0, 0);
+				addOffset('danceRight', 0, 0);
+				addOffset('sad', 0, 0);
+
+				addOffset('help', 0, 0);
+				addOffset('please help', 0, 0);
+
+				addOffset('OI', 0, 0);
+				addOffset('come saw', 0, 0);
+				addOffset('GET THE BITCH', 0, 0);
+				// addOffset('go saw', 0, 0);
 
 				playAnim('danceRight');
 
@@ -506,6 +598,96 @@ class Character extends FlxSprite
 				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
 
 				animation.addByPrefix('scared', 'BF idle shaking', 24);
+
+				addOffset('idle', -5);
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -38, -7);
+				addOffset("singLEFT", 12, -6);
+				addOffset("singDOWN", -10, -50);
+				addOffset("singUPmiss", -29, 27);
+				addOffset("singRIGHTmiss", -30, 21);
+				addOffset("singLEFTmiss", 12, 24);
+				addOffset("singDOWNmiss", -11, -19);
+				addOffset("hey", 7, 4);
+				addOffset('firstDeath', 37, 11);
+				addOffset('deathLoop', 37, 5);
+				addOffset('deathConfirm', 37, 69);
+				addOffset('scared', -4);
+
+				playAnim('idle');
+
+				flipX = true;
+
+			case 'bf404':
+				hasFail = true;
+				var tex = Paths.getSparrowAtlas('characters/BOYFRIEND_404', 'shared');
+				frames = tex;
+
+				trace(tex.frames.length);
+
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+				animation.addByPrefix('hey', 'BF HEY', 24, false);
+
+				animation.addByPrefix('firstDeath', "BF dies", 24, false);
+				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+
+				animation.addByPrefix('scared', 'BF idle shaking', 24);
+
+				animation.addByPrefix('dodge','boyfriend dodge', 24, false);
+
+				addOffset('idle', -5);
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -38, -7);
+				addOffset("singLEFT", 12, -6);
+				addOffset("singDOWN", -10, -50);
+				addOffset("singUPmiss", -29, 27);
+				addOffset("singRIGHTmiss", -30, 21);
+				addOffset("singLEFTmiss", 12, 24);
+				addOffset("singDOWNmiss", -11, -19);
+				addOffset("hey", 7, 4);
+				addOffset('firstDeath', 37, 11);
+				addOffset('deathLoop', 37, 5);
+				addOffset('deathConfirm', 37, 69);
+				addOffset('scared', -4);
+
+				playAnim('idle');
+
+				flipX = true;
+
+			case 'bf-night':
+				hasFail = true;
+				var tex = Paths.getSparrowAtlas('characters/BOYFRIEND-night', 'shared');
+				frames = tex;
+
+				trace(tex.frames.length);
+
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+				animation.addByPrefix('hey', 'BF HEY', 24, false);
+
+				animation.addByPrefix('firstDeath', "BF dies", 24, false);
+				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+
+				animation.addByPrefix('scared', 'BF idle shaking', 24);
+
+				animation.addByPrefix('dodge','boyfriend dodge', 24, false);
 
 				addOffset('idle', -5);
 				addOffset("singUP", -29, 27);
@@ -1221,6 +1403,106 @@ class Character extends FlxSprite
 				addOffset("singLEFT-alt", 133, -75);
 				addOffset("singRIGHT-alt", 16, -135);
 
+			case 'qt-kb-night':
+
+				tex = Paths.getSparrowAtlas('characters/qt-kb-night');
+				frames = tex;
+
+
+				animation.addByPrefix('danceRight', "danceRightNormal", 26, false);
+				animation.addByPrefix('danceLeft', "danceLeftNormal", 26, false);
+
+				//kb
+				animation.addByPrefix('danceRight-kb', "danceRightKB", 26, false);
+				animation.addByPrefix('danceLeft-kb', "danceLeftKB", 26, false);
+				animation.addByPrefix('singUP-kb', 'singUpKB', 24, false);
+				animation.addByPrefix('singDOWN-kb', 'singDownKB', 24, false);
+				animation.addByPrefix('singLEFT-kb', 'singLeftKB', 24, false);
+				animation.addByPrefix('singRIGHT-kb', 'singRightKB', 24, false);
+				//qt + kb PLACEHOLDER
+				animation.addByPrefix('singUP', "singUpTogether", 24, false);
+				animation.addByPrefix('singDOWN', "singDownTogether", 24, false);
+				animation.addByPrefix('singLEFT', 'singLeftTogether', 24, false);
+				animation.addByPrefix('singRIGHT', 'singRightTogether', 24, false);
+				//qt
+				animation.addByPrefix('singUP-alt', 'singUpQT', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'singDownQT', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'singLeftQT', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'singRightQT', 24, false);
+
+				//Positive = goes to left / Up. -Haz
+				//Negative = goes to right / Down. -Haz
+
+				addOffset('danceRight-kb',67,-115);
+				addOffset('danceLeft-kb',108,-123);
+				addOffset("singUP-kb", 115, 38);
+				addOffset("singDOWN-kb", 138, -194);
+				addOffset("singLEFT-kb", 214, 23);
+				addOffset("singRIGHT-kb", -158, -178);	
+
+				addOffset('danceRight',120,-101);
+				addOffset('danceLeft',160,-110);
+
+				addOffset("singUP", 151, 52);
+				addOffset("singDOWN", 140, -196);
+				addOffset("singLEFT", 213, 21);	
+				addOffset("singRIGHT", -163, -172);	
+				
+				addOffset("singUP-alt", 164, -68);
+				addOffset("singDOWN-alt", 99, -168);
+				addOffset("singLEFT-alt", 133, -75);
+				addOffset("singRIGHT-alt", 16, -135);
+
+			case 'qt-kb-404':
+
+				tex = Paths.getSparrowAtlas('characters/qt-kb-404');
+				frames = tex;
+
+
+				animation.addByPrefix('danceRight', "danceRightNormal", 26, false);
+				animation.addByPrefix('danceLeft', "danceLeftNormal", 26, false);
+
+				//kb
+				animation.addByPrefix('danceRight-kb', "danceRightKB", 26, false);
+				animation.addByPrefix('danceLeft-kb', "danceLeftKB", 26, false);
+				animation.addByPrefix('singUP-kb', 'singUpKB', 24, false);
+				animation.addByPrefix('singDOWN-kb', 'singDownKB', 24, false);
+				animation.addByPrefix('singLEFT-kb', 'singLeftKB', 24, false);
+				animation.addByPrefix('singRIGHT-kb', 'singRightKB', 24, false);
+				//qt + kb PLACEHOLDER
+				animation.addByPrefix('singUP', "singUpTogether", 24, false);
+				animation.addByPrefix('singDOWN', "singDownTogether", 24, false);
+				animation.addByPrefix('singLEFT', 'singLeftTogether', 24, false);
+				animation.addByPrefix('singRIGHT', 'singRightTogether', 24, false);
+				//qt
+				animation.addByPrefix('singUP-alt', 'singUpQT', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'singDownQT', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'singLeftQT', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'singRightQT', 24, false);
+
+				//Positive = goes to left / Up. -Haz
+				//Negative = goes to right / Down. -Haz
+
+				addOffset('danceRight-kb',67,-115);
+				addOffset('danceLeft-kb',108,-123);
+				addOffset("singUP-kb", 115, 38);
+				addOffset("singDOWN-kb", 138, -194);
+				addOffset("singLEFT-kb", 214, 23);
+				addOffset("singRIGHT-kb", -158, -178);	
+
+				addOffset('danceRight',120,-101);
+				addOffset('danceLeft',160,-110);
+
+				addOffset("singUP", 151, 52);
+				addOffset("singDOWN", 140, -196);
+				addOffset("singLEFT", 213, 21);	
+				addOffset("singRIGHT", -163, -172);	
+				
+				addOffset("singUP-alt", 164, -68);
+				addOffset("singDOWN-alt", 99, -168);
+				addOffset("singLEFT-alt", 133, -75);
+				addOffset("singRIGHT-alt", 16, -135);
+
 			case 'ded-ron':
 				// Ded admtion looding cod
 				// *anmtion
@@ -1375,7 +1657,7 @@ class Character extends FlxSprite
 	/**
 	 * FOR GF DANCING SHIT
 	 */
-	public function dance()
+	public function dance(useAltAnimation:Bool=false)
 	{
 		if (!debugMode)
 		{
@@ -1391,8 +1673,8 @@ class Character extends FlxSprite
 						else
 							playAnim('danceLeft');
 					}
-				case 'robo-gf':
-					if (!animation.curAnim.name.startsWith('hair'))
+				case 'robo-gf' | 'robo-gf-night' | 'robo-gf-404':
+					if (!animation.curAnim.name.startsWith('OI') && !animation.curAnim.name.startsWith('come saw') && !animation.curAnim.name.startsWith('GET THE BITCH') && !animation.curAnim.name.startsWith('go saw'))
 					{
 						danced = !danced;
 
@@ -1432,6 +1714,20 @@ class Character extends FlxSprite
 					else
 						playAnim('danceLeft-kb');
 
+				case 'qt-kb-night' | 'qt-kb-404':
+					danced = !danced;
+
+					if(useAltAnimation){
+						if (danced)
+							playAnim('danceRight-kb');
+						else
+							playAnim('danceLeft-kb');
+					}else{
+						if (danced)
+							playAnim('danceRight');
+						else
+							playAnim('danceLeft');
+					}
 				case 'gf-christmas':
 					if (!animation.curAnim.name.startsWith('hair'))
 					{

@@ -61,6 +61,8 @@ class OutdatedSubState extends MusicBeatState
 		];
 			case 'release':
 				creditsthingy = ['Smoke em Out Struggle', 'literally every fnf mod ever (Vs Bob Week)\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- LadMcLad for the idea of the cover, the heaven BG, and ghost ron sprites (i exist ig)'];
+			case 'glitcher':
+				creditsthingy = ['QT Mod', 'VS Hex Mod\n- Robotic Press for the cover (check me out on YouTube aaaaaa)'];
 		}
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
 			"YO! It'd be great if you credit these mods\\people if you showcase this cover:\n"

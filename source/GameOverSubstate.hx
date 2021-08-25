@@ -6,6 +6,7 @@ import flixel.FlxSubState;
 import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
+import flixel.FlxSprite;
 
 class GameOverSubstate extends MusicBeatSubstate
 {
@@ -13,6 +14,7 @@ class GameOverSubstate extends MusicBeatSubstate
 	var camFollow:FlxObject;
 
 	var stageSuffix:String = "";
+	var TerminationText:FlxSprite;
 
 	public function new(x:Float, y:Float)
 	{
@@ -33,6 +35,24 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		bf = new Boyfriend(x, y, daBf);
 		add(bf);
+
+		trace(PlayState.deathBySawBlade);
+		if(PlayState.deathBySawBlade){
+			//For telling the player how to dodge in Termination.
+			//I'm telling the player how to dodge after they've first died to the first saw blade to also communicate that sawblades = instant death.
+			//UPDATE - Tutorial text on TV screens now. This isn't necessary, but might as well reuse this for a custom "funny death" animation. -Haz
+			TerminationText = new FlxSprite();
+			TerminationText.frames = Paths.getSparrowAtlas('hex/sawkillanimation2');
+			TerminationText.animation.addByPrefix('normal', 'kb_attack_animation_kill_idle', 24, true);
+			TerminationText.animation.addByPrefix('animate', 'kb_attack_animation_kill_moving', 24, true);
+			var dumb = CoolUtil.coolTextFile(Paths.txt('dumb'));
+			TerminationText.x = x-50; //negative = left
+			TerminationText.y = y-315; //positive = down
+			TerminationText.angle += 135;
+			TerminationText.antialiasing = true;
+			TerminationText.animation.play("normal");
+			add(TerminationText);
+		}
 
 		camFollow = new FlxObject(bf.getGraphicMidpoint().x, bf.getGraphicMidpoint().y, 1, 1);
 		add(camFollow);
@@ -75,7 +95,26 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		if (bf.animation.curAnim.name == 'firstDeath' && bf.animation.curAnim.finished)
 		{
-			FlxG.sound.playMusic(Paths.music('gameOver' + stageSuffix));
+			if (PlayState.SONG.song.toLowerCase() == 'glitcher')
+			{
+				FlxG.sound.playMusic(Paths.music('gameOver' + stageSuffix), 0.3);
+
+				if (FlxG.random.int(0, 3) == 0)
+					FlxG.sound.play(Paths.sound('VLs/VL' + FlxG.random.int(0, 2)));
+				else
+				{
+					if (PlayState.deathBySawBlade)
+						FlxG.sound.play(Paths.sound('VLs/SAW-VL' + FlxG.random.int(0, 1)));
+					else
+						FlxG.sound.play(Paths.sound('VLs/VL' + FlxG.random.int(0, 2)));
+				}
+			}
+			else
+				FlxG.sound.playMusic(Paths.music('gameOver' + stageSuffix));
+
+			if(PlayState.deathBySawBlade){
+				TerminationText.animation.play("animate");
+			}
 		}
 
 		if (FlxG.sound.music.playing)
@@ -97,6 +136,10 @@ class GameOverSubstate extends MusicBeatSubstate
 	{
 		if (!isEnding)
 		{
+			/*
+			if(PlayState.deathBySawBlade){ //In case player retries early.
+				TerminationText.visible = true;
+			}*/
 			isEnding = true;
 			bf.playAnim('deathConfirm', true);
 			FlxG.sound.music.stop();

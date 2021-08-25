@@ -75,6 +75,9 @@ class DialogueBoxNormal extends FlxSpriteGroup
 			case 'release':
 				hasDialog = true;
 				box.loadGraphic(Paths.image('robo/robo_text'));
+			case 'glitcher':
+				hasDialog = true;
+				box.loadGraphic(Paths.image('robo/robo_text'));
 		}
 
 		this.dialogueList = dialogueList;
@@ -84,7 +87,9 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		
 		portraitLeft = new FlxSprite(160, 190);
 		portraitLeft.frames = Paths.getSparrowAtlas('robo/port');
-		portraitLeft.animation.addByPrefix('robo', 'port robo', 24, false);
+		portraitLeft.animation.addByPrefix('robo', 'port robo normal', 24, false);
+		portraitLeft.animation.addByPrefix('robo-sick', 'port robo help :)', 24, false);
+		portraitLeft.animation.addByPrefix('robo-done-with-your-shit', 'port robodonewithyourshit', 24, false);
 		portraitLeft.animation.addByPrefix('garcello', 'port garcello', 24, false);
 		portraitLeft.animation.addByPrefix('bf', 'port bf', 24, false);
 		portraitLeft.animation.addByPrefix('pegmepleaseuwu', 'port pegmepleaseuwu', 24, false);
@@ -92,6 +97,8 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitLeft.animation.addByPrefix('rose', 'port rose', 24, false);
 		portraitLeft.animation.addByPrefix('gardead', 'port gardead', 24, false);
 		portraitLeft.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
+		portraitLeft.animation.addByPrefix('qt', 'port qt', 24, false);
+		portraitLeft.animation.addByPrefix('kb', 'port kb', 24, false);
 		portraitLeft.updateHitbox();
 		portraitLeft.scrollFactor.set();
 		portraitLeft.flipX = true;
@@ -100,7 +107,9 @@ class DialogueBoxNormal extends FlxSpriteGroup
 
 		portraitRight = new FlxSprite(860, 190);
 		portraitRight.frames = Paths.getSparrowAtlas('robo/port');
-		portraitRight.animation.addByPrefix('robo', 'port robo', 24, false);
+		portraitRight.animation.addByPrefix('robo', 'port robo normal', 24, false);
+		portraitRight.animation.addByPrefix('robo-sick', 'port robo help :)', 24, false);
+		portraitRight.animation.addByPrefix('robo-done-with-your-shit', 'port robodonewithyourshit', 24, false);
 		portraitRight.animation.addByPrefix('garcello', 'port garcello', 24, false);
 		portraitRight.animation.addByPrefix('bf', 'port bf', 24, false);
 		portraitRight.animation.addByPrefix('pegmepleaseuwu', 'port pegmepleaseuwu', 24, false);
@@ -108,6 +117,8 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitRight.animation.addByPrefix('rose', 'port rose', 24, false);
 		portraitRight.animation.addByPrefix('gardead', 'port gardead', 24, false);
 		portraitRight.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
+		portraitRight.animation.addByPrefix('qt', 'port qt', 24, false);
+		portraitRight.animation.addByPrefix('kb', 'port kb', 24, false);
 		portraitRight.updateHitbox();
 		portraitRight.scrollFactor.set();
 		add(portraitRight);
@@ -115,7 +126,9 @@ class DialogueBoxNormal extends FlxSpriteGroup
 
 		portraitMiddle = new FlxSprite(160, 190);
 		portraitMiddle.frames = Paths.getSparrowAtlas('robo/port');
-		portraitMiddle.animation.addByPrefix('robo', 'port robo', 24, false);
+		portraitMiddle.animation.addByPrefix('robo', 'port robo normal', 24, false);
+		portraitMiddle.animation.addByPrefix('robo-sick', 'port robo help :)', 24, false);
+		portraitMiddle.animation.addByPrefix('robo-done-with-your-shit', 'port robodonewithyourshit', 24, false);
 		portraitMiddle.animation.addByPrefix('garcello', 'port garcello', 24, false);
 		portraitMiddle.animation.addByPrefix('bf', 'port bf', 24, false);
 		portraitMiddle.animation.addByPrefix('pegmepleaseuwu', 'port pegmepleaseuwu', 24, false);
@@ -123,6 +136,8 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitMiddle.animation.addByPrefix('rose', 'port rose', 24, false);
 		portraitMiddle.animation.addByPrefix('gardead', 'port gardead', 24, false);
 		portraitMiddle.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
+		portraitMiddle.animation.addByPrefix('qt', 'port qt', 24, false);
+		portraitMiddle.animation.addByPrefix('kb', 'port kb', 24, false);
 		portraitMiddle.updateHitbox();
 		portraitMiddle.scrollFactor.set();
 		portraitMiddle.flipX = true;
@@ -238,205 +253,53 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		swagDialogue.resetText(dialogueList[0]);
 		swagDialogue.start(0.04, true);
 
-		switch (curCharacter)
+		var anim:String = '';
+
+		if (curCharacter.toLowerCase().startsWith('garcello'))
+			anim = 'garcello';
+		else if (curCharacter.toLowerCase().startsWith('robo-sick'))
+			anim = 'robo-sick';
+		else if (curCharacter.toLowerCase().startsWith('robo-done-with-your-shit'))
+			anim = 'robo-done-with-your-shit';
+		else if (curCharacter.toLowerCase().startsWith('robo'))
+			anim = 'robo';
+		else if (curCharacter.toLowerCase().startsWith('bf'))
+			anim = 'bf';
+		else if (curCharacter.toLowerCase().startsWith('pegmepleaseuwu'))
+			anim = 'pegmepleaseuwu';
+		else if (curCharacter.toLowerCase().startsWith('lav3'))
+			anim = 'lav3';
+		else if (curCharacter.toLowerCase().startsWith('rose'))
+			anim = 'rose';
+		else if (curCharacter.toLowerCase().startsWith('gardead'))
+			anim = 'gardead';
+		else if (curCharacter.toLowerCase().startsWith('ded-ron'))
+			anim = 'ded-ron';
+		else if (curCharacter.toLowerCase().startsWith('qt'))
+			anim = 'qt';
+		else if (curCharacter.toLowerCase().startsWith('kb'))
+			anim = 'kb';
+
+		if (curCharacter.toLowerCase().endsWith('left'))
 		{
-			// ON THE RIGHT
-			case 'garcello':
-				portraitRight.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitLeft.visible)
-				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('garcello');
-				}
-			case 'robo':
-				portraitRight.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitLeft.visible)
-				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('robo');
-				}
-			case 'bf':
-				portraitRight.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitLeft.visible)
-				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('bf');
-				}
-			case 'pegmepleaseuwu':
-				portraitRight.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitLeft.visible)
-				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('pegmepleaseuwu');
-				}
-			case 'lav3':
-				portraitRight.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitLeft.visible)
-				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('lav3');
-				}
-			case 'rose':
-				portraitRight.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitLeft.visible)
-				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('rose');
-				}
-			case 'gardead':
-				portraitRight.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitLeft.visible)
-				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('gardead');
-				}
-			case 'ded-ron':
-				portraitRight.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitLeft.visible)
-				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('ded-ron');
-				}
-
-			// ON THE LEFT
-			case 'garcello-left':
-				portraitLeft.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitRight.visible)
-				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('garcello');
-				}
-			case 'robo-left':
-				portraitLeft.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitRight.visible)
-				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('robo');
-				}
-			case 'bf-left':
-				portraitLeft.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitRight.visible)
-				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('bf');
-				}
-			case 'pegmepleaseuwu-left':
-				portraitLeft.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitRight.visible)
-				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('pegmepleaseuwu');
-				}
-			case 'lav3-left':
-				portraitLeft.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitRight.visible)
-				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('lav3');
-				}
-			case 'rose-left':
-				portraitLeft.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitRight.visible)
-				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('rose');
-				}
-			case 'gardead-left':
-				portraitLeft.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitRight.visible)
-				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('gardead');
-				}
-			case 'ded-ron-left':
-				portraitLeft.visible = false;
-				portraitMiddle.visible = false;
-				if (!portraitRight.visible)
-				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('ded-ron');
-				}
-
-			// MIDDLE
-			case 'garcello-middle':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
-				if (!portraitMiddle.visible)
-				{
-					portraitMiddle.visible = true;
-					portraitMiddle.animation.play('garcello');
-				}
-			case 'robo-middle':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
-				if (!portraitMiddle.visible)
-				{
-					portraitMiddle.visible = true;
-					portraitMiddle.animation.play('robo');
-				}
-			case 'bf-middle':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
-				if (!portraitMiddle.visible)
-				{
-					portraitMiddle.visible = true;
-					portraitMiddle.animation.play('bf');
-				}
-			case 'pegmepleaseuwu-middle':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
-				if (!portraitMiddle.visible)
-				{
-					portraitMiddle.visible = true;
-					portraitMiddle.animation.play('pegmepleaseuwu');
-				}
-			case 'lav3-middle':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
-				if (!portraitMiddle.visible)
-				{
-					portraitMiddle.visible = true;
-					portraitMiddle.animation.play('lav3');
-				}
-			case 'rose-middle':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
-				if (!portraitMiddle.visible)
-				{
-					portraitMiddle.visible = true;
-					portraitMiddle.animation.play('rose');
-				}
-			case 'gardead-middle':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
-				if (!portraitMiddle.visible)
-				{
-					portraitMiddle.visible = true;
-					portraitMiddle.animation.play('gardead');
-				}
-			case 'ded-ron-middle':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
-				if (!portraitMiddle.visible)
-				{
-					portraitMiddle.visible = true;
-					portraitMiddle.animation.play('ded-ron');
-				}
+			portraitLeft.visible = false;
+			portraitMiddle.visible = false;
+			portraitRight.visible = true;
+			portraitRight.animation.play(anim);
+		}
+		else if (curCharacter.toLowerCase().endsWith('middle'))
+		{
+			portraitLeft.visible = false;
+			portraitRight.visible = false;
+			portraitMiddle.visible = true;
+			portraitMiddle.animation.play(anim);
+		}
+		else
+		{
+			portraitRight.visible = false;
+			portraitMiddle.visible = false;
+			portraitLeft.visible = true;
+			portraitLeft.animation.play(anim);
 		}
 	}
 

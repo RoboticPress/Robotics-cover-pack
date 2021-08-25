@@ -75,6 +75,10 @@ class HealthIcon extends FlxSprite
 		animation.add('garcellodead', [70, 71], 0, false, isPlayer);
 		animation.add('ded-ron', [72, 73], 0, false, isPlayer);
 		animation.add('pizza', [74, 75], 0, false, isPlayer);
+		animation.add('qt-kb-night', [66, 67], 0, false, isPlayer);
+		animation.add('bf-night', [0, 1], 0, false, isPlayer);
+		animation.add('bf404', [0, 1], 0, false, isPlayer);
+		animation.add('qt-kb-404', [66, 67], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)
