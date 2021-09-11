@@ -11,3 +11,4 @@ auditorHell
 garAlley
 heaven
 hex-night
+sonicfunStage

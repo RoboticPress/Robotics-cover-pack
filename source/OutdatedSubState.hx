@@ -63,6 +63,31 @@ class OutdatedSubState extends MusicBeatState
 				creditsthingy = ['Smoke em Out Struggle', 'literally every fnf mod ever (Vs Bob Week)\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- LadMcLad for the idea of the cover, the heaven BG, and ghost ron sprites (i exist ig)'];
 			case 'glitcher':
 				creditsthingy = ['QT Mod', 'VS Hex Mod\n- Robotic Press for the cover (check me out on YouTube aaaaaa)'];
+			case 'endless':
+				creditsthingy = ['Robotic Press for the cover (check me out on YouTube aaaaaa)', 'Sonic.exe mod'
+			+ '\n- Sarvente\'s Mid-Fight Masses [FULL WEEK+]'
+			+ '\n- Friday Night Fever'
+			+ '\n- Playable Tankman'
+			+ '\n- VS. Bob & Bosip'
+			+ '\n- Vs Annie'
+			+ '\n- Smoke em Out Struggle'
+			+ '\n- V.S. TABI Ex Boyfriend'
+			+ '\n- Ex-GF Over Mom'
+			+ '\n- Friday Night Shootin\''
+			+ '\n- VS Cassandra'
+			+ '\n- Whitty full week'
+			+ '\n- Hellchart Carol'
+			+ '\n- Hat Kid - A Hat In Time BF + Week 1 Replacements'
+			+ '\n- The Full-Ass Tricky Mod'
+			+ '\n- HD Monika over Dad'
+			+ '\n- Vs Nonsense [Full Week]'
+			+ '\n- Salty\'s Sunday Night'
+			+ '\n- literally every fnf mod ever (Vs Bob Week)'
+			+ '\n- QT Mod'
+			+ '\n- HD Senpai over Dad'
+			+ '\n- Vs Matt'
+			+ '\n- Deep-Sea Date'
+		];
 		}
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
 			"YO! It'd be great if you credit these mods\\people if you showcase this cover:\n"

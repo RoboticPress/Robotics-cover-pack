@@ -63,19 +63,7 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		var hasDialog = false;
 		switch (PlayState.SONG.song.toLowerCase())
 		{
-			case 'gospel':
-				hasDialog = true;
-				box.loadGraphic(Paths.image('robo/robo_text'));
-			case 'expurgation':
-				hasDialog = true;
-				box.loadGraphic(Paths.image('robo/robo_text'));
-			case 'headache':
-				hasDialog = true;
-				box.loadGraphic(Paths.image('robo/robo_text'));
-			case 'release':
-				hasDialog = true;
-				box.loadGraphic(Paths.image('robo/robo_text'));
-			case 'glitcher':
+			default:
 				hasDialog = true;
 				box.loadGraphic(Paths.image('robo/robo_text'));
 		}
@@ -99,6 +87,7 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitLeft.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
 		portraitLeft.animation.addByPrefix('qt', 'port qt', 24, false);
 		portraitLeft.animation.addByPrefix('kb', 'port kb', 24, false);
+		portraitLeft.animation.addByPrefix('sonicfun', 'port sonicfun', 24, false);
 		portraitLeft.updateHitbox();
 		portraitLeft.scrollFactor.set();
 		portraitLeft.flipX = true;
@@ -119,6 +108,7 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitRight.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
 		portraitRight.animation.addByPrefix('qt', 'port qt', 24, false);
 		portraitRight.animation.addByPrefix('kb', 'port kb', 24, false);
+		portraitRight.animation.addByPrefix('sonicfun', 'port sonicfun', 24, false);
 		portraitRight.updateHitbox();
 		portraitRight.scrollFactor.set();
 		add(portraitRight);
@@ -138,6 +128,7 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitMiddle.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
 		portraitMiddle.animation.addByPrefix('qt', 'port qt', 24, false);
 		portraitMiddle.animation.addByPrefix('kb', 'port kb', 24, false);
+		portraitMiddle.animation.addByPrefix('sonicfun', 'port sonicfun', 24, false);
 		portraitMiddle.updateHitbox();
 		portraitMiddle.scrollFactor.set();
 		portraitMiddle.flipX = true;
@@ -279,6 +270,8 @@ class DialogueBoxNormal extends FlxSpriteGroup
 			anim = 'qt';
 		else if (curCharacter.toLowerCase().startsWith('kb'))
 			anim = 'kb';
+		else if (curCharacter.toLowerCase().startsWith('sonicfun'))
+			anim = 'sonicfun';
 
 		if (curCharacter.toLowerCase().endsWith('left'))
 		{

@@ -128,6 +128,29 @@ class Note extends FlxSprite
 				updateHitbox();
 				antialiasing = true;
 
+			case 'majinNOTES':
+
+				frames = Paths.getSparrowAtlas('Majin_Notes');
+				animation.addByPrefix('greenScroll', 'green0');
+				animation.addByPrefix('redScroll', 'red0');
+				animation.addByPrefix('blueScroll', 'blue0');
+				animation.addByPrefix('purpleScroll', 'purple0');
+
+				animation.addByPrefix('purpleholdend', 'pruple end hold'); //PRUPLE Its not typo in the programming, but it is a typo in adobe animate hence why its in da xml like dat
+				animation.addByPrefix('greenholdend', 'green hold end');
+				animation.addByPrefix('redholdend', 'red hold end');
+				animation.addByPrefix('blueholdend', 'blue hold end');
+
+				animation.addByPrefix('purplehold', 'purple hold piece');
+				animation.addByPrefix('greenhold', 'green hold piece');
+				animation.addByPrefix('redhold', 'red hold piece');
+				animation.addByPrefix('bluehold', 'blue hold piece');
+
+				setGraphicSize(Std.int(width * 0.7));
+				
+				updateHitbox();
+				antialiasing = true;
+
 			default:
 				frames = Paths.getSparrowAtlas('NOTE_assets');
 

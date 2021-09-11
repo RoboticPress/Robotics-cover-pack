@@ -249,6 +249,10 @@ class FreeplayState extends MusicBeatState
 		{
 			curDifficulty = 6;
 		}
+		else if (songs[curSelected].songName == 'Endless')
+		{
+			curDifficulty = 2;
+		}
 		else
 		{
 			if (curDifficulty < 0)
