@@ -335,7 +335,7 @@ class TitleState extends MusicBeatState
 			{
 				// Get current version of Kade Engine
 				
-				FlxG.switchState(new MainMenuState());
+				FlxG.switchState(new ThanksSubState());
 			});
 			// FlxG.sound.play(Paths.music('titleShoot'), 0.7);
 		}

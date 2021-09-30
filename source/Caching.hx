@@ -71,7 +71,12 @@ class Caching extends MusicBeatState
             var alpha = HelperFunctions.truncateFloat(done / toBeDone * 100,2) / 100;
             kadeLogo.alpha = alpha;
             text.alpha = alpha;
-            text.text = "Loading... (" + done + "/" + toBeDone + ")";
+            if (done == 69)
+                text.text = "Loading... ( nice /" + toBeDone + ")";
+            else if (done == 86)
+                text.text = "Loading... ( :3 /" + toBeDone + ")";
+            else
+                text.text = "Loading... (" + done + "/" + toBeDone + ")";
         }
 
         super.update(elapsed);

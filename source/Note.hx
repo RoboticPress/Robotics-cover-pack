@@ -27,6 +27,7 @@ class Note extends FlxSprite
 	public var sustainLength:Float = 0;
 	public var isSustainNote:Bool = false;
 	public var burning:Bool = false;
+	public var dataColor:Array<String> = ['purple', 'blue', 'green', 'red'];
 
 	public var noteScore:Float = 1;
 
@@ -74,9 +75,18 @@ class Note extends FlxSprite
 		//defaults if no noteStyle was found in chart
 		var noteTypeCheck:String = 'normal';
 
-		if (PlayState.SONG.noteStyle == null) {
-			switch(PlayState.storyWeek) {case 6: noteTypeCheck = 'pixel';}
-		} else {noteTypeCheck = PlayState.SONG.noteStyle;}
+		if (PlayState.SONG.noteStyle == null)
+		{
+			switch (PlayState.storyWeek)
+			{
+				case 6:
+					noteTypeCheck = 'pixel';
+			}
+		}
+		else
+		{
+			noteTypeCheck = PlayState.SONG.noteStyle;
+		}
 
 		switch (noteTypeCheck)
 		{
@@ -148,6 +158,46 @@ class Note extends FlxSprite
 
 				setGraphicSize(Std.int(width * 0.7));
 				
+				updateHitbox();
+				antialiasing = true;
+
+			case 'eteled':
+
+				frames = Paths.getSparrowAtlas('eteled', 'shared');
+
+				for (i in 0...4)
+				{
+					animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
+					animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
+					animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
+				}
+
+				setGraphicSize(Std.int(width * 0.7));
+				updateHitbox();
+				
+				if(FlxG.save.data.antialiasing)
+					{
+						antialiasing = true;
+					}
+			case 'spinel':
+				frames = Paths.getSparrowAtlas('spinel');
+
+				animation.addByPrefix('greenScroll', 'green0');
+				animation.addByPrefix('redScroll', 'red0');
+				animation.addByPrefix('blueScroll', 'blue0');
+				animation.addByPrefix('purpleScroll', 'purple0');
+
+				animation.addByPrefix('purpleholdend', 'pruple end hold');
+				animation.addByPrefix('greenholdend', 'green hold end');
+				animation.addByPrefix('redholdend', 'red hold end');
+				animation.addByPrefix('blueholdend', 'blue hold end');
+
+				animation.addByPrefix('purplehold', 'purple hold piece');
+				animation.addByPrefix('greenhold', 'green hold piece');
+				animation.addByPrefix('redhold', 'red hold piece');
+				animation.addByPrefix('bluehold', 'blue hold piece');
+
+				setGraphicSize(Std.int(width * 0.7));
 				updateHitbox();
 				antialiasing = true;
 

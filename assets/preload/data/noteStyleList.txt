@@ -2,3 +2,5 @@ normal
 pixel
 cross
 majinNOTES
+eteled
+spinel

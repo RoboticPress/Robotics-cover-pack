@@ -28,7 +28,7 @@ class OutdatedSubState extends MusicBeatState
 			case 'tutorial':
 				creditsthingy = ['wait...', 'this is normal fnf'];
 			case 'gospel':
-				creditsthingy = ['Sarvente\'s Mid-Fight Masses', 'Vs. Lav: Frostbite Frenzy\n- Robotic Press for the cover (check me out on YouTube aaaaaa)'];
+				creditsthingy = ['Sarvente\'s Mid-Fight Masses', 'Vs. Lav: Frostbite Frenzy\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- GenoX for Sarv UTAU voicebank used'];
 			case 'expurgation':
 				creditsthingy = ['The Full-Ass Tricky Mod', 'Hat Kid - A Hat In Time BF + Week 1 Replacements\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- The86thPlayer for fixing the cover being offkey (discord: the86thplayer#4426)'];
 			case 'headache':
@@ -58,11 +58,12 @@ class OutdatedSubState extends MusicBeatState
 			+ '\n- QT Mod'
 			+ '\n- Whitty full week'
 			+ '\n- Carol V2'
+			+ '\n- GenoX for UTAU voicebanks used'
 		];
 			case 'release':
 				creditsthingy = ['Smoke em Out Struggle', 'literally every fnf mod ever (Vs Bob Week)\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- LadMcLad for the idea of the cover, the heaven BG, and ghost ron sprites (i exist ig)'];
 			case 'glitcher':
-				creditsthingy = ['QT Mod', 'VS Hex Mod\n- Robotic Press for the cover (check me out on YouTube aaaaaa)'];
+				creditsthingy = ['QT Mod', 'VS Hex Mod\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- GenoX for BF soft UTAU voicebanks used'];
 			case 'endless':
 				creditsthingy = ['Robotic Press for the cover (check me out on YouTube aaaaaa)', 'Sonic.exe mod'
 			+ '\n- Sarvente\'s Mid-Fight Masses [FULL WEEK+]'
@@ -87,6 +88,49 @@ class OutdatedSubState extends MusicBeatState
 			+ '\n- HD Senpai over Dad'
 			+ '\n- Vs Matt'
 			+ '\n- Deep-Sea Date'
+			+ '\n- GenoX for UTAU voicebanks used'
+			+ '\n- Blantados for UTAU voicebanks used'
+		];
+			case 'ejected':
+				creditsthingy = ['Robotic Press for the cover (check me out on YouTube aaaaaa)', 'Vs Imposter V2'
+			+ '\n- Vs Arch'
+			+ '\n- VS Sunday [Remastered]'
+			+ '\n- Carol V2'
+			+ '\n- Friday Night Funkin\' Soft'
+			+ '\n- Ex-GF Over Mom'
+			+ '\n- literally every fnf mod ever (Vs Bob Week)'
+			+ '\n- VS. Bob & Bosip'
+			+ '\n- VS Hex Mod'
+			+ '\n- Whitty full week'
+			+ '\n- Liz Week'
+			+ '\n- vs. NEON (Full Week)'
+			+ '\n- Lila over Daddy Dearest'
+			+ '\n- Shaggy X Matt - Full Week'
+			+ '\n- Salty\'s Sunday Night'
+			+ '\n- V.S SAYORI'
+			+ '\n- HD Monika over Dad'
+			+ '\n- V.S Zardy - Foolhardy'
+			+ '\n- Zardy Foolhardy Reanimated'
+			+ '\n- Starving Artist'
+			+ '\n- Vs Henry Stickmin 3.0 DEMO'
+			+ '\n- Vs Annie'
+			+ '\n- Smoke em Out Struggle'
+			+ '\n- FNF: Space Journey [Full Week Beta]'
+			+ '\n- Blantados Sprites Remake by MadBitch'
+			+ '\n- V.S. Chara'
+			+ '\n- Playable Sans! (w/ Vocals)'
+			+ '\n- Friday Night Funkin\' CG5'
+			+ '\n- Sarvente\'s Mid-Fight Masses [FULL WEEK+]'
+			+ '\n- Mii Funkin: Vs. eteled [FULL WEEK]'
+			+ '\n- Hat Kid - A Hat In Time BF + Week 1 Replacements'
+			+ '\n- V.S. Spinel'
+			+ '\n- Starlight Mayhem [Full Week] Vs CJ'
+			+ '\n- The86thPlayer for making the character "rose"'
+			+ '\n- Vs. Lav: Frostbite Frenzy'
+			+ '\n- Friday Night Funkin\' Creamed [FULL WEEK] VS Cream'
+			+ '\n- "Cheesed Bread" on the Robotic Hat discord server for making the featured meme in the cover'
+			+ '\n- GenoX for UTAU voicebanks used'
+			+ '\n- Blantados for UTAU voicebanks used'
 		];
 		}
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
@@ -96,7 +140,7 @@ class OutdatedSubState extends MusicBeatState
 			+ "- And of course this mod!\n"
 			+ "\n\nPress Any key to continue",
 			32);
-		txt.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, CENTER);
+		txt.setFormat("VCR OSD Mono", 18, FlxColor.WHITE, CENTER);
 		txt.screenCenter();
 		add(txt);
 	}

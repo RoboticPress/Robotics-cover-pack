@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="amorButFUNNY.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Amor Sing Note DOWN0000" x="0" y="0" width="417" height="780" frameX="0" frameY="-1" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0001" x="0" y="0" width="417" height="780" frameX="0" frameY="-1" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0002" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0003" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0004" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0005" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0006" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0007" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0008" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0009" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0010" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0011" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0012" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0013" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0014" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note DOWN0015" x="417" y="0" width="422" height="781" frameX="-2" frameY="0" frameWidth="424" frameHeight="781"/>
+	<SubTexture name="Amor Sing Note LEFT0000" x="839" y="0" width="590" height="791" frameX="-9" frameY="-7" frameWidth="599" frameHeight="798"/>
+	<SubTexture name="Amor Sing Note LEFT0001" x="839" y="0" width="590" height="791" frameX="-9" frameY="-7" frameWidth="599" frameHeight="798"/>
+	<SubTexture name="Amor Sing Note LEFT0002" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0003" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0004" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0005" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0006" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0007" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0008" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0009" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0010" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0011" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0012" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0013" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0014" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0015" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0016" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0017" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note LEFT0018" x="1429" y="0" width="599" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0000" x="2028" y="0" width="494" height="798" frameX="0" frameY="0" frameWidth="502" frameHeight="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0001" x="2028" y="0" width="494" height="798" frameX="0" frameY="0" frameWidth="502" frameHeight="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0002" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0003" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0004" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0005" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0006" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0007" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0008" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0009" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0010" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0011" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0012" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0013" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0014" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note RIGHT0015" x="2522" y="0" width="502" height="798"/>
+	<SubTexture name="Amor Sing Note UP0000" x="3024" y="0" width="542" height="831" frameX="-5" frameY="-6" frameWidth="551" frameHeight="837"/>
+	<SubTexture name="Amor Sing Note UP0001" x="3024" y="0" width="542" height="831" frameX="-5" frameY="-6" frameWidth="551" frameHeight="837"/>
+	<SubTexture name="Amor Sing Note UP0002" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0003" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0004" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0005" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0006" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0007" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0008" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0009" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0010" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0011" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0012" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0013" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0014" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0015" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0016" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0017" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0018" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0019" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0020" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0021" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0022" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0023" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0024" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0025" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0026" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0027" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0028" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0029" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0030" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0031" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0032" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0033" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0034" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0035" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0036" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0037" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0038" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0039" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0040" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0041" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0042" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0043" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0044" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0045" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0046" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0047" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0048" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0049" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0050" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0051" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0052" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0053" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0054" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0055" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0056" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0057" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0058" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor Sing Note UP0059" x="3566" y="0" width="551" height="837"/>
+	<SubTexture name="Amor drop0000" x="4117" y="0" width="429" height="827" frameX="-53" frameY="-190" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0001" x="4546" y="0" width="429" height="827" frameX="-53" frameY="-190" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0002" x="4975" y="0" width="429" height="827" frameX="-53" frameY="-190" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0003" x="5404" y="0" width="429" height="827" frameX="-53" frameY="-190" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0004" x="5833" y="0" width="431" height="827" frameX="-53" frameY="-190" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0005" x="6264" y="0" width="435" height="826" frameX="-53" frameY="-191" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0006" x="6699" y="0" width="449" height="824" frameX="-53" frameY="-193" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0007" x="7148" y="0" width="456" height="824" frameX="-53" frameY="-194" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0008" x="7604" y="0" width="458" height="826" frameX="-53" frameY="-194" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0009" x="0" y="837" width="459" height="825" frameX="-53" frameY="-195" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0010" x="459" y="837" width="459" height="825" frameX="-53" frameY="-195" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0011" x="918" y="837" width="460" height="825" frameX="-52" frameY="-195" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0012" x="1378" y="837" width="436" height="826" frameX="-49" frameY="-183" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0013" x="1814" y="837" width="541" height="896" frameX="0" frameY="-106" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0014" x="2355" y="837" width="667" height="944" frameX="-15" frameY="-65" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0015" x="3022" y="837" width="646" height="923" frameX="-16" frameY="-93" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0016" x="3668" y="837" width="622" height="921" frameX="-22" frameY="-96" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0017" x="4290" y="837" width="623" height="929" frameX="-22" frameY="-88" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0018" x="4913" y="837" width="623" height="930" frameX="-22" frameY="-87" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0019" x="5536" y="837" width="623" height="930" frameX="-22" frameY="-87" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0020" x="6159" y="837" width="624" height="930" frameX="-22" frameY="-87" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0021" x="6783" y="837" width="624" height="931" frameX="-22" frameY="-86" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0022" x="7407" y="837" width="624" height="931" frameX="-22" frameY="-86" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0023" x="0" y="1781" width="624" height="931" frameX="-22" frameY="-86" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0024" x="624" y="1781" width="625" height="931" frameX="-22" frameY="-86" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0025" x="1249" y="1781" width="625" height="931" frameX="-22" frameY="-86" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0026" x="1874" y="1781" width="625" height="931" frameX="-22" frameY="-86" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0027" x="2499" y="1781" width="625" height="934" frameX="-22" frameY="-83" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0028" x="3124" y="1781" width="625" height="937" frameX="-22" frameY="-80" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0029" x="3749" y="1781" width="625" height="940" frameX="-22" frameY="-77" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0030" x="4374" y="1781" width="625" height="1017" frameX="-22" frameY="0" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0031" x="4999" y="1781" width="625" height="996" frameX="-22" frameY="-21" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0032" x="5624" y="1781" width="462" height="799" frameX="-22" frameY="-218" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0033" x="6086" y="1781" width="460" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0034" x="6546" y="1781" width="458" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0035" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0036" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0037" x="7460" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0038" x="7460" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0039" x="0" y="2798" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0040" x="0" y="2798" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0041" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0042" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0043" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0044" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0045" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0046" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0047" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0048" x="456" y="2798" width="448" height="797" frameX="-22" frameY="-220" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0049" x="904" y="2798" width="461" height="780" frameX="-9" frameY="-237" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0050" x="1365" y="2798" width="463" height="775" frameX="-7" frameY="-242" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor drop0051" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+
+	<SubTexture name="Amor wws0000" x="5624" y="1781" width="462" height="799" frameX="-22" frameY="-218" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0001" x="6086" y="1781" width="460" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0002" x="6546" y="1781" width="458" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0003" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0004" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0005" x="7460" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0006" x="7460" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0007" x="0" y="2798" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0008" x="0" y="2798" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0009" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0010" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0011" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0012" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0013" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0014" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0015" x="7004" y="1781" width="456" height="798" frameX="-22" frameY="-219" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0016" x="456" y="2798" width="448" height="797" frameX="-22" frameY="-220" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0017" x="904" y="2798" width="461" height="780" frameX="-9" frameY="-237" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0018" x="1365" y="2798" width="463" height="775" frameX="-7" frameY="-242" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0019" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0020" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0021" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0022" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0023" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0024" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0025" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0026" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0027" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0028" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0029" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0030" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0031" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0032" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0033" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0034" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0035" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0036" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0037" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0038" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+	<SubTexture name="Amor wws0039" x="1828" y="2798" width="465" height="769" frameX="-5" frameY="-248" frameWidth="682" frameHeight="1020"/>
+
+	<SubTexture name="down puddle0000" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="down puddle0001" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="down puddle0002" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="down puddle0003" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0004" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0005" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0006" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0007" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0008" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0009" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0010" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0011" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0012" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0013" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0014" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0015" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0016" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0017" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0018" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0019" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0020" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0021" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0022" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="down puddle0023" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0000" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="left puddle0001" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="left puddle0002" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="left puddle0003" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0004" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0005" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0006" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0007" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0008" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0009" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0010" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0011" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0012" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0013" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0014" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0015" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0016" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0017" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0018" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0019" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0020" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0021" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0022" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="left puddle0023" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0000" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="puddle0001" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="puddle0002" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="puddle0003" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0004" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0005" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0006" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0007" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0008" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0009" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0010" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0011" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0012" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0013" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0014" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0015" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0016" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0017" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0018" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0019" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0020" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0021" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0022" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="puddle0023" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0000" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="right puddle0001" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="right puddle0002" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="right puddle0003" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0004" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0005" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0006" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0007" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0008" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0009" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0010" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0011" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0012" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0013" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0014" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0015" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0016" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0017" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0018" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0019" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0020" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0021" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0022" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="right puddle0023" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0000" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="up puddle0001" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="up puddle0002" x="2293" y="2798" width="625" height="261"/>
+	<SubTexture name="up puddle0003" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0004" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0005" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0006" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0007" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0008" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0009" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0010" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0011" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0012" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0013" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0014" x="4786" y="2798" width="621" height="258" frameX="-2" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0015" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0016" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0017" x="4164" y="2798" width="622" height="259" frameX="-1" frameY="-2" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0018" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0019" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0020" x="3542" y="2798" width="622" height="260" frameX="-1" frameY="-1" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0021" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0022" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+	<SubTexture name="up puddle0023" x="2918" y="2798" width="624" height="261" frameX="0" frameY="0" frameWidth="625" frameHeight="261"/>
+</TextureAtlas>

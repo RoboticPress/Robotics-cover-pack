@@ -17,6 +17,7 @@ class HealthIcon extends FlxSprite
 
 		antialiasing = true;
 		animation.add('bf', [0, 1], 0, false, isPlayer);
+		animation.add('bf-fall', [0, 1], 0, false, isPlayer);
 		animation.add('bf-car', [0, 1], 0, false, isPlayer);
 		animation.add('bf-christmas', [0, 1], 0, false, isPlayer);
 		animation.add('bf-pixel', [21, 21], 0, false, isPlayer);
@@ -25,6 +26,7 @@ class HealthIcon extends FlxSprite
 		animation.add('mom', [6, 7], 0, false, isPlayer);
 		animation.add('mom-car', [6, 7], 0, false, isPlayer);
 		animation.add('tankman', [8, 9], 0, false, isPlayer);
+		animation.add('tankman-playable', [8, 9], 0, false, isPlayer);
 		animation.add('face', [10, 11], 0, false, isPlayer);
 		animation.add('dad', [12, 13], 0, false, isPlayer);
 		animation.add('senpai', [22, 22], 0, false, isPlayer);
@@ -41,6 +43,7 @@ class HealthIcon extends FlxSprite
 		animation.add('zardy', [26, 27], 0, false, isPlayer);
 		animation.add('lavfinal', [28, 29], 0, false, isPlayer);
 		animation.add('hat-kid-hatted', [30, 31], 0, false, isPlayer);
+		animation.add('hat-kid-unhatted', [30, 31], 0, false, isPlayer);
 		animation.add('exTricky-hat-kid', [32, 33], 0, false, isPlayer);
 		animation.add('sarvente-lucifer', [34, 35], 0, false, isPlayer);
 		animation.add('hex', [36, 37], 0, false, isPlayer);
@@ -49,9 +52,8 @@ class HealthIcon extends FlxSprite
 		animation.add('not-sky-mad', [10, 11], 0, false, isPlayer);
 		animation.add('monster-annie', [44, 45], 0, false, isPlayer);
 		animation.add('robo-gf', [46, 47], 0, false, isPlayer);
-		animation.add('tankman', [8, 9], 0, false, isPlayer);
-		animation.add('tankman-playable', [8, 9], 0, false, isPlayer);
-		animation.add('tricky', [48, 49], 0, false, isPlayer);
+		animation.add('roboparachute', [46, 47], 0, false, isPlayer);
+		animation.add('rosefall', [48, 49], 0, false, isPlayer);
 		animation.add('lav', [50, 51], 0, false, isPlayer);
 		animation.add('kapi', [52, 53], 0, false, isPlayer);
 		animation.add('rebecca4', [54, 55], 0, false, isPlayer);
@@ -60,13 +62,10 @@ class HealthIcon extends FlxSprite
 		animation.add('tabi-agoti', [58, 59], 0, false, isPlayer);
 		animation.add('HD_senpai', [60, 61], 0, false, isPlayer);
 		animation.add('HD_senpai-HD_monika', [60, 61], 0, false, isPlayer);
-		animation.add('bob', [62, 63], 0, false, isPlayer);
 		animation.add('bob-opheebop', [62, 63], 0, false, isPlayer);
 		animation.add('sarv-ruv', [64, 65], 0, false, isPlayer);
 		animation.add('qt-kb', [66], 0, false, isPlayer);
 		animation.add('nonsense-god', [67], 0, false, isPlayer);
-		animation.add('whitty', [68, 69], 0, false, isPlayer); // nice
-		animation.add('carol', [68, 69], 0, false, isPlayer); // nice
 		animation.add('whitty-carol', [68, 69], 0, false, isPlayer); // nice
 		animation.add('garcellodead', [70, 71], 0, false, isPlayer);
 		animation.add('ded-ron', [72, 73], 0, false, isPlayer);
@@ -83,6 +82,7 @@ class HealthIcon extends FlxSprite
 		animation.add('worriedbob', [86, 87], 0, false, isPlayer);
 		animation.add('bosip', [88, 89], 0, false, isPlayer);
 		animation.add('annie', [90, 91], 0, false, isPlayer);
+		animation.add('exGf', [92, 93], 0, false, isPlayer);
 		animation.add('exGf-playable', [92, 93], 0, false, isPlayer);
 		animation.add('tabi', [94, 95], 0, false, isPlayer);
 		animation.add('cass', [96, 97], 0, false, isPlayer);
@@ -98,8 +98,38 @@ class HealthIcon extends FlxSprite
 		animation.add('glitched-bob', [112, 113], 0, false, isPlayer);
 		animation.add('HD_spirit', [114, 115], 0, false, isPlayer);
 		animation.add('matt', [116, 117], 0, false, isPlayer);
+		animation.add('matt-shaggy', [116, 117], 0, false, isPlayer);
 		animation.add('anchor', [118, 119], 0, false, isPlayer);
 		animation.add('roro', [120, 121], 0, false, isPlayer);
+		animation.add('parasite', [122, 123], 0, false, isPlayer);
+		animation.add('arch', [124], 0, false, isPlayer);
+		animation.add('bbpanzu', [126, 127], 0, false, isPlayer);
+		animation.add('carol', [128,129], 0, false, isPlayer);
+		animation.add('softie', [130,131], 0, false, isPlayer);
+		animation.add('monster-soft', [132, 133], 0, false, isPlayer);
+		animation.add('bob', [134, 135], 0, false, isPlayer);
+		animation.add('whitty', [136, 137], 0, false, isPlayer);
+		animation.add('liz', [138, 139], 0, false, isPlayer);
+		animation.add('neon', [140, 141], 0, false, isPlayer);
+		animation.add('lila', [142, 143], 0, false, isPlayer);
+		animation.add('shaggy-shaggy', [144, 145], 0, false, isPlayer);
+		animation.add('little-man', [146, 147], 0, false, isPlayer);
+		animation.add('sayori', [148, 149], 0, false, isPlayer);
+		animation.add('cableCrowPog', [150, 151], 0, false, isPlayer);
+		animation.add('henry', [152, 153], 0, false, isPlayer);
+		animation.add('rebecca', [154, 155], 0, false, isPlayer);
+		animation.add('astro', [156, 157], 0, false, isPlayer);
+		animation.add('blantados', [158, 159], 0, false, isPlayer);
+		animation.add('chara', [160, 161], 0, false, isPlayer);
+		animation.add('sans', [162, 163], 0, false, isPlayer);
+		animation.add('CG5', [164, 165], 0, false, isPlayer);
+		animation.add('eteled2', [166, 167], 0, false, isPlayer);
+		animation.add('spinel-angy', [168, 169], 0, false, isPlayer);
+		animation.add('selever', [170, 171], 0, false, isPlayer);
+		animation.add('cj', [172, 173], 0, false, isPlayer);
+		animation.add('ruby', [174, 175], 0, false, isPlayer);
+		animation.add('tricky', [176, 177], 0, false, isPlayer);
+		animation.add('cream-dead', [178, 179], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)

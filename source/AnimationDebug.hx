@@ -50,7 +50,7 @@ class AnimationDebug extends FlxState
 			add(dad);
 
 			char = dad;
-			dad.flipX = true;
+			dad.flipX = false;
 		}
 		else
 		{
@@ -60,7 +60,7 @@ class AnimationDebug extends FlxState
 			add(bf);
 
 			char = bf;
-			bf.flipX = true;
+			bf.flipX = false;
 		}
 
 		dumbTexts = new FlxTypedGroup<FlxText>();
@@ -115,6 +115,8 @@ class AnimationDebug extends FlxState
 
 		if (FlxG.keys.justPressed.E)
 			FlxG.camera.zoom += 0.25;
+		if (FlxG.keys.justPressed.M)
+			FlxG.switchState(new MainMenuState());
 		if (FlxG.keys.justPressed.Q)
 			FlxG.camera.zoom -= 0.25;
 

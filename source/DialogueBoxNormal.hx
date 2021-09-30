@@ -82,12 +82,15 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitLeft.animation.addByPrefix('bf', 'port bf', 24, false);
 		portraitLeft.animation.addByPrefix('pegmepleaseuwu', 'port pegmepleaseuwu', 24, false);
 		portraitLeft.animation.addByPrefix('lav3', 'port lav3', 24, false);
-		portraitLeft.animation.addByPrefix('rose', 'port rose', 24, false);
 		portraitLeft.animation.addByPrefix('gardead', 'port gardead', 24, false);
 		portraitLeft.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
 		portraitLeft.animation.addByPrefix('qt', 'port qt', 24, false);
 		portraitLeft.animation.addByPrefix('kb', 'port kb', 24, false);
 		portraitLeft.animation.addByPrefix('sonicfun', 'port sonicfun', 24, false);
+		portraitLeft.animation.addByPrefix('rose', 'port rose0', 24, false);
+		portraitLeft.animation.addByPrefix('rose-fall', 'port rosefall0', 24, false);
+		portraitLeft.animation.addByPrefix('rose-fall-mad', 'port rosefallmad0', 24, false);
+		portraitLeft.animation.addByPrefix('sus', 'port SUSSY BAKA', 24, false);
 		portraitLeft.updateHitbox();
 		portraitLeft.scrollFactor.set();
 		portraitLeft.flipX = true;
@@ -103,12 +106,15 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitRight.animation.addByPrefix('bf', 'port bf', 24, false);
 		portraitRight.animation.addByPrefix('pegmepleaseuwu', 'port pegmepleaseuwu', 24, false);
 		portraitRight.animation.addByPrefix('lav3', 'port lav3', 24, false);
-		portraitRight.animation.addByPrefix('rose', 'port rose', 24, false);
 		portraitRight.animation.addByPrefix('gardead', 'port gardead', 24, false);
 		portraitRight.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
 		portraitRight.animation.addByPrefix('qt', 'port qt', 24, false);
 		portraitRight.animation.addByPrefix('kb', 'port kb', 24, false);
 		portraitRight.animation.addByPrefix('sonicfun', 'port sonicfun', 24, false);
+		portraitRight.animation.addByPrefix('rose', 'port rose0', 24, false);
+		portraitRight.animation.addByPrefix('rose-fall', 'port rosefall0', 24, false);
+		portraitRight.animation.addByPrefix('rose-fall-mad', 'port rosefallmad0', 24, false);
+		portraitRight.animation.addByPrefix('sus', 'port SUSSY BAKA', 24, false);
 		portraitRight.updateHitbox();
 		portraitRight.scrollFactor.set();
 		add(portraitRight);
@@ -123,12 +129,15 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitMiddle.animation.addByPrefix('bf', 'port bf', 24, false);
 		portraitMiddle.animation.addByPrefix('pegmepleaseuwu', 'port pegmepleaseuwu', 24, false);
 		portraitMiddle.animation.addByPrefix('lav3', 'port lav3', 24, false);
-		portraitMiddle.animation.addByPrefix('rose', 'port rose', 24, false);
 		portraitMiddle.animation.addByPrefix('gardead', 'port gardead', 24, false);
 		portraitMiddle.animation.addByPrefix('ded-ron', 'port ded-ron', 24, false);
 		portraitMiddle.animation.addByPrefix('qt', 'port qt', 24, false);
 		portraitMiddle.animation.addByPrefix('kb', 'port kb', 24, false);
 		portraitMiddle.animation.addByPrefix('sonicfun', 'port sonicfun', 24, false);
+		portraitMiddle.animation.addByPrefix('rose', 'port rose0', 24, false);
+		portraitMiddle.animation.addByPrefix('rose-fall', 'port rosefall0', 24, false);
+		portraitMiddle.animation.addByPrefix('rose-fall-mad', 'port rosefallmad0', 24, false);
+		portraitMiddle.animation.addByPrefix('sus', 'port SUSSY BAKA', 24, false);
 		portraitMiddle.updateHitbox();
 		portraitMiddle.scrollFactor.set();
 		portraitMiddle.flipX = true;
@@ -260,8 +269,6 @@ class DialogueBoxNormal extends FlxSpriteGroup
 			anim = 'pegmepleaseuwu';
 		else if (curCharacter.toLowerCase().startsWith('lav3'))
 			anim = 'lav3';
-		else if (curCharacter.toLowerCase().startsWith('rose'))
-			anim = 'rose';
 		else if (curCharacter.toLowerCase().startsWith('gardead'))
 			anim = 'gardead';
 		else if (curCharacter.toLowerCase().startsWith('ded-ron'))
@@ -272,6 +279,14 @@ class DialogueBoxNormal extends FlxSpriteGroup
 			anim = 'kb';
 		else if (curCharacter.toLowerCase().startsWith('sonicfun'))
 			anim = 'sonicfun';
+		else if (curCharacter.toLowerCase().startsWith('rose-fall-mad'))
+			anim = 'rose-fall-mad';
+		else if (curCharacter.toLowerCase().startsWith('rose-fall'))
+			anim = 'rose-fall';
+		else if (curCharacter.toLowerCase().startsWith('rose'))
+			anim = 'rose';
+		else if (curCharacter.toLowerCase().startsWith('sus'))
+			anim = 'sus';
 
 		if (curCharacter.toLowerCase().endsWith('left'))
 		{

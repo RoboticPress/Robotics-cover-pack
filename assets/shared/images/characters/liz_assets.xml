@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="liz_assets.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="liz down pose0000" x="0" y="0" width="393" height="453" frameX="-3" frameY="0" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0001" x="0" y="0" width="393" height="453" frameX="-3" frameY="0" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0002" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0003" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0004" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0005" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0006" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0007" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0008" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0009" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0010" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0011" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0012" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0013" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz down pose0014" x="393" y="0" width="395" height="451" frameX="0" frameY="-2" frameWidth="396" frameHeight="453"/>
+	<SubTexture name="liz idle0000" x="788" y="0" width="424" height="452" frameX="-2" frameY="-10" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0001" x="788" y="0" width="424" height="452" frameX="-2" frameY="-10" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0002" x="1212" y="0" width="434" height="452" frameX="0" frameY="-9" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0003" x="1212" y="0" width="434" height="452" frameX="0" frameY="-9" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0004" x="0" y="453" width="430" height="456" frameX="-2" frameY="-4" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0005" x="0" y="453" width="430" height="456" frameX="-2" frameY="-4" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0006" x="430" y="453" width="423" height="460" frameX="-4" frameY="0" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0007" x="430" y="453" width="423" height="460" frameX="-4" frameY="0" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0008" x="430" y="453" width="423" height="460" frameX="-4" frameY="0" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0009" x="430" y="453" width="423" height="460" frameX="-4" frameY="0" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0010" x="430" y="453" width="423" height="460" frameX="-4" frameY="0" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0011" x="430" y="453" width="423" height="460" frameX="-4" frameY="0" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0012" x="430" y="453" width="423" height="460" frameX="-4" frameY="0" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0013" x="430" y="453" width="423" height="460" frameX="-4" frameY="0" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz idle0014" x="430" y="453" width="423" height="460" frameX="-4" frameY="0" frameWidth="434" frameHeight="462"/>
+	<SubTexture name="liz left pose0000" x="853" y="453" width="367" height="454" frameX="0" frameY="-1" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0001" x="853" y="453" width="367" height="454" frameX="0" frameY="-1" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0002" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0003" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0004" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0005" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0006" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0007" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0008" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0009" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0010" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0011" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0012" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0013" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz left pose0014" x="1220" y="453" width="369" height="455" frameX="-11" frameY="0" frameWidth="380" frameHeight="455"/>
+	<SubTexture name="liz right pose0000" x="1589" y="453" width="350" height="428" frameX="0" frameY="-4" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0001" x="1589" y="453" width="350" height="428" frameX="0" frameY="-4" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0002" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0003" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0004" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0005" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0006" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0007" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0008" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0009" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0010" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0011" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0012" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0013" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz right pose0014" x="0" y="913" width="342" height="432" frameX="0" frameY="0" frameWidth="350" frameHeight="432"/>
+	<SubTexture name="liz up pose0000" x="342" y="913" width="383" height="432" frameX="-1" frameY="0" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0001" x="342" y="913" width="383" height="432" frameX="-1" frameY="0" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0002" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0003" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0004" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0005" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0006" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0007" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0008" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0009" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0010" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0011" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0012" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0013" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+	<SubTexture name="liz up pose0014" x="725" y="913" width="388" height="428" frameX="0" frameY="-4" frameWidth="388" frameHeight="432"/>
+</TextureAtlas>
