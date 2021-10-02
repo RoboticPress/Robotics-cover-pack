@@ -1440,7 +1440,7 @@ class PlayState extends MusicBeatState
 				}
 
 				curStage = 'ejected';
-				lol86 = new Character(Std.parseInt(dumb[0]), Std.parseInt(dumb[1]), 'rosefall');
+				lol86 = new Character(200, 100, 'rosefall');
 				cloudScroll = new FlxTypedGroup<FlxSprite>();
 				farClouds = new FlxTypedGroup<FlxSprite>();
 				var sky:FlxSprite = new FlxSprite(-2372.25, -4181.7).loadGraphic(Paths.image('ejected/sky', 'shared'));
