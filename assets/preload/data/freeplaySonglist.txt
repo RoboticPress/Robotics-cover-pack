@@ -1,8 +1,9 @@
 Tutorial:gf:1
 Gospel:sarvente-lucifer:7
-Expurgation:exTricky:7
+Expurgation:exTricky-hat-kid:7
 headache:garcello:7
 Release:garcellodead:7
 Glitcher:qt-kb-night:7
 Endless:sonicfun:7
 Ejected:parasite:7
+The Sunday Revolving:jevil-sunday:7

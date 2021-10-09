@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="other sunday assets.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="sunday alt idle0000" x="0" y="0" width="428" height="565" frameX="-12" frameY="-2" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0001" x="0" y="0" width="428" height="565" frameX="-12" frameY="-2" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0002" x="428" y="0" width="429" height="566" frameX="-11" frameY="-1" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0003" x="428" y="0" width="429" height="566" frameX="-11" frameY="-1" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0004" x="857" y="0" width="429" height="567" frameX="-10" frameY="0" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0005" x="857" y="0" width="429" height="567" frameX="-10" frameY="0" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0006" x="1286" y="0" width="418" height="560" frameX="-6" frameY="-7" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0007" x="1286" y="0" width="418" height="560" frameX="-6" frameY="-7" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0008" x="1704" y="0" width="414" height="558" frameX="-4" frameY="-9" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0009" x="1704" y="0" width="414" height="558" frameX="-4" frameY="-9" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0010" x="2118" y="0" width="415" height="559" frameX="-1" frameY="-8" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0011" x="2118" y="0" width="415" height="559" frameX="-1" frameY="-8" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0012" x="2533" y="0" width="416" height="560" frameX="0" frameY="-7" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0013" x="2533" y="0" width="416" height="560" frameX="0" frameY="-7" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0014" x="2949" y="0" width="413" height="557" frameX="-5" frameY="-10" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0015" x="2949" y="0" width="413" height="557" frameX="-5" frameY="-10" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0016" x="3362" y="0" width="420" height="559" frameX="-8" frameY="-8" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0017" x="3362" y="0" width="420" height="559" frameX="-8" frameY="-8" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0018" x="3782" y="0" width="427" height="564" frameX="-11" frameY="-3" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt idle0019" x="3782" y="0" width="427" height="564" frameX="-11" frameY="-3" frameWidth="440" frameHeight="567"/>
+	<SubTexture name="sunday alt up0000" x="4209" y="0" width="432" height="598" frameX="-52" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0001" x="4641" y="0" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0002" x="5116" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0003" x="5658" y="0" width="639" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0004" x="6297" y="0" width="884" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0005" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0006" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0007" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0008" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0009" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0010" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0011" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0012" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0013" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0014" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0015" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0016" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0017" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0018" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0019" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0020" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0021" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0022" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0023" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0024" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0025" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0026" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0027" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0028" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0029" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0030" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0031" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0032" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0033" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0034" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0035" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0036" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0037" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0038" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0039" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0040" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0041" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0042" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0043" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0044" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0045" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0046" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0047" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0048" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday alt up0049" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday bop0000" x="475" y="646" width="451" height="587" frameX="-34" frameY="-21" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0001" x="926" y="646" width="466" height="602" frameX="-10" frameY="-6" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0002" x="1392" y="646" width="472" height="608" frameX="0" frameY="0" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0003" x="1392" y="646" width="472" height="608" frameX="0" frameY="0" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0004" x="1864" y="646" width="473" height="608" frameX="-1" frameY="0" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0005" x="1864" y="646" width="473" height="608" frameX="-1" frameY="0" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0006" x="2337" y="646" width="415" height="551" frameX="-99" frameY="-57" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0007" x="2752" y="646" width="467" height="593" frameX="-114" frameY="-15" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0008" x="3219" y="646" width="476" height="603" frameX="-123" frameY="-5" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0009" x="3219" y="646" width="476" height="603" frameX="-123" frameY="-5" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0010" x="3695" y="646" width="480" height="608" frameX="-123" frameY="0" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday bop0011" x="3695" y="646" width="480" height="608" frameX="-123" frameY="0" frameWidth="603" frameHeight="608"/>
+	<SubTexture name="sunday down0000" x="4175" y="646" width="475" height="558" frameX="-120" frameY="0" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0001" x="4650" y="646" width="595" height="578" frameX="0" frameY="-4" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0002" x="5245" y="646" width="473" height="534" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0003" x="5718" y="646" width="473" height="535" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0004" x="6191" y="646" width="473" height="535" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0005" x="6664" y="646" width="473" height="536" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0006" x="7137" y="646" width="473" height="536" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0007" x="7610" y="646" width="473" height="537" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0008" x="0" y="1257" width="473" height="537" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0009" x="473" y="1257" width="473" height="537" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0010" x="946" y="1257" width="473" height="538" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0011" x="1419" y="1257" width="473" height="533" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday down0012" x="1892" y="1257" width="473" height="533" frameX="-121" frameY="-5" frameWidth="595" frameHeight="582"/>
+	<SubTexture name="sunday idle0000" x="2365" y="1257" width="428" height="562" frameX="-12" frameY="-2" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0001" x="2365" y="1257" width="428" height="562" frameX="-12" frameY="-2" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0002" x="2793" y="1257" width="429" height="563" frameX="-11" frameY="-1" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0003" x="2793" y="1257" width="429" height="563" frameX="-11" frameY="-1" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0004" x="3222" y="1257" width="429" height="564" frameX="-10" frameY="0" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0005" x="3222" y="1257" width="429" height="564" frameX="-10" frameY="0" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0006" x="3651" y="1257" width="418" height="557" frameX="-6" frameY="-7" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0007" x="3651" y="1257" width="418" height="557" frameX="-6" frameY="-7" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0008" x="4069" y="1257" width="414" height="554" frameX="-4" frameY="-9" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0009" x="4069" y="1257" width="414" height="554" frameX="-4" frameY="-9" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0010" x="4483" y="1257" width="415" height="556" frameX="-1" frameY="-8" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0011" x="4483" y="1257" width="415" height="556" frameX="-1" frameY="-8" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0012" x="4898" y="1257" width="416" height="557" frameX="0" frameY="-7" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0013" x="4898" y="1257" width="416" height="557" frameX="0" frameY="-7" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0014" x="5314" y="1257" width="413" height="554" frameX="-5" frameY="-10" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0015" x="5314" y="1257" width="413" height="554" frameX="-5" frameY="-10" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0016" x="5727" y="1257" width="420" height="556" frameX="-8" frameY="-8" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0017" x="5727" y="1257" width="420" height="556" frameX="-8" frameY="-8" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0018" x="6147" y="1257" width="427" height="561" frameX="-11" frameY="-3" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday idle0019" x="6147" y="1257" width="427" height="561" frameX="-11" frameY="-3" frameWidth="440" frameHeight="564"/>
+	<SubTexture name="sunday left0000" x="6574" y="1257" width="419" height="556" frameX="-2" frameY="-6" frameWidth="428" frameHeight="562"/>
+	<SubTexture name="sunday left0001" x="6993" y="1257" width="421" height="559" frameX="0" frameY="-3" frameWidth="428" frameHeight="562"/>
+	<SubTexture name="sunday left0002" x="7414" y="1257" width="423" height="562" frameX="-5" frameY="0" frameWidth="428" frameHeight="562"/>
+	<SubTexture name="sunday left0003" x="0" y="1821" width="424" height="562" frameX="-3" frameY="0" frameWidth="428" frameHeight="562"/>
+	<SubTexture name="sunday left0004" x="424" y="1821" width="424" height="562" frameX="-2" frameY="0" frameWidth="428" frameHeight="562"/>
+	<SubTexture name="sunday left0005" x="848" y="1821" width="424" height="562" frameX="-1" frameY="0" frameWidth="428" frameHeight="562"/>
+	<SubTexture name="sunday left0006" x="1272" y="1821" width="423" height="562" frameX="-1" frameY="0" frameWidth="428" frameHeight="562"/>
+	<SubTexture name="sunday left0007" x="1695" y="1821" width="423" height="562" frameX="-1" frameY="0" frameWidth="428" frameHeight="562"/>
+	<SubTexture name="sunday right0000" x="2118" y="1821" width="476" height="543" frameX="0" frameY="-15" frameWidth="490" frameHeight="558"/>
+	<SubTexture name="sunday right0001" x="2594" y="1821" width="467" height="540" frameX="0" frameY="-18" frameWidth="490" frameHeight="558"/>
+	<SubTexture name="sunday right0002" x="3061" y="1821" width="486" height="552" frameX="-4" frameY="-6" frameWidth="490" frameHeight="558"/>
+	<SubTexture name="sunday right0003" x="3547" y="1821" width="472" height="552" frameX="-4" frameY="-6" frameWidth="490" frameHeight="558"/>
+	<SubTexture name="sunday right0004" x="4019" y="1821" width="473" height="556" frameX="-5" frameY="-2" frameWidth="490" frameHeight="558"/>
+	<SubTexture name="sunday right0005" x="4492" y="1821" width="485" height="556" frameX="-5" frameY="-2" frameWidth="490" frameHeight="558"/>
+	<SubTexture name="sunday right0006" x="4977" y="1821" width="470" height="557" frameX="-6" frameY="-1" frameWidth="490" frameHeight="558"/>
+	<SubTexture name="sunday right0007" x="5447" y="1821" width="472" height="557" frameX="-6" frameY="-1" frameWidth="490" frameHeight="558"/>
+	<SubTexture name="sunday right0008" x="5919" y="1821" width="484" height="558" frameX="-6" frameY="0" frameWidth="490" frameHeight="558"/>
+	<SubTexture name="sunday right0009" x="6403" y="1821" width="470" height="558" frameX="-6" frameY="0" frameWidth="490" frameHeight="558"/>
+	<SubTexture name="sunday title0000" x="6873" y="1821" width="595" height="763" frameX="-43" frameY="-28" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0001" x="7468" y="1821" width="613" height="782" frameX="-13" frameY="-9" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0002" x="0" y="2603" width="621" height="790" frameX="0" frameY="-1" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0003" x="0" y="2603" width="621" height="790" frameX="0" frameY="-1" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0004" x="621" y="2603" width="623" height="790" frameX="-1" frameY="-1" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0005" x="621" y="2603" width="623" height="790" frameX="-1" frameY="-1" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0006" x="1244" y="2603" width="549" height="716" frameX="-127" frameY="-75" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0007" x="1793" y="2603" width="615" height="770" frameX="-147" frameY="-21" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0008" x="2408" y="2603" width="626" height="783" frameX="-158" frameY="-8" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0009" x="2408" y="2603" width="626" height="783" frameX="-158" frameY="-8" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0010" x="3034" y="2603" width="631" height="791" frameX="-159" frameY="0" frameWidth="790" frameHeight="791"/>
+	<SubTexture name="sunday title0011" x="3034" y="2603" width="631" height="791" frameX="-159" frameY="0" frameWidth="790" frameHeight="791"/>
+	<!-- SubTexture name="sunday up0000" x="3665" y="2603" width="430" height="598" frameX="-52" frameY="-43" frameWidth="542" frameHeight="646"/>
+	<SubTexture name="sunday up0001" x="4095" y="2603" width="475" height="611" frameX="-46" frameY="-35" frameWidth="542" frameHeight="646"/-->
+	<SubTexture name="sunday up0002" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday up0003" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday up0004" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday up0005" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday up0006" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday up0007" x="0" y="646" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday up0008" x="7181" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
+	<SubTexture name="sunday up0009" x="7723" y="0" width="431" height="603" frameX="-53" frameY="-43" frameWidth="930" frameHeight="646"/>
+</TextureAtlas>

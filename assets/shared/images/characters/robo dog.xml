@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="robo dog.png"><SubTexture name="GF Dancing Beat0000" x="0" y="0" width="27" height="23" frameX="0" frameY="0" frameWidth="27" frameHeight="23" />
+<SubTexture name="GF Dancing Beat0001" x="0" y="23" width="27" height="23" frameX="0" frameY="0" frameWidth="27" frameHeight="23" />
+</TextureAtlas>

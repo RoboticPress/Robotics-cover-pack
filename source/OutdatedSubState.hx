@@ -132,15 +132,18 @@ class OutdatedSubState extends MusicBeatState
 			+ '\n- GenoX for UTAU voicebanks used'
 			+ '\n- Blantados for UTAU voicebanks used'
 		];
+		case 'the sunday revolving':
+			creditsthingy = ['Deltarune', 'VS Sunday [Remastered]\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- The86thPlayer for charting the main vocals (discord: the86thplayer#4426)'];
 		}
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
 			"YO! It'd be great if you credit these mods\\people if you showcase this cover:\n"
 			+ '- ${creditsthingy[0]}\n'
 			+ '- ${creditsthingy[1]}\n'
+			+ "- MythicSpeed for the Robo sprites\n"
 			+ "- And of course this mod!\n"
 			+ "\n\nPress Any key to continue",
 			32);
-		txt.setFormat("VCR OSD Mono", 18, FlxColor.WHITE, CENTER);
+		txt.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, CENTER);
 		txt.screenCenter();
 		add(txt);
 	}

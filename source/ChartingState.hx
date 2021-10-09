@@ -62,6 +62,8 @@ class ChartingState extends MusicBeatState
 	var strumLine:FlxSprite;
 	var curSong:String = 'Dad Battle';
 	var amountSteps:Int = 0;
+	var distance:Float = 0;
+	var move = 0;
 	var bullshitUI:FlxGroup;
 	var writingNotesText:FlxText;
 	var highlight:FlxSprite;
@@ -437,8 +439,13 @@ class ChartingState extends MusicBeatState
 			for (i in 0..._song.notes[curSection].sectionNotes.length)
 			{
 				var note = _song.notes[curSection].sectionNotes[i];
-				note[1] = (note[1] + 4) % 8;
-				_song.notes[curSection].sectionNotes[i] = note;
+				{
+					var thingy = 0;
+					if (note[1] > 7 && note[1] < 16) thingy = 8;
+					else if (note[1] > 15) thingy = 16;
+					note[1] = ((note[1] + 4) % 8) + thingy;
+					_song.notes[curSection].sectionNotes[i] = note;
+				}
 				updateGrid();
 			}
 		});
@@ -666,7 +673,7 @@ class ChartingState extends MusicBeatState
 	{
 		updateHeads();
 
-		snapText.text = "Snap: 1/" + snap + " (" + (doSnapShit ? "Control to disable" : "Snap Disabled, Control to renable") + ")\nAdd Notes: 1-8 (or click)\n";
+		snapText.text = "Snap: 1/" + snap + " (" + (doSnapShit ? "Control to disable" : "Snap Disabled, Control to renable") + ")\nAdd Notes: 1-8 (or click)\nMOVE: " + move;
 
 		curStep = recalculateSteps();
 
@@ -681,6 +688,16 @@ class ChartingState extends MusicBeatState
 
 		if (FlxG.keys.justPressed.CONTROL)
 			doSnapShit = !doSnapShit;
+		if (FlxG.keys.justPressed.N)
+		{
+			move -= 8;
+			updateGrid();
+		}
+		if (FlxG.keys.justPressed.M)
+		{
+			move += 8;
+			updateGrid();
+		}
 
 		Conductor.songPosition = FlxG.sound.music.time;
 		_song.song = typingShit.text;
@@ -1243,7 +1260,7 @@ class ChartingState extends MusicBeatState
 			note.sustainLength = daSus;
 			note.setGraphicSize(GRID_SIZE, GRID_SIZE);
 			note.updateHitbox();
-			note.x = Math.floor(daNoteInfo * GRID_SIZE);
+			note.x = Math.floor(daNoteInfo * GRID_SIZE) + move * GRID_SIZE;
 			note.y = Math.floor(getYfromStrum((daStrumTime - sectionStartTime()) % (Conductor.stepCrochet * _song.notes[curSection].lengthInSteps)));
 
 			if (curSelectedNote != null)
@@ -1391,10 +1408,30 @@ class ChartingState extends MusicBeatState
 	private function addNote(?n:Note):Void
 	{
 		var noteStrum = getStrumTime(dummyArrow.y) + sectionStartTime();
-		var noteData = Math.floor(FlxG.mouse.x / GRID_SIZE) + (FlxG.keys.pressed.ALT ? 8 : 0);
+		var noteData = Math.floor(FlxG.mouse.x / GRID_SIZE) + (move*-1);
 		var noteSus = 0;
+		if (FlxG.keys.pressed.J)
+			distance = noteStrum;
 
-		if (n != null)
+		if (FlxG.keys.pressed.G)
+		{
+			_song.notes[curSection].sectionNotes.push([noteStrum, noteData, noteSus]);
+			_song.notes[curSection].sectionNotes.push([noteStrum + (distance/2), noteData + 1, noteSus]);
+			_song.notes[curSection].sectionNotes.push([noteStrum + distance, noteData + 2, noteSus]);
+			_song.notes[curSection].sectionNotes.push([noteStrum + distance + (distance/2), noteData + 3, noteSus]);
+			_song.notes[curSection].sectionNotes.push([noteStrum + distance*2, noteData + 2, noteSus]);
+			_song.notes[curSection].sectionNotes.push([noteStrum + (distance*2.5), noteData + 1, noteSus]);
+		}
+		else if (FlxG.keys.pressed.H)
+		{
+			_song.notes[curSection].sectionNotes.push([noteStrum, noteData, noteSus]);
+			_song.notes[curSection].sectionNotes.push([noteStrum + (distance/2), noteData - 1, noteSus]);
+			_song.notes[curSection].sectionNotes.push([noteStrum + distance, noteData - 2, noteSus]);
+			_song.notes[curSection].sectionNotes.push([noteStrum + distance + (distance/2), noteData - 3, noteSus]);
+			_song.notes[curSection].sectionNotes.push([noteStrum + distance*2, noteData - 2, noteSus]);
+			_song.notes[curSection].sectionNotes.push([noteStrum + (distance*2.5), noteData - 1, noteSus]);
+		}
+		else if (n != null)
 			_song.notes[curSection].sectionNotes.push([n.strumTime, n.noteData, n.sustainLength]);
 		else
 			_song.notes[curSection].sectionNotes.push([noteStrum, noteData, noteSus]);

@@ -27,6 +27,7 @@ class Note extends FlxSprite
 	public var sustainLength:Float = 0;
 	public var isSustainNote:Bool = false;
 	public var burning:Bool = false;
+	public var burning2:Bool = false;
 	public var dataColor:Array<String> = ['purple', 'blue', 'green', 'red'];
 
 	public var noteScore:Float = 1;
@@ -39,7 +40,7 @@ class Note extends FlxSprite
 
 	public var rating:String = "shit";
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?burning = false)
+	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?burning = false, ?burning2 = false)
 	{
 		super();
 
@@ -58,15 +59,21 @@ class Note extends FlxSprite
 			this.strumTime = 0;
 
 		this.noteData = noteData;
-		if (isSustainNote && prevNote.noteData > 7)
+		if (isSustainNote && prevNote.noteData > 7 && prevNote.noteData < 16)
 		{
 			burning = true;
+			noteData = -99;
+		}
+		if (isSustainNote && prevNote.noteData > 15)
+		{
+			burning2 = true;
 			noteData = -99;
 		}
 
 		if (isSustainNote && FlxG.save.data.downscroll)
 			flipY = true;
 		this.burning = burning;
+		this.burning2 = burning2;
 
 		noteData = noteData % 4;
 
@@ -219,9 +226,9 @@ class Note extends FlxSprite
 				animation.addByPrefix('redhold', 'red hold piece');
 				animation.addByPrefix('bluehold', 'blue hold piece');
 
-				if (burning)
+				if (burning || burning2)
 				{
-					if (PlayState.curStage == 'auditorHell')
+					if (PlayState.curStage == 'auditorHell' || PlayState.curStage == 'jevil')
 					{
 						frames = Paths.getSparrowAtlas('fourth/mech/ALL_deathnotes', "shared");
 						animation.addByPrefix('greenScroll', 'Green Arrow');
@@ -251,6 +258,8 @@ class Note extends FlxSprite
 
 						x -= 50;
 					}
+					if (PlayState.curStage == 'jevil')
+						visible = false;
 				}
 
 				setGraphicSize(Std.int(width * 0.7));
@@ -259,6 +268,8 @@ class Note extends FlxSprite
 		}
 
 		if (burning)
+			setGraphicSize(Std.int(width * 0.86));
+		if (burning2)
 			setGraphicSize(Std.int(width * 0.86));
 
 		switch (noteData)
@@ -337,6 +348,8 @@ class Note extends FlxSprite
 		x -= 165;
 		if (burning)
 			x -= 165;
+		if (burning2)
+			x -= 165;
 	}
 
 	override function update(elapsed:Float)
@@ -348,7 +361,7 @@ class Note extends FlxSprite
 		if (mustPress)
 		{
 			// The * 0.5 is so that it's easier to hit them too late, instead of too early
-			if (!burning)
+			if (!burning && !burning2)
 			{
 				if (strumTime > Conductor.songPosition - Conductor.safeZoneOffset
 					&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))

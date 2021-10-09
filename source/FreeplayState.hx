@@ -253,6 +253,10 @@ class FreeplayState extends MusicBeatState
 		{
 			curDifficulty = 2;
 		}
+		else if (songs[curSelected].songName == 'The Sunday Revolving')
+		{
+			curDifficulty = 7;
+		}
 		else
 		{
 			if (curDifficulty < 0)
@@ -290,6 +294,8 @@ class FreeplayState extends MusicBeatState
 				diffText.text = "ALT-a";
 			case 6:
 				diffText.text = "UNFAIR";
+			case 7:
+				diffText.text = "CHAOS";
 		}
 	}
 

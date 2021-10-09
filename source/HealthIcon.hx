@@ -17,6 +17,7 @@ class HealthIcon extends FlxSprite
 
 		antialiasing = true;
 		animation.add('bf', [0, 1], 0, false, isPlayer);
+		animation.add('bf-flipped', [0, 1], 0, false, isPlayer);
 		animation.add('bf-fall', [0, 1], 0, false, isPlayer);
 		animation.add('bf-car', [0, 1], 0, false, isPlayer);
 		animation.add('bf-christmas', [0, 1], 0, false, isPlayer);
@@ -49,7 +50,6 @@ class HealthIcon extends FlxSprite
 		animation.add('hex', [36, 37], 0, false, isPlayer);
 		animation.add('tord', [38, 39], 0, false, isPlayer);
 		animation.add('ron', [40, 41], 0, false, isPlayer);
-		animation.add('not-sky-mad', [10, 11], 0, false, isPlayer);
 		animation.add('monster-annie', [44, 45], 0, false, isPlayer);
 		animation.add('robo-gf', [46, 47], 0, false, isPlayer);
 		animation.add('roboparachute', [46, 47], 0, false, isPlayer);
@@ -130,6 +130,9 @@ class HealthIcon extends FlxSprite
 		animation.add('ruby', [174, 175], 0, false, isPlayer);
 		animation.add('tricky', [176, 177], 0, false, isPlayer);
 		animation.add('cream-dead', [178, 179], 0, false, isPlayer);
+		animation.add('not-sky-mad', [180, 181], 0, false, isPlayer);
+		animation.add('jevil-sunday', [182, 183], 0, false, isPlayer);
+		animation.add('jevil-sunday-flipped', [182, 183], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)
