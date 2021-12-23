@@ -104,6 +104,45 @@ class Character extends FlxSprite
 
 				playAnim('danceRight');
 
+			case 'robo-gf-no-speakers':
+				// GIRLFRIEND CODE
+				tex = Paths.getSparrowAtlas('characters/ROBO_assets_no_speakers');
+				trace(tex);
+				frames = tex;
+				animation.addByPrefix('singLEFT', 'robo left', 24, false);
+				animation.addByPrefix('singRIGHT', 'robo right', 24, false);
+				animation.addByPrefix('singUP', 'robo up', 24, false);
+				animation.addByPrefix('singDOWN', 'robo down', 24, false);
+				animation.addByIndices('danceLeft', 'robo Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'robo Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+				animation.addByIndices('sad', 'robo sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+
+				animation.addByIndices('help', 'robo help', [0], "", 24, false);
+				animation.addByIndices('please help', 'robo help', [0, 1, 1, 2, 3, 3, 3, 4, 4, 4, 2, 4, 4, 5, 5, 5, 3, 3, 2, 2, 1, 1, 6, 6, 6, 6, 6, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 20, 20], "", 24, false);
+
+				animation.addByIndices('OI', 'robo saw come', [0], "", 30, false);
+				animation.addByPrefix('come saw', 'robo saw come', 30, false);
+				animation.addByPrefix('GET THE BITCH', 'robo GET THE BITCH', 30, false);
+				// animation.addByPrefix('go saw', 'robo go saw', 30, false);
+
+				addOffset('singLEFT', 27, -11);
+				addOffset('singRIGHT', -1, -10);
+				addOffset('singUP', 2, 9);
+				addOffset('singDOWN', 0, -14);
+				addOffset('danceLeft', 0, -8);
+				addOffset('danceRight', 0, -8);
+				addOffset('sad', -2, -11);
+
+				addOffset('help', 215, -9);
+				addOffset('please help', 216, -3);
+
+				addOffset('OI', 0, -9);
+				addOffset('come saw', 0, -6);
+				addOffset('GET THE BITCH', 0, -8);
+				// addOffset('go saw', 0, 0);
+
+				playAnim('danceRight');
+
 			case 'robo-gf-night':
 				// GIRLFRIEND CODE
 				tex = Paths.getSparrowAtlas('characters/ROBO_assets-night');
@@ -2807,6 +2846,73 @@ class Character extends FlxSprite
 				addOffset("singUP-alt", 430, 86);
 				addOffset("singRIGHT", -33,3);
 			
+			case 'hat-kid-spamton':
+				var tex = Paths.getSparrowAtlas('characters/Hatkid_spamton', 'shared');
+				frames = tex;
+
+				trace(tex.frames.length);
+
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+
+				addOffset('idle', -5);
+				addOffset("singUP", -14, -11);
+				addOffset("singRIGHT", -36, -2);
+				addOffset("singLEFT", 12, -8);
+				addOffset("singDOWN", -12, -29);
+
+				playAnim('idle');
+
+				flipX = true;
+
+			case 'MTTcarol':
+				frames = Paths.getSparrowAtlas('characters/MTTcarol_assets');
+				animation.addByPrefix('idle', 'carol idle', 24, false);
+				animation.addByPrefix('singUP', 'carol up', 24, false);
+				animation.addByPrefix('singDOWN', 'carol down', 24, false);
+				animation.addByPrefix('singLEFT', 'carol right', 24, false);
+				animation.addByPrefix('singRIGHT', 'carol left', 24, false);
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				/*
+				animation.addByPrefix('idle-alt', 'carol alt idle', 24, false);
+				animation.addByPrefix('singUP-alt', 'carol alt up', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'carol alt down', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'carol alt left', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'carol alt right', 24, false);
+				addOffset('idle-alt');
+				addOffset("singUP-alt");
+				addOffset("singRIGHT-alt");
+				addOffset("singLEFT-alt");
+				addOffset("singDOWN-alt");
+				*/
+
+				playAnim('idle');
+
+			case 'DUMMYmiku':
+				frames = Paths.getSparrowAtlas('characters/dummy_miku_assets','shared');
+				
+				animation.addByIndices('danceLeft','Miku idle dance',[31,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14], '', 24, false);
+				animation.addByIndices('danceRight','Miku idle dance',[15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], '', 24, false);
+				animation.addByPrefix('singUP', 'Miku Sing Note UP0', 24, false);
+				animation.addByPrefix('singDOWN', 'Miku Sing Note DOWN0', 24, false);
+				animation.addByPrefix('singRIGHT', 'Miku Sing Note LEFT0', 24, false);
+				animation.addByPrefix('singLEFT', 'Miku Sing Note RIGHT0', 24, false);
+				addOffset('danceLeft');
+				addOffset('danceRight');
+				addOffset("singUP", 19, 51);
+				addOffset("singDOWN", 11, 0);
+				addOffset("singRIGHT", -51, 1);
+				addOffset("singLEFT", 41, -1);
+
+				playAnim('danceLeft');
+
 		}
 
 		dance();
@@ -2923,7 +3029,7 @@ class Character extends FlxSprite
 		{
 			switch (curCharacter)
 			{
-				case 'gf':
+				case 'gf' | 'DUMMYmiku':
 					if (!animation.curAnim.name.startsWith('hair'))
 					{
 						danced = !danced;
@@ -2933,7 +3039,7 @@ class Character extends FlxSprite
 						else
 							playAnim('danceLeft');
 					}
-				case 'robo-gf' | 'robo-gf-night' | 'robo-gf-404' | 'roboparachute' | 'robo-dog':
+				case 'robo-gf' | 'robo-gf-night' | 'robo-gf-404' | 'roboparachute' | 'robo-dog' | 'robo-gf-no-speakers':
 					if (!animation.curAnim.name.startsWith('OI') && !animation.curAnim.name.startsWith('come saw') && !animation.curAnim.name.startsWith('GET THE BITCH') && !animation.curAnim.name.startsWith('go saw'))
 					{
 						danced = !danced;
@@ -3052,7 +3158,7 @@ class Character extends FlxSprite
 		else
 			offset.set(0, 0);
 
-		if (curCharacter == 'gf' || curCharacter == 'robo-gf')
+		if (curCharacter == 'gf' || curCharacter == 'robo-gf' || curCharacter == 'robo-gf-no-speakers')
 		{
 			if (AnimName == 'singLEFT')
 			{

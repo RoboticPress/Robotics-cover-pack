@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ralsei.png"><SubTexture name="ralsei idle0000" x="0" y="0" width="72" height="51" frameX="0" frameY="0" frameWidth="72" frameHeight="51" />
+<SubTexture name="ralsei idle0001" x="72" y="0" width="72" height="51" frameX="0" frameY="0" frameWidth="72" frameHeight="51" />
+<SubTexture name="ralsei idle0002" x="144" y="0" width="72" height="51" frameX="0" frameY="0" frameWidth="72" frameHeight="51" />
+<SubTexture name="ralsei idle0003" x="216" y="0" width="72" height="51" frameX="0" frameY="0" frameWidth="72" frameHeight="51" />
+<SubTexture name="ralsei idle0004" x="0" y="51" width="72" height="51" frameX="0" frameY="0" frameWidth="72" frameHeight="51" />
+<SubTexture name="ralsei snap0000" x="72" y="51" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0001" x="145" y="51" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0002" x="218" y="51" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0003" x="0" y="102" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0004" x="73" y="102" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0005" x="146" y="102" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0006" x="219" y="102" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0007" x="0" y="153" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0008" x="73" y="153" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0009" x="146" y="153" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0010" x="219" y="153" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0011" x="0" y="204" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+<SubTexture name="ralsei snap0012" x="73" y="204" width="73" height="51" frameX="0" frameY="0" frameWidth="73" frameHeight="51" />
+</TextureAtlas>

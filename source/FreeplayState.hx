@@ -257,6 +257,10 @@ class FreeplayState extends MusicBeatState
 		{
 			curDifficulty = 7;
 		}
+		else if (songs[curSelected].songName == 'Big Piece')
+		{
+			curDifficulty = 8;
+		}
 		else
 		{
 			if (curDifficulty < 0)
@@ -296,6 +300,8 @@ class FreeplayState extends MusicBeatState
 				diffText.text = "UNFAIR";
 			case 7:
 				diffText.text = "CHAOS";
+			case 8:
+				diffText.text = "NEO";
 		}
 	}
 

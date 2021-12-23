@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="rail.png"><SubTexture name="rail idle0000" x="0" y="0" width="2004" height="41" frameX="0" frameY="0" frameWidth="2004" frameHeight="41" />
+<SubTexture name="rail idle0001" x="2004" y="0" width="2004" height="41" frameX="0" frameY="0" frameWidth="2004" frameHeight="41" />
+<SubTexture name="rail idle0002" x="0" y="41" width="2004" height="41" frameX="0" frameY="0" frameWidth="2004" frameHeight="41" />
+<SubTexture name="rail idle0003" x="2004" y="41" width="2004" height="41" frameX="0" frameY="0" frameWidth="2004" frameHeight="41" />
+<SubTexture name="rail idle0004" x="0" y="82" width="2004" height="41" frameX="0" frameY="0" frameWidth="2004" frameHeight="41" />
+<SubTexture name="rail idle0005" x="2004" y="82" width="2004" height="41" frameX="0" frameY="0" frameWidth="2004" frameHeight="41" />
+</TextureAtlas>

@@ -52,6 +52,7 @@ class HealthIcon extends FlxSprite
 		animation.add('ron', [40, 41], 0, false, isPlayer);
 		animation.add('monster-annie', [44, 45], 0, false, isPlayer);
 		animation.add('robo-gf', [46, 47], 0, false, isPlayer);
+		animation.add('robo-gf-no-speakers', [46, 47], 0, false, isPlayer);
 		animation.add('roboparachute', [46, 47], 0, false, isPlayer);
 		animation.add('rosefall', [48, 49], 0, false, isPlayer);
 		animation.add('lav', [50, 51], 0, false, isPlayer);
@@ -133,6 +134,7 @@ class HealthIcon extends FlxSprite
 		animation.add('not-sky-mad', [180, 181], 0, false, isPlayer);
 		animation.add('jevil-sunday', [182, 183], 0, false, isPlayer);
 		animation.add('jevil-sunday-flipped', [182, 183], 0, false, isPlayer);
+		animation.add('hat-kid-spamton', [184, 185], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)

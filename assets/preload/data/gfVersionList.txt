@@ -7,3 +7,4 @@ ROBO-TIKY
 robo-gf-night
 robo-gf-404
 roboparachute
+robo-gf-no-speakers

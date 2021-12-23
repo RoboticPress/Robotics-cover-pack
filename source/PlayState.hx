@@ -57,6 +57,7 @@ import openfl.display.BlendMode;
 import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 import flixel.addons.display.FlxBackdrop;
+import flash.system.System;
 
 #if windows
 import Discord.DiscordClient;
@@ -133,6 +134,7 @@ class PlayState extends MusicBeatState
 	public static var strumLineNotes:FlxTypedGroup<FlxSprite> = null;
 	public static var playerStrums:FlxTypedGroup<FlxSprite> = null;
 	public static var cpuStrums:FlxTypedGroup<FlxSprite> = null;
+	private var projectiles:FlxTypedGroup<Projectile>;
 
 	private var camZooming:Bool = false;
 	private var curSong:String = "";
@@ -238,6 +240,19 @@ class PlayState extends MusicBeatState
 	var circ1:FlxSprite;
 	var circ2:FlxSprite;
 	var mic:FlxSprite;
+	var spamtonCart:FlxSprite;
+	var spamtonCartThing:FlxSprite;
+	var spamtonCart2:FlxSprite;
+	var spamtonCartThing2:FlxSprite;
+	var spamtonCart3:FlxSprite;
+	var spamtonCartThing3:FlxSprite;
+	var blueSpamton1:FlxSprite;
+	var blueSpamton2:FlxSprite;
+	var heartSheild:FlxSprite;
+	var heartThing:FlxSprite;
+	var spamtonLarg:FlxSprite;
+	var spamtonLargJaw:FlxSprite;
+	var spamtonLargHead:FlxSprite;
 	public static var susie:FlxSprite;
 	var kris:FlxSprite;
 	var ralsei:FlxSprite;
@@ -269,6 +284,19 @@ class PlayState extends MusicBeatState
 
 	var BG2:FlxSprite;
 	var BG3:FlxSprite;
+	var BG4:FlxSprite;
+	var FG1:FlxSprite;
+	var FG2:FlxSprite;
+	var FG3:FlxSprite;
+	var FG4:FlxSprite;
+	var railRoad:FlxSprite;
+	var railRoad2:FlxSprite;
+	var railRoad3:FlxSprite;
+	var string1:FlxSprite;
+	var string2:FlxSprite;
+	var string3:FlxSprite;
+	var string4:FlxSprite;
+	var string5:FlxSprite;
 
 	private var floatshit:Float = 0;
 
@@ -474,6 +502,7 @@ class PlayState extends MusicBeatState
 	override public function create()
 	{
 
+		projectiles = new FlxTypedGroup<Projectile>();
 		boyfriendSinging = true;
 		boyfriendAgainSinging = false;
 		dadAgainSinging = false;
@@ -569,6 +598,8 @@ class PlayState extends MusicBeatState
 				storyDifficultyText = "Unfair";
 			case 7:
 				storyDifficultyText = "CHAOS";
+			case 8:
+				storyDifficultyText = "NEO";
 		}
 
 		iconRPC = SONG.player2;
@@ -668,6 +699,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('ejected/ejectedDialogue'));
 			case 'the-sunday-revolving':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('the-sunday-revolving/the-sunday-revolvingDialogue'));
+			case 'big-piece':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('big-piece/big-pieceDialogue'));
 		}
 
 		//defaults if no stage was found in chart
@@ -692,7 +725,14 @@ class PlayState extends MusicBeatState
 			}
 		} else {stageCheck = SONG.stage;}
 
-		dad = new Character(100, 100, SONG.player2);
+		if (stageCheck != 'spamton')
+		{
+			dad = new Character(100, 100, SONG.player2);
+		}
+		else
+		{
+			dad = new Character(500, 30, SONG.player2);
+		}
 		dadAgain = new Character(100, 100, SONG.player2);
 		dadAgain2 = new Character(100, 100, SONG.player2);
 		dadAgain3 = new Character(100, 100, SONG.player2);
@@ -722,6 +762,8 @@ class PlayState extends MusicBeatState
 				curGf = 'gf-pixel';
 			case 'robo-gf':
 				curGf = 'robo-gf';
+			case 'robo-gf-no-speakers':
+				curGf = 'robo-gf-no-speakers';
 			case 'ROBO-TIKY':
 				curGf = 'ROBO-TIKY';
 			case 'robo-gf-night':
@@ -743,7 +785,14 @@ class PlayState extends MusicBeatState
 		else
 			gf.scrollFactor.set(0.95, 0.95);
 
-		boyfriend = new Boyfriend(770, 450, SONG.player1);
+		if (stageCheck != 'spamton')
+		{
+			boyfriend = new Boyfriend(770, 450, SONG.player1);
+		}
+		else
+		{
+			boyfriend = new Boyfriend(-300, 170, SONG.player1);
+		}
 		boyfriendAgain = new Boyfriend(770, 450, SONG.player1);
 
 		switch(stageCheck)
@@ -1611,7 +1660,6 @@ class PlayState extends MusicBeatState
 				//add(amogos);*/
 			}
 
-
 			case 'jevil':
 			{
 					defaultCamZoom = 0.9;
@@ -1627,6 +1675,126 @@ class PlayState extends MusicBeatState
 					susie = new FlxSprite();
 					ralsei = new FlxSprite();
 					kris = new FlxSprite();
+			}
+			case 'spamton':
+			{
+				FlxG.bitmap.add(Paths.image("the sunday revolving/bg"));
+				FlxG.bitmap.add(Paths.image("characters/MTTcarol_assets"));
+				FlxG.bitmap.add(Paths.image("characters/dummy_miku_assets"));
+				FlxG.bitmap.add(Paths.image("characters/CHAOS_sunday"));
+				FlxG.bitmap.add(Paths.image('the sunday revolving/DELTARUNE DIALOGUE BOX AND ROBO'));
+				FlxG.bitmap.add(Paths.image("characters/ROBO_assets"));
+				spamtonLarg = new FlxSprite(1200 , 50); // go to 600 170
+				spamtonLargJaw = new FlxSprite(-140 , 200 + 140);
+				spamtonLargHead = new FlxSprite(-140 , 200 + 140);
+				defaultCamZoom = 0.9;
+				BG2 = new FlxSprite(50, 40).loadGraphic(Paths.image('spamton/Background'));
+				BG2.setGraphicSize(Std.int(BG2.width * 4));
+				BG2.antialiasing = false;
+				BG2.scrollFactor.set(1, 1);
+				BG2.active = false;
+				add(BG2);
+				BG3 = new FlxSprite(BG2.x + BG2.width, 40).loadGraphic(Paths.image('spamton/Background'));
+				BG3.setGraphicSize(Std.int(BG2.width * 4));
+				BG3.antialiasing = false;
+				BG3.scrollFactor.set(1, 1);
+				BG3.active = false;
+				add(BG3);
+				BG4 = new FlxSprite(-387, -100);
+				BG4.frames = Paths.getSparrowAtlas('the sunday revolving/bg', 'shared');
+				BG4.animation.addByPrefix('idle', 'idle', 24, true);
+				BG4.animation.play('idle');
+				add(BG4);
+				BG4.visible = false;
+				FG1 = new FlxSprite(50, 40).loadGraphic(Paths.image('spamton/Foreground'));
+				FG1.setGraphicSize(Std.int(BG2.width * 4));
+				FG1.antialiasing = false;
+				FG1.scrollFactor.set(1, 1);
+				FG1.active = false;
+				add(FG1);
+				FG2 = new FlxSprite(BG2.x + BG2.width, 40).loadGraphic(Paths.image('spamton/Foreground'));
+				FG2.setGraphicSize(Std.int(BG2.width * 4));
+				FG2.antialiasing = false;
+				FG2.scrollFactor.set(1, 1);
+				FG2.active = false;
+				add(FG2);
+				FG3 = new FlxSprite(50, 40).loadGraphic(Paths.image('spamton/Foreground 2'));
+				FG3.setGraphicSize(Std.int(BG2.width * 4));
+				FG3.antialiasing = false;
+				FG3.scrollFactor.set(1, 1);
+				FG3.active = false;
+				add(FG3);
+				FG4 = new FlxSprite(BG2.x + BG2.width, 40).loadGraphic(Paths.image('spamton/Foreground 2'));
+				FG4.setGraphicSize(Std.int(BG2.width * 4));
+				FG4.antialiasing = false;
+				FG4.scrollFactor.set(1, 1);
+				FG4.active = false;
+				add(FG4);
+				curStage = 'spamton';
+				var rail = Paths.getSparrowAtlas('spamton/rail');
+				railRoad = new FlxSprite(320 , 200);
+				railRoad.frames = rail;
+				railRoad.animation.addByPrefix('idle', 'rail idle', 24);
+				railRoad.animation.play('idle');
+				railRoad.antialiasing = false;
+				railRoad.setGraphicSize(Std.int(railRoad.width * 3));
+				add(railRoad);
+				railRoad2 = new FlxSprite(320 , 200 + 140);
+				railRoad2.frames = rail;
+				railRoad2.animation.addByPrefix('idle', 'rail idle', 24);
+				railRoad2.animation.play('idle');
+				railRoad2.antialiasing = false;
+				railRoad2.setGraphicSize(Std.int(railRoad2.width * 3));
+				add(railRoad2);
+				railRoad3 = new FlxSprite(320 , 200 + 280);
+				railRoad3.frames = rail;
+				railRoad3.animation.addByPrefix('idle', 'rail idle', 24);
+				railRoad3.animation.play('idle');
+				railRoad3.antialiasing = false;
+				railRoad3.setGraphicSize(Std.int(railRoad3.width * 3));
+				add(railRoad3);
+				spamtonCartThing = new FlxSprite(-175 , 200 + 140).loadGraphic(Paths.image('spamton/cart 2'));
+				spamtonCartThing.setGraphicSize(Std.int(spamtonCartThing.width * 4));
+				add(spamtonCartThing);
+				spamtonCartThing2 = new FlxSprite(-175 , 200 + 280).loadGraphic(Paths.image('spamton/cart 2'));
+				spamtonCartThing2.setGraphicSize(Std.int(spamtonCartThing2.width * 4));
+				add(spamtonCartThing2);
+				spamtonCart2 = new FlxSprite(-140 , 200 + 280).loadGraphic(Paths.image('spamton/cart 1'));
+				spamtonCart2.setGraphicSize(Std.int(spamtonCart2.width * 4));
+				add(spamtonCart2);
+				spamtonCartThing3 = new FlxSprite(-15 , 200).loadGraphic(Paths.image('spamton/cart 4'));
+				spamtonCartThing3.setGraphicSize(Std.int(spamtonCartThing3.width * 4));
+				add(spamtonCartThing3);
+				mic = new FlxSprite();
+				var bluefaceTex = Paths.getSparrowAtlas('spamton/blueface');
+				var dumb = CoolUtil.coolTextFile(Paths.txt('dumb'));
+				string1 = new FlxSprite(dad.x + 180,dad.y - 125).makeGraphic(3, 500, FlxColor.GREEN);
+				add(string1);
+				string2 = new FlxSprite(dad.x + 180,dad.y - 125).makeGraphic(3, 500, FlxColor.GREEN);
+				add(string2);
+				string3 = new FlxSprite(dad.x + 180,dad.y - 125).makeGraphic(3, 500, FlxColor.GREEN);
+				add(string3);
+				string4 = new FlxSprite(dad.x + 180,dad.y - 125).makeGraphic(3, 500, FlxColor.GREEN);
+				add(string4);
+				string5 = new FlxSprite(dad.x + 180,dad.y - 125).makeGraphic(3, 500, FlxColor.GREEN);
+				add(string5);
+				blueSpamton1 = new FlxSprite();
+				blueSpamton1.frames = bluefaceTex;
+				blueSpamton1.animation.addByPrefix('idle', 'blueface idle0000', 24);
+				blueSpamton1.animation.addByPrefix('shoot', 'blueface idle', 12, false);
+				blueSpamton1.animation.play('idle');
+				blueSpamton1.antialiasing = false;
+				blueSpamton1.setGraphicSize(Std.int(blueSpamton1.width * 2));
+				blueSpamton2 = new FlxSprite();
+				blueSpamton2.frames = bluefaceTex;
+				blueSpamton2.animation.addByPrefix('idle', 'blueface idle0000', 24);
+				blueSpamton2.animation.addByPrefix('shoot', 'blueface idle', 12, false);
+				blueSpamton2.animation.play('idle');
+				blueSpamton2.antialiasing = false;
+				blueSpamton2.setGraphicSize(Std.int(blueSpamton2.width * 2));
+				susie = new FlxSprite();
+				ralsei = new FlxSprite();
+				kris = new FlxSprite();
 			}
 			default:
 			{
@@ -1774,6 +1942,14 @@ class PlayState extends MusicBeatState
 				gf.setPosition(114.4, 78.45);
 			case 'jevil':
 				dad.y = 275;
+			case 'spamton':
+				dad.x = 500;
+				dad.y = 30;
+				boyfriend.x = -370;
+				boyfriend.y = 95;
+				gf.x = -270;
+				gf.y = 220;
+				dad.x = 500;
 		}
 
 
@@ -1783,14 +1959,16 @@ class PlayState extends MusicBeatState
 
 		if (!curStage.startsWith('auditorHell'))
 		{
-			add(gf);
+			if (curStage != 'spamton')
+				add(gf);
 			if(curStage == "ejected")
 			{
 				gf.scrollFactor.set(0.95, 0.95);
 				add(lol86);
 			}
 			add(dad);
-			add(boyfriend);
+			if (curStage != 'spamton')
+				add(boyfriend);
 			if(curStage == "ejected")
 			{
 				for(i in 0...cloudScroll.members.length) {
@@ -1906,7 +2084,7 @@ class PlayState extends MusicBeatState
 		healthBarBG.scrollFactor.set();
 		add(healthBarBG);
 
-		if (curStage == 'jevil')
+		if (curStage == 'jevil' || curStage == 'spamton')
 		{
 			dialogueBoxDelta = new FlxSprite(0, 532).loadGraphic(Paths.image('the sunday revolving/DELTARUNE DIALOGUE BOX'));
 			add(dialogueBoxDelta);
@@ -1914,6 +2092,8 @@ class PlayState extends MusicBeatState
 			mic = new FlxSprite(0, 532).loadGraphic(Paths.image('the sunday revolving/mic'));
 			add(mic);
 			remove(mic);
+			if (curStage == 'spamton')
+				mic.y = -1500;
 		}
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
@@ -1932,7 +2112,7 @@ class PlayState extends MusicBeatState
 		add(healthBar);
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 7 ? "CHAOS" : storyDifficulty == 6 ? "Unfair" : storyDifficulty == 5 ? "Alt-alpha" : storyDifficulty == 4 ? "Hard-alpha" : storyDifficulty == 3 ? "Alt" : storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - KE " + MainMenuState.kadeEngineVer : ""), 16);
+		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 8 ? "NEO" : storyDifficulty == 7 ? "CHAOS" : storyDifficulty == 6 ? "Unfair" : storyDifficulty == 5 ? "Alt-alpha" : storyDifficulty == 4 ? "Hard-alpha" : storyDifficulty == 3 ? "Alt" : storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - KE " + MainMenuState.kadeEngineVer : ""), 16);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
@@ -1966,7 +2146,7 @@ class PlayState extends MusicBeatState
 		add(dumbasstext);
 		if (curStage == 'auditorHell')
 			add(dumbasstext2);
-		if (curStage == 'jevil')
+		if (curStage == 'jevil' || curStage == 'spamton')
 		{
 			dumbasstext2.text = '2000';
 			dumbasstext2.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
@@ -2014,10 +2194,12 @@ class PlayState extends MusicBeatState
 		startCircle.cameras = [camHUD];
 		startText.cameras = [camHUD];
 		blackFuck.cameras = [camHUD];
-		if (curStage == 'jevil')
+		if (curStage == 'jevil' || curStage == 'spamton')
 		{
 			dialogueBoxDelta.cameras = [camHUD];
 			mic.cameras = [camHUDier];
+			if (curStage == 'spamton')
+				doofus.cameras = [camHUDier];
 		}
 		if (FlxG.save.data.songPosition)
 		{
@@ -2092,6 +2274,8 @@ class PlayState extends MusicBeatState
 					add(doofus);
 				case 'the sunday revolving':
 					add(doofus);
+				case 'big piece':
+					add(doofus);
 				default:
 					startCountdown();
 			}
@@ -2116,6 +2300,8 @@ class PlayState extends MusicBeatState
 					add(doofus);
 				case 'the sunday revolving':
 					add(doofus);
+				case 'big piece':
+					add(doofus);
 				default:
 					startCountdown();
 			}
@@ -2125,6 +2311,153 @@ class PlayState extends MusicBeatState
 			rep = new Replay("na");
 
 		deathBySawBlade = false; //Some reason, it keeps it's value after death, so this forces itself to reset to false.
+		trace('camera COORDS: '+ camFollow.x + ' , ' + camFollow.y);
+
+		if (curStage == 'spamton')
+		{
+			FlxG.mouse.visible = false;
+			add(dialogueBoxDelta);
+			dadAgain = new Character(500, 220, 'DUMMYmiku');
+			changeBf('bf-flipped');
+			dadAgain2 = new Character(dadAgain.x - 100, dadAgain.y, 'jevil-sunday-flipped');
+			add(dadAgain2);
+			dadAgain3 = new Character(dadAgain.x + 100, dadAgain.y, 'MTTcarol');
+			add(dadAgain3);
+			add(dadAgain);
+
+			gf.setGraphicSize(Std.int(gf.width * 0.4));
+			gf.updateHitbox();
+
+			for (anim in gf.animOffsets.keys())
+			{
+				trace(gf.animOffsets.keys());
+				gf.animOffsets[anim] = [gf.animOffsets[anim][0]*0.4,gf.animOffsets[anim][1]*0.4];
+			}
+
+			dad.setGraphicSize(Std.int(dad.width * 0.6));
+			dad.updateHitbox();
+
+			for (anim in dad.animOffsets.keys())
+			{
+				trace(dad.animOffsets.keys());
+				dad.animOffsets[anim] = [dad.animOffsets[anim][0]*0.6,dad.animOffsets[anim][1]*0.6];
+			}
+
+			dadAgain.setGraphicSize(Std.int(dadAgain.width * 0.4));
+			dadAgain.updateHitbox();
+
+			for (anim in dadAgain.animOffsets.keys())
+			{
+				trace(dadAgain.animOffsets.keys());
+				dadAgain.animOffsets[anim] = [dadAgain.animOffsets[anim][0]*0.4,dadAgain.animOffsets[anim][1]*0.4];
+			}
+
+			dadAgain.playAnim('idle');
+
+			dadAgain2.setGraphicSize(Std.int(dadAgain2.width * 0.4));
+			dadAgain2.updateHitbox();
+
+			for (anim in dadAgain2.animOffsets.keys())
+			{
+				trace(dadAgain2.animOffsets.keys());
+				dadAgain2.animOffsets[anim] = [dadAgain2.animOffsets[anim][0]*0.4,dadAgain2.animOffsets[anim][1]*0.4];
+			}
+
+			dadAgain2.playAnim('idle');
+
+			dadAgain3.setGraphicSize(Std.int(dadAgain3.width * 0.4));
+			dadAgain3.updateHitbox();
+
+			for (anim in dadAgain3.animOffsets.keys())
+			{
+				trace(dadAgain3.animOffsets.keys());
+				dadAgain3.animOffsets[anim] = [dadAgain3.animOffsets[anim][0]*0.4,dadAgain3.animOffsets[anim][1]*0.4];
+			}
+
+			dadAgain3.playAnim('idle');
+
+			dadAgain.flipX = !dadAgain.flipX;
+			dadAgain2.flipX = !dadAgain2.flipX;
+			dadAgain3.flipX = !dadAgain3.flipX;
+			dad.flipX = !dad.flipX;
+			boyfriend.flipX = !boyfriend.flipX;
+
+			dad.x = 500;
+			dad.y = 30;
+			gf.x = -270;
+			gf.y = 220;
+			boyfriend.x = -370;
+			boyfriend.y = 95;
+			spamtonCart = new FlxSprite(-140 , 200 + 140).loadGraphic(Paths.image('spamton/cart 1'));
+			spamtonCart.setGraphicSize(Std.int(spamtonCart.width * 4));
+			add(spamtonCart);
+			spamtonCart3 = new FlxSprite(20 , 200).loadGraphic(Paths.image('spamton/cart 3'));
+			spamtonCart3.setGraphicSize(Std.int(spamtonCart3.width * 4));
+			add(spamtonCart3);
+			add(mic);
+			add(gf);
+			add(boyfriend);
+
+			boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.3));
+			boyfriend.updateHitbox();
+
+			for (anim in boyfriend.animOffsets.keys())
+			{
+				boyfriend.animOffsets[anim] = [boyfriend.animOffsets[anim][0]*0.3,boyfriend.animOffsets[anim][1]*0.3];
+			}
+			dadAgain.visible = false;
+			dadAgain2.visible = false;
+			dadAgain3.visible = false;
+			iconP1.visible = false;
+			iconP2.visible = false;
+			remove(healthBar);
+			healthBar = new FlxBar(806, 570, LEFT_TO_RIGHT, 129, 15, this,
+			'health', 0, 2);
+			add(healthBar);
+			healthBar.cameras = [camHUDier];
+			healthBar.createFilledBar(0xFF7F0B00, 0xFF00D0E7);
+			healthBarBG.visible = false;
+			scoreTxt.cameras = [camHUDier];
+			kadeEngineWatermark.cameras = [camHUDier];
+			boyfriend.dance();
+			dad.dance();
+			gf.dance();
+			add(dumbasstext2);
+			add(dumbasstext3);
+			removal = 0;
+			addition = 0;
+			susie = new FlxSprite(-120 , 120);
+			susie.frames = Paths.getSparrowAtlas('spamton/susie');
+			susie.animation.addByPrefix('idle', 'susie idle', 6);
+			susie.animation.addByPrefix('snap', 'susie snap', 12, false);
+			susie.animation.play('idle');
+			susie.setGraphicSize(Std.int(susie.width * 3));
+			susie.antialiasing = false;
+			add(susie);
+			ralsei = new FlxSprite(60 , 120);
+			ralsei.frames = Paths.getSparrowAtlas('spamton/ralsei');
+			ralsei.animation.addByPrefix('idle', 'ralsei idle', 6);
+			ralsei.animation.addByPrefix('snap', 'ralsei snap', 12, false);
+			ralsei.animation.play('idle');
+			ralsei.setGraphicSize(Std.int(ralsei.width * 3));
+			ralsei.antialiasing = false;
+			add(ralsei);
+			kris = new FlxSprite(140 , 140);
+			kris.frames = Paths.getSparrowAtlas('spamton/kris');
+			kris.animation.addByPrefix('idle', 'kris idle', 6);
+			kris.animation.addByPrefix('snap', 'kris snap', 12, false);
+			kris.animation.play('idle');
+			kris.setGraphicSize(Std.int(kris.width * 3));
+			kris.antialiasing = false;
+			add(kris);
+			heartThing = new FlxSprite(-140 , 200 + 140).loadGraphic(Paths.image('spamton/heart'));
+			heartSheild = new FlxSprite(-140 , 200 + 140).loadGraphic(Paths.image('spamton/heartCircle'));
+			add(blueSpamton1);
+			add(blueSpamton2);
+			add(projectiles);
+			add(heartSheild);
+			add(heartThing);
+		}
 		super.create();
 	}
 
@@ -2505,7 +2838,7 @@ class PlayState extends MusicBeatState
 		{
 			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
 		}
-		if (curStage != 'jevil')
+		if (curStage != 'jevil' && curStage != 'spamton')
 			FlxG.sound.music.onComplete = endSong;
 		else
 			FlxG.sound.music.onComplete = funnifunction;
@@ -2637,7 +2970,11 @@ class PlayState extends MusicBeatState
 					daStrumTime = 0;
 				var daNoteData:Int = Std.int(songNotes[1] % 4);
 				var burning = (songNotes[1] > 7 && songNotes[1] < 16);
-				var burning2 = (songNotes[1] > 15);
+				var burning2 = (songNotes[1] > 15 && songNotes[1] < 24);
+				var burning3 = (songNotes[1] > 23);
+				var spamton = false;
+				if (daSection > 72 && daSection < 82)
+					spamton = true;
 
 				var gottaHitNote:Bool = section.mustHitSection;
 
@@ -2655,7 +2992,7 @@ class PlayState extends MusicBeatState
 				else
 					oldNote = null;
 
-				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote, false, burning, burning2);
+				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote, false, burning, burning2, burning3, gottaHitNote, spamton);
 				swagNote.sustainLength = songNotes[2];
 				swagNote.scrollFactor.set(0, 0);
 				if (curStage == 'jevil' && (burning || burning2))
@@ -2670,7 +3007,7 @@ class PlayState extends MusicBeatState
 				{
 					oldNote = unspawnNotes[Std.int(unspawnNotes.length - 1)];
 
-					var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, burning, burning2);
+					var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, burning, burning2, burning3, gottaHitNote, spamton);
 					sustainNote.scrollFactor.set();
 					unspawnNotes.push(sustainNote);
 
@@ -3539,15 +3876,20 @@ class PlayState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('Lights_Shut_off'));
 			FlxG.log.add("Oke now it's " + noDeathMode);
 		}
+
+		if (FlxG.keys.justPressed.FOUR)
+		{
+			health = 2;
+			FlxG.sound.play(Paths.sound('Lights_Shut_off'));
+		}
 		
 		if (FlxG.keys.justPressed.G)
 		{
-			var dumb = CoolUtil.coolTextFile(Paths.txt('dumb'));
-			remove(healthBar);
-			healthBar = new FlxBar(Std.parseFloat(dumb[0]), Std.parseFloat(dumb[1]), LEFT_TO_RIGHT, Std.parseInt(dumb[2]), Std.parseInt(dumb[3]), this,
-			'health', 0, 2);
-			add(healthBar);
-			healthBar.cameras = [camHUDier];
+			BG2.x = 3000;
+		}
+		if (FlxG.keys.justPressed.H)
+		{
+			FlxG.mouse.visible = true;
 		}
 
 		if (FlxG.keys.justPressed.P)
@@ -4182,46 +4524,100 @@ class PlayState extends MusicBeatState
 									switch (Math.abs(daNote.noteData))
 									{
 										case 2:
-											trace(daNote.burning);
-											trace(daNote.burning2);
-											if (dadSinging && !((daNote.burning || daNote.burning2) && curStage == 'jevil'))
-												dad.playAnim('singUP' + altAnim, true);
-											if (dadAgainSinging || (daNote.burning && curStage == 'jevil'))
-												dadAgain.playAnim('singUP' + altAnim, true);
-											if (dadAgainSinging || (daNote.burning2 && curStage == 'jevil'))
+											if (curStage != 'spamton')
 											{
-												dadAgain2.playAnim('singUP' + altAnim, true);
-												dadAgain3.playAnim('singUP' + altAnim, true);
+												if (dadSinging && !((daNote.burning || daNote.burning2) && curStage == 'jevil'))
+													dad.playAnim('singUP' + altAnim, true);
+												if (dadAgainSinging || (daNote.burning && curStage == 'jevil'))
+													dadAgain.playAnim('singUP' + altAnim, true);
+												if (dadAgainSinging || (daNote.burning2 && curStage == 'jevil'))
+												{
+													dadAgain2.playAnim('singUP' + altAnim, true);
+													dadAgain3.playAnim('singUP' + altAnim, true);
+												}
+											}
+											else
+											{
+												if (dadSinging && !(daNote.burning || daNote.burning2 || daNote.burning3))
+													dad.playAnim('singUP' + altAnim, true);
+												if (dadAgainSinging || daNote.burning)
+													dadAgain.playAnim('singUP' + altAnim, true);
+												if (dadAgainSinging || daNote.burning2)
+													dadAgain2.playAnim('singUP' + altAnim, true);
+												if (dadAgainSinging || daNote.burning3)
+													dadAgain3.playAnim('singUP' + altAnim, true);
 											}
 										case 3:
-											if (dadSinging && !((daNote.burning || daNote.burning2) && curStage == 'jevil'))
-												dad.playAnim('singRIGHT' + altAnim, true);
-											if (dadAgainSinging || (daNote.burning && curStage == 'jevil'))
-												dadAgain.playAnim('singRIGHT' + altAnim, true);
-											if (dadAgainSinging || (daNote.burning2 && curStage == 'jevil'))
+											if (curStage != 'spamton')
 											{
-												dadAgain2.playAnim('singRIGHT' + altAnim, true);
-												dadAgain3.playAnim('singRIGHT' + altAnim, true);
+												if (dadSinging && !((daNote.burning || daNote.burning2) && curStage == 'jevil'))
+													dad.playAnim('singRIGHT' + altAnim, true);
+												if (dadAgainSinging || (daNote.burning && curStage == 'jevil'))
+													dadAgain.playAnim('singRIGHT' + altAnim, true);
+												if (dadAgainSinging || (daNote.burning2 && curStage == 'jevil'))
+												{
+													dadAgain2.playAnim('singRIGHT' + altAnim, true);
+													dadAgain3.playAnim('singRIGHT' + altAnim, true);
+												}
+											}
+											else
+											{
+												if (dadSinging && !(daNote.burning || daNote.burning2 || daNote.burning3))
+													dad.playAnim('singRIGHT' + altAnim, true);
+												if (dadAgainSinging || daNote.burning)
+													dadAgain.playAnim('singRIGHT' + altAnim, true);
+												if (dadAgainSinging || daNote.burning2)
+													dadAgain2.playAnim('singRIGHT' + altAnim, true);
+												if (dadAgainSinging || daNote.burning3)
+													dadAgain3.playAnim('singRIGHT' + altAnim, true);
 											}
 										case 1:
-											if (dadSinging && !((daNote.burning || daNote.burning2) && curStage == 'jevil'))
-												dad.playAnim('singDOWN' + altAnim, true);
-											if (dadAgainSinging || (daNote.burning && curStage == 'jevil'))
-												dadAgain.playAnim('singDOWN' + altAnim, true);
-											if (dadAgainSinging || (daNote.burning2 && curStage == 'jevil'))
+											if (curStage != 'spamton')
 											{
-												dadAgain2.playAnim('singDOWN' + altAnim, true);
-												dadAgain3.playAnim('singDOWN' + altAnim, true);
+												if (dadSinging && !((daNote.burning || daNote.burning2) && curStage == 'jevil'))
+													dad.playAnim('singDOWN' + altAnim, true);
+												if (dadAgainSinging || (daNote.burning && curStage == 'jevil'))
+													dadAgain.playAnim('singDOWN' + altAnim, true);
+												if (dadAgainSinging || (daNote.burning2 && curStage == 'jevil'))
+												{
+													dadAgain2.playAnim('singDOWN' + altAnim, true);
+													dadAgain3.playAnim('singDOWN' + altAnim, true);
+												}
+											}
+											else
+											{
+												if (dadSinging && !(daNote.burning || daNote.burning2 || daNote.burning3))
+													dad.playAnim('singDOWN' + altAnim, true);
+												if (dadAgainSinging || daNote.burning)
+													dadAgain.playAnim('singDOWN' + altAnim, true);
+												if (dadAgainSinging || daNote.burning2)
+													dadAgain2.playAnim('singDOWN' + altAnim, true);
+												if (dadAgainSinging || daNote.burning3)
+													dadAgain3.playAnim('singDOWN' + altAnim, true);
 											}
 										case 0:
-											if (dadSinging && !((daNote.burning || daNote.burning2) && curStage == 'jevil'))
-												dad.playAnim('singLEFT' + altAnim, true);
-											if (dadAgainSinging || (daNote.burning && curStage == 'jevil'))
-												dadAgain.playAnim('singLEFT' + altAnim, true);
-											if (dadAgainSinging || (daNote.burning2 && curStage == 'jevil'))
+											if (curStage != 'spamton')
 											{
-												dadAgain2.playAnim('singLEFT' + altAnim, true);
-												dadAgain3.playAnim('singLEFT' + altAnim, true);
+												if (dadSinging && !((daNote.burning || daNote.burning2) && curStage == 'jevil'))
+													dad.playAnim('singLEFT' + altAnim, true);
+												if (dadAgainSinging || (daNote.burning && curStage == 'jevil'))
+													dadAgain.playAnim('singLEFT' + altAnim, true);
+												if (dadAgainSinging || (daNote.burning2 && curStage == 'jevil'))
+												{
+													dadAgain2.playAnim('singLEFT' + altAnim, true);
+													dadAgain3.playAnim('singLEFT' + altAnim, true);
+												}
+											}
+											else
+											{
+												if (dadSinging && !(daNote.burning || daNote.burning2 || daNote.burning3))
+													dad.playAnim('singLEFT' + altAnim, true);
+												if (dadAgainSinging || daNote.burning)
+													dadAgain.playAnim('singLEFT' + altAnim, true);
+												if (dadAgainSinging || daNote.burning2)
+													dadAgain2.playAnim('singLEFT' + altAnim, true);
+												if (dadAgainSinging || daNote.burning3)
+													dadAgain3.playAnim('singLEFT' + altAnim, true);
 											}
 									}
 									if (dadSinging)
@@ -4287,22 +4683,26 @@ class PlayState extends MusicBeatState
 					{
 						if (!daNote.burning && !daNote.burning2 && curStage == 'jevil')
 							daNote.visible = playerStrums.members[Math.floor(Math.abs(daNote.noteData % 4))].visible;
-						if (!daNote.burning)
-							daNote.x = playerStrums.members[Math.floor(Math.abs(daNote.noteData % 4))].x;
+						if (!daNote.burning && !daNote.burning2 && !daNote.burning3)
+							daNote.x = playerStrums.members[Math.floor(Math.abs(daNote.noteData % 8))].x;
+						else if (curStage != 'spamton')
+							daNote.x = playerStrums.members[Math.floor(Math.abs(daNote.noteData % 8))].x - 165;
 						else
-							daNote.x = playerStrums.members[Math.floor(Math.abs(daNote.noteData % 4))].x - 165;
+							daNote.x = playerStrums.members[Math.floor(Math.abs(daNote.noteData % 8))].x;
 						if (!daNote.isSustainNote)
 							daNote.angle = playerStrums.members[Math.floor(Math.abs(daNote.noteData % 4))].angle;
 						daNote.alpha = playerStrums.members[Math.floor(Math.abs(daNote.noteData % 4))].alpha;
 					}
 					else if (!daNote.wasGoodHit && !daNote.modifiedByLua)
 					{
-						if (!daNote.burning && !daNote.burning2 && curStage == 'jevil')
+						if (!daNote.burning && !daNote.burning2 && curStage == 'jevil') //RESET
 							daNote.visible = strumLineNotes.members[Math.floor(Math.abs(daNote.noteData % 8))].visible;
-						if (!daNote.burning)
+						if (!daNote.burning && !daNote.burning2 && !daNote.burning3)
 							daNote.x = strumLineNotes.members[Math.floor(Math.abs(daNote.noteData % 8))].x;
-						else
+						else if (curStage != 'spamton')
 							daNote.x = strumLineNotes.members[Math.floor(Math.abs(daNote.noteData % 8))].x - 165;
+						else
+							daNote.x = strumLineNotes.members[Math.floor(Math.abs(daNote.noteData % 8))].x;
 						if (!daNote.isSustainNote)
 							daNote.angle = strumLineNotes.members[Math.floor(Math.abs(daNote.noteData % 8))].angle;
 						daNote.alpha = strumLineNotes.members[Math.floor(Math.abs(daNote.noteData % 8))].alpha;
@@ -4318,7 +4718,7 @@ class PlayState extends MusicBeatState
 					// WIP interpolation shit? Need to fix the pause issue
 					// daNote.y = (strumLine.y - (songTime - daNote.strumTime) * (0.45 * PlayState.SONG.speed));
 	
-					if ((daNote.mustPress && daNote.tooLate && !PlayStateChangeables.useDownscroll || daNote.mustPress && daNote.tooLate && PlayStateChangeables.useDownscroll) && daNote.mustPress && !daNote.burning)
+					if ((daNote.mustPress && daNote.tooLate && !PlayStateChangeables.useDownscroll || daNote.mustPress && daNote.tooLate && PlayStateChangeables.useDownscroll) && daNote.mustPress && !(daNote.burning && curStage == 'AuditorHell'))
 					{
 							if (daNote.isSustainNote && daNote.wasGoodHit)
 							{
@@ -4480,6 +4880,156 @@ class PlayState extends MusicBeatState
 				kris.y = susie.y + 15;
 				ralsei.x = susie.x - 100;
 				ralsei.y = susie.y + 9;
+			}
+		}
+		if (curStage == 'spamton')
+		{
+			string1.x = dad.x + 182 - Math.cos(floatshit);
+			string2.x = dad.x + 200 + Math.cos(floatshit);
+			string3.x = dad.x + 219 - Math.cos(floatshit);
+			string4.x = dad.x + 240 + Math.cos(floatshit);
+			string5.x = dad.x + 260 - Math.cos(floatshit);
+			heartSheild.angle += 1;
+			heartSheild.x = (FlxG.mouse.x / camHUDier.zoom) - 32;
+			heartSheild.y = (FlxG.mouse.y / camHUDier.zoom) - 32;
+			heartThing.x = heartSheild.x;
+			heartThing.y = heartSheild.y;
+			dumbasstext2.x = 890;
+			dumbasstext2.y = 542;
+			dumbasstext3.x = 800;
+			dumbasstext3.y = 542;
+			dumbasstext3.text = '${Math.floor(health * 1000)}';
+			dadAgain.y = -70 + Math.sin(floatshit) * 40;
+			dadAgain.x = 300 - Math.sin(floatshit * 0.5) * 160;
+			blueSpamton1.y = 260 + Math.sin(floatshit * 0.1) * 160;
+			blueSpamton2.y = 260 - Math.sin(floatshit * 0.1) * 160;
+			blueSpamton1.x = dad.x;
+			blueSpamton2.x = dad.x;
+			if (curStep > 530 && curStep < 786)
+			{
+				gf.x = -200;
+				gf.y = -100 + Math.sin(floatshit) * 20;
+			}
+			else
+			{
+				gf.x = -270;
+				gf.y = 220;
+			}
+			//var dumb = CoolUtil.coolTextFile(Paths.txt('dumb'));
+			//spamtonLarg.x = Std.parseFloat(dumb[0]);
+			//spamtonLarg.y = Std.parseFloat(dumb[1]);
+			if (curStep > 1168 && curStep < 1210)
+			{
+				spamtonLargJaw.x = spamtonLarg.x;
+				spamtonLargJaw.y = spamtonLarg.y - Math.sin(floatshit) * 10;
+				spamtonLargHead.x = spamtonLarg.x;
+				spamtonLargHead.y = spamtonLarg.y + Math.sin(floatshit) * 10;
+			}
+			else if (curStep > 1232)
+			{
+				spamtonLargHead.x = spamtonLarg.x + (Std.random(50) - 25) + 300;
+				spamtonLargHead.y = spamtonLarg.y + (Std.random(50) - 25); //100 1100
+			}
+			else
+			{
+				spamtonLargJaw.x = spamtonLarg.x;
+				spamtonLargJaw.y = spamtonLarg.y;
+				spamtonLargHead.x = spamtonLarg.x;
+				spamtonLargHead.y = spamtonLarg.y;
+			}
+			camFollow.x = 320;
+			camFollow.y = 387;
+			//BACKGROUND
+			if (BG2.x < BG3.x)
+			{
+				BG3.x = BG2.x + BG2.width * 4;
+				BG2.x -= 4;
+			}
+			else
+			{
+				BG2.x = BG3.x + BG3.width * 4;
+				BG3.x -= 4;
+			}
+			if (BG2.x < -4000)
+				BG2.x = BG3.x + BG3.width * 4;
+			if (BG3.x < -4000)
+				BG3.x = BG2.x + BG2.width * 4;
+
+			//FOREGROUND
+			if (FG1.x < FG2.x)
+			{
+				FG2.x = FG1.x + FG1.width * 4;
+				FG1.x -= 5;
+			}
+			else
+			{
+				FG1.x = FG2.x + FG2.width * 4;
+				FG2.x -= 5;
+			}
+			if (FG1.x < -4000)
+				FG1.x = FG2.x + FG2.width * 4;
+			if (FG2.x < -4000)
+				FG2.x = FG1.x + FG1.width * 4;
+
+			//FOREGROUND 2
+			if (FG3.x < FG4.x)
+			{
+				FG4.x = FG3.x + FG3.width * 4;
+				FG3.x -= 6;
+			}
+			else
+			{
+				FG3.x = FG4.x + FG4.width * 4;
+				FG4.x -= 6;
+			}
+			if (FG3.x < -4000)
+				FG3.x = FG4.x + FG4.width * 4;
+			if (FG4.x < -4000)
+				FG4.x = FG3.x + FG3.width * 4;
+			mic.angle += 2;
+			dadAgain2.y += Math.sin(floatshit);
+			dadAgain3.y += Math.sin(floatshit * 0.67);
+			if (ralsei.animation.curAnim.name.startsWith('snap') && ralsei.animation.curAnim.finished)
+				ralsei.animation.play('idle');
+			if (kris.animation.curAnim.name.startsWith('snap') && kris.animation.curAnim.finished)
+			{
+				kris.x += 9;
+				kris.y += 0;
+				kris.animation.play('idle');
+			}
+			if (susie.animation.curAnim.name.startsWith('snap') && susie.animation.curAnim.finished)
+			{
+				susie.animation.play('idle');
+				susie.x = -120;
+				susie.y = 120;
+			}
+		}
+
+		for (proj in projectiles)
+		{
+			// CHANGE HOW THE CURSOR LOOKS and check if the projectile is IN the mouse
+			if (   proj.getMidpoint().x > heartSheild.x
+				&& proj.getMidpoint().x < heartSheild.x + heartSheild.width
+				&& proj.getMidpoint().y > heartSheild.y
+				&& proj.getMidpoint().y < heartSheild.y + heartSheild.height)
+			{
+				projectiles.remove(proj);
+				proj.kill();
+				heartSheild.color = FlxColor.YELLOW;
+				new FlxTimer().start(0.1, function(tmr:FlxTimer)
+				{
+					heartSheild.color = FlxColor.WHITE;
+					FlxG.sound.play(Paths.sound('deltarune/snd_bell'), 0.2);
+				});
+			}
+			// CHANGE HOW THE CURSOR LOOKS and check if the projectile is IN the mouse
+			if (proj.getMidpoint().x < -130)
+			{
+				projectiles.remove(proj);
+				proj.kill();
+				health -= 0.1;
+				removal += 0.1;
+				deltaruneHit();
 			}
 		}
 	}
@@ -4701,6 +5251,36 @@ class PlayState extends MusicBeatState
 					}
 				});
 			}
+		});
+	}
+	function funniestfunction():Void
+	{
+		dumbasstext4.visible = false;
+		ralsei.animation.play('snap');
+		susie.animation.play('snap');
+		kris.animation.play('snap');
+		susie.x = -130;
+		susie.y = 60;
+		kris.x -= 9;
+		kris.y -= 0;
+		FlxG.sound.play(Paths.sound('deltarune/snd_damage'), 1);
+		var comboSpr:FlxSprite = new FlxSprite().loadGraphic(Paths.image('snap'));
+		comboSpr.screenCenter();
+		comboSpr.x = dad.x + 200;
+		comboSpr.y = dad.y;
+		comboSpr.acceleration.y = 600;
+		comboSpr.velocity.y -= 150;
+		comboSpr.velocity.x += FlxG.random.int(1, 10);
+		comboSpr.cameras = [camHUDier];
+		comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.5));
+		comboSpr.antialiasing = true;
+		add(comboSpr);
+		FlxTween.tween(string3, {y: -2000}, 2.5, {
+			ease: FlxEase.cubeIn,
+		});
+		new FlxTimer().start(0.5, function(tmr:FlxTimer)
+		{
+			System.exit(0);
 		});
 	}
 
@@ -5181,15 +5761,12 @@ class PlayState extends MusicBeatState
 									mashViolations--;
 								scoreTxt.color = FlxColor.WHITE;
 								trace(coolNote.burning);
-								if (coolNote.burning)
+								if (coolNote.burning && curStage == 'auditorHell')
 								{
-									if (curStage == 'auditorHell')
-									{
-										// lol death
-										health = 0;
-										shouldBeDead = true;
-										FlxG.sound.play(Paths.sound('death', 'shared'));
-									}
+									// lol death
+									health = 0;
+									shouldBeDead = true;
+									FlxG.sound.play(Paths.sound('death', 'shared'));
 								}
 								else
 									goodNoteHit(coolNote);
@@ -5397,7 +5974,7 @@ class PlayState extends MusicBeatState
 				totalNotesHit -= 1;
 
 			songScore -= 10;
-			if (curStage == 'jevil' && curStep > 127)
+			if ((curStage == 'jevil' && curStep > 127) || (curStage == 'spamton' && !daNote.spamton))
 			{
 				deltaruneHit();
 			}
@@ -5405,7 +5982,7 @@ class PlayState extends MusicBeatState
 				FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
 			// FlxG.sound.play(Paths.sound('missnote1'), 1, false);
 			// FlxG.log.add('played imss note');
-			if (roboasbf && roboturn)
+			if ((roboasbf && roboturn && !daNote.burning && curStage != 'spamton') || (daNote.burning && curStage == 'spamton'))
 			{
 				gf.playAnim('sad', true);
 			}
@@ -5583,38 +6160,50 @@ class PlayState extends MusicBeatState
 						totalNotesHit += 1;
 	
 
+					if (note.spamton && note.burning)
+					{
+						if (!PlayStateChangeables.botPlay)
+						{
+							trace('HELLO');
+							health -= 0.1;
+							removal += 0.1;
+							deltaruneHit();
+						}
+					}
 					switch (note.noteData)
 					{
 						case 2:
-							if (boyfriendSinging)
+							if (boyfriendSinging && !note.burning)
 								boyfriend.playAnim('singUP', true);
 							if (boyfriendAgainSinging)
 								boyfriendAgain.playAnim('singUP', true);
-							if (roboasbf && roboturn)
+							if ((roboasbf && roboturn && !note.burning && curStage != 'spamton') || (note.burning && curStage == 'spamton'))
+							{
 								gf.playAnim('singUP', true);
+							}
 						case 3:
-							if (boyfriendSinging)
+							if (boyfriendSinging && !note.burning)
 								boyfriend.playAnim('singRIGHT', true);
 							if (boyfriendAgainSinging)
 								boyfriendAgain.playAnim('singRIGHT', true);
-							if (roboasbf && roboturn)
+							if ((roboasbf && roboturn && !note.burning && curStage != 'spamton') || (note.burning && curStage == 'spamton'))
 								gf.playAnim('singRIGHT', true);
 						case 1:
-							if (boyfriendSinging)
+							if (boyfriendSinging && !note.burning)
 								boyfriend.playAnim('singDOWN', true);
 							if (boyfriendAgainSinging)
 								boyfriendAgain.playAnim('singDOWN', true);
-							if (roboasbf && roboturn)
+							if ((roboasbf && roboturn && !note.burning && curStage != 'spamton') || (note.burning && curStage == 'spamton'))
 								gf.playAnim('singDOWN', true);
 						case 0:
-							if (boyfriendSinging)
+							if (boyfriendSinging && !note.burning)
 								boyfriend.playAnim('singLEFT', true);
 							if (boyfriendAgainSinging)
 								boyfriendAgain.playAnim('singLEFT', true);
-							if (roboasbf && roboturn)
+							if ((roboasbf && roboturn && !note.burning && curStage != 'spamton') || (note.burning && curStage == 'spamton'))
 								gf.playAnim('singLEFT', true);
 					}
-					if (boyfriendSinging)
+					if (boyfriendSinging && !note.burning)
 					{
 						switch (boyfriend.curCharacter) {
 							case 'ruv':
@@ -6056,7 +6645,7 @@ class PlayState extends MusicBeatState
 	
 	function deltaruneHit()
 	{
-		if (curStage == 'jevil' && curStep > 127)
+		if ((curStage == 'jevil' && curStep > 127) || curStage == 'spamton')
 		{
 			FlxG.sound.play(Paths.sound('snd_hurt1'), 1);
 			if (!(removal <= 0))
@@ -6123,7 +6712,7 @@ class PlayState extends MusicBeatState
 	function deltaruneHeal()
 	{
 		
-		if (curStage == 'jevil' && curStep > 127)
+		if ((curStage == 'jevil' && curStep > 127) || curStage == 'spamton')
 		{
 			if (health >= 2)
 			{
@@ -7245,7 +7834,6 @@ class PlayState extends MusicBeatState
 						dumbasstext4.start(0.03, true);
 						dumbasstext4.cameras = [camHUDier];
 						add(dumbasstext4);
-						var dumb = CoolUtil.coolTextFile(Paths.txt('dumb'));
 						dumbasstext4.x = 50;
 						dumbasstext4.y = 615;
 					}
@@ -7398,6 +7986,556 @@ class PlayState extends MusicBeatState
 								{
 									todel.visible = false;
 								});
+						}
+					});
+			}
+		}
+		else if (SONG.song.toLowerCase() == 'big piece' && curStep != stepOfLast && !songEnded)
+		{
+			switch (curStep)
+			{
+				case 1:
+
+					playerStrums.forEach(function(todel:FlxSprite)
+						{
+							todel.x -= (FlxG.width / 2);
+						});
+					cpuStrums.forEach(function(todel:FlxSprite)
+						{
+							todel.x += (FlxG.width / 2);
+						});
+					var dumbasstextS = ['* OH CRAP NO POWERS FOR ROBO',
+										'* WHO CHARTED THIS COVER? A CUTE FEMBOY? AGAIN?????',
+										'* DON\'T YOU WANNA BE A BIG SHOT??',
+										'* WAIT IT ISN\'T A BETADCIU?',
+										'* LAUGHS HESTERICALLY',
+										'* IT\'S THE FLUFFY BOY!',
+										'* GET US OUTA DELTAFUNK',
+										'* WHAT DO YOU MEAN THEY\'RE CALLED TENSION POINTS???',
+										'* BRO CHAPTER 2 SPOILERS',
+										'* SPAMTON IS A HAT KID NOW LMAOOOOO',
+										'* MUSTACHE GIRL WHERE DID YOU GOO',
+										'* BLANDADOS NOTICED ME :D',
+										'* I WANNA HEAL AAAAAA'];
+		
+					dumbasstext4 = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), "", 32);
+					dumbasstext4.setFormat(Paths.font("DeterminationMonoWebRegular.ttf"), 36, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+					dumbasstext4.color = FlxColor.WHITE;
+					dumbasstext4.sounds = [FlxG.sound.load(Paths.sound('snd_text'), 1)];	
+					dumbasstext4.resetText(dumbasstextS[FlxG.random.int(0, dumbasstextS.length)]);
+					dumbasstext4.start(0.03, true);
+					dumbasstext4.cameras = [camHUDier];
+					add(dumbasstext4);
+					dumbasstext4.x = 50;
+					dumbasstext4.y = 615;
+				case 127:
+					FlxTween.tween(railRoad, {alpha: 0}, 0.2);
+					FlxTween.tween(railRoad2, {alpha: 0}, 0.2);
+					FlxTween.tween(railRoad3, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCart, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCartThing, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCart2, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCartThing2, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCart3, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCartThing3, {alpha: 0}, 0.2);
+					FlxTween.tween(BG2, {alpha: 0}, 0.2);
+					FlxTween.tween(BG3, {alpha: 0}, 0.2);
+					FlxTween.tween(BG4, {alpha: 0}, 0.2);
+					FlxTween.tween(FG1, {alpha: 0}, 0.2);
+					FlxTween.tween(FG2, {alpha: 0}, 0.2);
+					FlxTween.tween(FG3, {alpha: 0}, 0.2);
+					FlxTween.tween(FG4, {alpha: 0}, 0.2);
+					FlxTween.tween(camHUD, {alpha: 0}, 0.2);
+					FlxTween.tween(dumbasstext2, {alpha: 0}, 0.2);
+					FlxTween.tween(dumbasstext3, {alpha: 0}, 0.2);
+					FlxTween.tween(dumbasstext4, {alpha: 0}, 0.2);
+					FlxTween.tween(healthBar, {alpha: 0}, 0.2);
+				case 146:
+					railRoad.alpha = 1;
+					railRoad2.alpha = 1;
+					railRoad3.alpha = 1;
+					spamtonCart.alpha = 1;
+					spamtonCartThing.alpha = 1;
+					spamtonCart2.alpha = 1;
+					spamtonCartThing2.alpha = 1;
+					spamtonCart3.alpha = 1;
+					spamtonCartThing3.alpha = 1;
+					BG2.alpha = 1;
+					BG3.alpha = 1;
+					BG4.alpha = 1;
+					FG1.alpha = 1;
+					FG2.alpha = 1;
+					FG3.alpha = 1;
+					FG4.alpha = 1;
+					camHUD.alpha = 1;
+					dumbasstext2.alpha = 1;
+					dumbasstext3.alpha = 1;
+					dumbasstext4.alpha = 1;
+					healthBar.alpha = 1;
+				case 203 | 204 | 205 | 206 | 207 | 208 | 209 | 267 | 268 | 269 | 270 | 271 | 272 | 273 | 434 | 436 | 442 | 445 | 450 | 453 | 456 | 458 | 459 | 460 | 461 | 462 | 846 | 847 | 848 | 917 | 930 | 934 | 946 | 950 | 1026 | 1028 | 1030 | 1032 | 1033 | 1034 | 1035 | 1036 | 1037 | 1038 | 1040:
+					var newProj = new Projectile(boyfriend, blueSpamton1.getMidpoint().x - 30, blueSpamton1.getMidpoint().y);
+					newProj.loadGraphic(Paths.image('spamton/laser'));
+					projectiles.add(newProj);
+					blueSpamton1.animation.play('shoot');
+					var newProj2 = new Projectile(boyfriend, blueSpamton2.getMidpoint().x - 30, blueSpamton2.getMidpoint().y);
+					newProj2.loadGraphic(Paths.image('spamton/laser'));
+					projectiles.add(newProj2);
+					blueSpamton2.animation.play('shoot');
+				case 526:
+					mic.setGraphicSize(Std.int(mic.width * 2));
+					mic.screenCenter(X);
+					FlxTween.tween(mic, {y: dialogueBoxDelta.y- 300}, 0.40, {
+						onComplete: function(twn:FlxTween)
+						{
+							dumbasstext4.resetText('* ROBO JOINS IN!');
+							dumbasstext4.start(0.03, true);
+							roboturn = true;
+							roboasbf = true;
+							FlxG.sound.play(Paths.sound('snd_scytheburst'), 1);
+							mic.y = -1500;
+							var BANG:FlxSprite;
+							BANG = new FlxSprite().makeGraphic(FlxG.width,720, FlxColor.WHITE);
+							BANG.cameras = [camHUDier];
+							add(BANG);
+							dadAgain3.visible = true;
+							dadAgain2.visible = true;
+							dad.visible = false;
+							
+							railRoad.visible = false;
+							railRoad2.visible = false;
+							railRoad3.visible = false;
+
+							blueSpamton1.visible = false;
+							blueSpamton2.visible = false;
+							
+							changeGf('robo-gf');
+
+							gf.setGraphicSize(Std.int(gf.width * 0.4));
+							gf.updateHitbox();
+				
+							for (anim in gf.animOffsets.keys())
+							{
+								trace(gf.animOffsets.keys());
+								gf.animOffsets[anim] = [gf.animOffsets[anim][0]*0.4,gf.animOffsets[anim][1]*0.4];
+							}
+							dialogueBoxDelta.loadGraphic(Paths.image('the sunday revolving/DELTARUNE DIALOGUE BOX AND ROBO'));
+
+							spamtonCart.visible = false;
+							spamtonCartThing.visible = false;
+							spamtonCart2.visible = false;
+							spamtonCartThing2.visible = false;
+							spamtonCart3.visible = false;
+							spamtonCartThing3.visible = false;
+							
+							string1.visible = false;
+							string2.visible = false;
+							string3.visible = false;
+							string4.visible = false;
+							string5.visible = false;
+							
+							susie.visible = false;
+							ralsei.visible = false;
+							kris.visible = false;
+
+							BG2.visible = false;
+							BG3.visible = false;
+
+							BG2.visible = false;
+							BG3.visible = false;
+							BG4.visible = true;
+							FG1.visible = false;
+							FG2.visible = false;
+							FG3.visible = false;
+							FG4.visible = false;
+
+							dadAgain2.y -= 130;
+							dadAgain3.y -= 180;
+							boyfriend.y += 110;
+							boyfriend.x += 40;
+							FlxTween.tween(BANG, {alpha: 0}, 3, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(BANG);
+								}
+							});
+						}
+					});
+				case 780:
+					roboturn = false;
+					roboasbf = false;
+					FlxG.sound.play(Paths.sound('deltarune/gun'), 1);
+					var timepiece = new FlxSprite().loadGraphic(Paths.image('the sunday revolving/timepiece'));
+					timepiece.setGraphicSize(Std.int(mic.width * 3));
+					timepiece.screenCenter(X);
+					timepiece.y = -1500;
+					timepiece.cameras = [camHUDier];
+					add(timepiece);
+					FlxTween.tween(timepiece, {y: dialogueBoxDelta.y - 300, angle: 360}, 0.5, {
+						onComplete: function(twn:FlxTween)
+						{
+							dumbasstext4.resetText('* IT\'S A REVOLUTION!');
+							dumbasstext4.start(0.03, true);
+							FlxG.sound.play(Paths.sound('snd_scytheburst'), 1);
+							var BANG:FlxSprite;
+							BANG = new FlxSprite().makeGraphic(FlxG.width,720, FlxColor.WHITE);
+							BANG.cameras = [camHUDier];
+							add(BANG);
+							remove(timepiece);
+							dadAgain.visible = true;
+							FlxTween.tween(BANG, {alpha: 0}, 3, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(BANG);
+								}
+							});
+							dad.visible = true;
+							
+							railRoad.visible = true;
+							railRoad2.visible = true;
+							railRoad3.visible = true;
+
+							blueSpamton1.visible = true;
+							blueSpamton2.visible = true;
+							changeGf('robo-gf-no-speakers');
+
+							gf.setGraphicSize(Std.int(gf.width * 0.4));
+							gf.updateHitbox();
+				
+							for (anim in gf.animOffsets.keys())
+							{
+								trace(gf.animOffsets.keys());
+								gf.animOffsets[anim] = [gf.animOffsets[anim][0]*0.4,gf.animOffsets[anim][1]*0.4];
+							}
+		
+							spamtonCart.visible = true;
+							spamtonCartThing.visible = true;
+							spamtonCart2.visible = true;
+							spamtonCartThing2.visible = true;
+							spamtonCart3.visible = true;
+							spamtonCartThing3.visible = true;
+
+							string3.visible = true;
+							string5.visible = true;
+
+							susie.visible = true;
+							ralsei.visible = true;
+							kris.visible = true;
+		
+							BG2.visible = true;
+							BG3.visible = true;
+		
+							BG2.visible = true;
+							BG3.visible = true;
+							BG4.visible = false;
+							FG1.visible = true;
+							FG2.visible = true;
+							FG3.visible = true;
+							FG4.visible = true;
+
+							boyfriend.y -= 110;
+							boyfriend.x -= 40;
+							dadAgain2.x -= 70;
+							dadAgain2.y -= 30;
+							dadAgain3.y -= 30;
+						}
+					});
+				case 850:
+					roboturn = true;
+					roboasbf = true;
+				case 914:
+					roboturn = false;
+					roboasbf = false;
+					var newProj = new Projectile(boyfriend, blueSpamton1.getMidpoint().x - 30, blueSpamton1.getMidpoint().y);
+					newProj.loadGraphic(Paths.image('spamton/laser'));
+					projectiles.add(newProj);
+					blueSpamton1.animation.play('shoot');
+					var newProj2 = new Projectile(boyfriend, blueSpamton2.getMidpoint().x - 30, blueSpamton2.getMidpoint().y);
+					newProj2.loadGraphic(Paths.image('spamton/laser'));
+					projectiles.add(newProj2);
+					blueSpamton2.animation.play('shoot');
+					ralsei.animation.play('snap');
+					susie.animation.play('snap');
+					kris.animation.play('snap');
+					susie.x = -130;
+					susie.y = 60;
+					kris.x -= 9;
+					kris.y -= 0;
+					FlxG.sound.play(Paths.sound('deltarune/snd_damage'), 1);
+					var comboSpr:FlxSprite = new FlxSprite().loadGraphic(Paths.image('snap'));
+					comboSpr.screenCenter();
+					comboSpr.x = dad.x + 200;
+					comboSpr.y = dad.y;
+					comboSpr.acceleration.y = 600;
+					comboSpr.velocity.y -= 150;
+					comboSpr.velocity.x += FlxG.random.int(1, 10);
+					comboSpr.cameras = [camHUDier];
+					comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.5));
+					comboSpr.antialiasing = true;
+					add(comboSpr);
+				case 1168:
+					FlxTween.tween(railRoad, {alpha: 0}, 0.2);
+					FlxTween.tween(railRoad2, {alpha: 0}, 0.2);
+					FlxTween.tween(railRoad3, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCart, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCartThing, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCart2, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCartThing2, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCart3, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonCartThing3, {alpha: 0}, 0.2);
+					FlxTween.tween(BG2, {alpha: 0}, 0.2);
+					FlxTween.tween(BG3, {alpha: 0}, 0.2);
+					FlxTween.tween(BG4, {alpha: 0}, 0.2);
+					FlxTween.tween(FG1, {alpha: 0}, 0.2);
+					FlxTween.tween(FG2, {alpha: 0}, 0.2);
+					FlxTween.tween(FG3, {alpha: 0}, 0.2);
+					FlxTween.tween(FG4, {alpha: 0}, 0.2);
+					FlxTween.tween(dumbasstext2, {alpha: 0}, 0.2);
+					FlxTween.tween(dumbasstext3, {alpha: 0}, 0.2);
+					FlxTween.tween(dumbasstext4, {alpha: 0}, 0.2);
+					FlxTween.tween(healthBar, {alpha: 0}, 0.2);
+					FlxTween.tween(heartSheild, {alpha: 0}, 0.2);
+					FlxTween.tween(heartThing, {alpha: 0}, 0.2);
+					FlxTween.tween(dad, {alpha: 0}, 0.2);
+					FlxTween.tween(dadAgain, {alpha: 0}, 0.2);
+					FlxTween.tween(dadAgain2, {alpha: 0}, 0.2);
+					FlxTween.tween(dadAgain3, {alpha: 0}, 0.2);
+					FlxTween.tween(boyfriend, {alpha: 0}, 0.2);
+					FlxTween.tween(gf, {alpha: 0}, 0.2);
+					FlxTween.tween(blueSpamton1, {alpha: 0}, 0.2);
+					FlxTween.tween(blueSpamton2, {alpha: 0}, 0.2);
+					FlxTween.tween(kris, {alpha: 0}, 0.2);
+					FlxTween.tween(susie, {alpha: 0}, 0.2);
+					FlxTween.tween(ralsei, {alpha: 0}, 0.2);
+					FlxTween.tween(string3, {alpha: 0}, 0.2);
+					spamtonLarg.loadGraphic(Paths.image('spamton/haha spamton hat'));
+					spamtonLarg.setGraphicSize(Std.int(spamtonLarg.width * 1.5));
+					add(spamtonLarg);
+					spamtonLargJaw.loadGraphic(Paths.image('spamton/haha spamton hat jaw'));
+					spamtonLargJaw.setGraphicSize(Std.int(spamtonLargJaw.width * 1.5));
+					add(spamtonLargJaw);
+					spamtonLargHead.loadGraphic(Paths.image('spamton/haha spamton hat head'));
+					spamtonLargHead.setGraphicSize(Std.int(spamtonLargHead.width * 1.5));
+					add(spamtonLargHead);
+					cpuStrums.forEach(function(todel:FlxSprite)
+						{
+							FlxTween.tween(todel, {alpha: 0}, 0.2);
+						});
+					FlxTween.tween(dialogueBoxDelta, {alpha: 0}, 0.2);
+					FlxTween.tween(spamtonLarg, {x: 600, y: 170}, 4.15, {
+						ease: FlxEase.quadInOut,
+						onComplete: function(twn:FlxTween)
+						{
+							spamtonLargHead.loadGraphic(Paths.image('spamton/haha spamton hat head no move'));
+							spamtonLargHead.setGraphicSize(Std.int(spamtonLargHead.width * 1.5));
+							spamtonLargJaw.visible = false;
+							FlxTween.tween(spamtonLarg, {x: 1200}, 1, {
+								ease: FlxEase.quadIn,
+								onComplete: function(twn:FlxTween)
+								{
+									spamtonLarg.x = 0;
+									spamtonLarg.y = 1700;
+								}
+							});
+						}
+					});
+					
+					FlxTween.tween(camHUD, {y: camHUD.y + 240, x: camHUD.x + (FlxG.width / 4) + 60}, 4.15, {
+						ease: FlxEase.quadInOut,
+					});
+				case 1232:
+					spamtonLarg.angle = 90;
+					spamtonLargHead.angle = 90;
+					spamtonLargJaw.visible = false;
+					spamtonLargHead.loadGraphic(Paths.image('spamton/haha spamton hat head shoot'));
+					spamtonLarg.setGraphicSize(Std.int(spamtonLarg.width * 4));
+					spamtonLargHead.setGraphicSize(Std.int(spamtonLargHead.width * 4));
+					spamtonLarg.cameras = [camHUDier];
+					spamtonLargHead.cameras = [camHUDier];
+					FlxTween.tween(spamtonLarg, {y: 1100}, 3, {
+						ease: FlxEase.quadInOut,
+					});
+				case 1280:
+					var BANG:FlxSprite;
+					BANG = new FlxSprite().makeGraphic(FlxG.width,720, FlxColor.WHITE);
+					BANG.cameras = [camHUDier];
+					add(BANG);
+					BANG.alpha = 0;
+					FlxTween.tween(BANG, {alpha: 1}, 1.72, {
+						onComplete: function(twn:FlxTween)
+						{
+							camHUD.y -= 240;
+							camHUD.x -= (FlxG.width / 4) + 60;
+							cpuStrums.forEach(function(todel:FlxSprite)
+								{
+									todel.alpha = 1;
+								});
+							remove(BANG);
+							dadAgain.alpha = 1;
+							spamtonLargHead.visible = false;
+							spamtonLarg.visible = false;
+						}
+					});
+				case 1314:
+					FlxTween.tween(boyfriend, {alpha: 1}, 0.2);
+				case 202 | 266:
+					ralsei.animation.play('snap');
+					susie.animation.play('snap');
+					kris.animation.play('snap');
+					susie.x = -130;
+					susie.y = 60;
+					kris.x -= 9;
+					kris.y -= 0;
+					FlxG.sound.play(Paths.sound('deltarune/snd_damage'), 1);
+					var comboSpr:FlxSprite = new FlxSprite().loadGraphic(Paths.image('snap'));
+					comboSpr.screenCenter();
+					comboSpr.x = dad.x + 200;
+					comboSpr.y = dad.y;
+					comboSpr.acceleration.y = 600;
+					comboSpr.velocity.y -= 150;
+					comboSpr.velocity.x += FlxG.random.int(1, 10);
+					comboSpr.cameras = [camHUDier];
+					comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.5));
+					comboSpr.antialiasing = true;
+					add(comboSpr);
+					var newProj = new Projectile(boyfriend, blueSpamton1.getMidpoint().x - 30, blueSpamton1.getMidpoint().y);
+					newProj.loadGraphic(Paths.image('spamton/laser'));
+					projectiles.add(newProj);
+					blueSpamton1.animation.play('shoot');
+					var newProj2 = new Projectile(boyfriend, blueSpamton2.getMidpoint().x - 30, blueSpamton2.getMidpoint().y);
+					newProj2.loadGraphic(Paths.image('spamton/laser'));
+					projectiles.add(newProj2);
+					blueSpamton2.animation.play('shoot');
+				case 402:
+					ralsei.animation.play('snap');
+					susie.animation.play('snap');
+					kris.animation.play('snap');
+					susie.x = -130;
+					susie.y = 60;
+					kris.x -= 9;
+					kris.y -= 0;
+					FlxG.sound.play(Paths.sound('deltarune/snd_damage'), 1);
+					var comboSpr:FlxSprite = new FlxSprite().loadGraphic(Paths.image('snap'));
+					comboSpr.screenCenter();
+					comboSpr.x = dad.x + 200;
+					comboSpr.y = dad.y;
+					comboSpr.acceleration.y = 600;
+					comboSpr.velocity.y -= 150;
+					comboSpr.velocity.x += FlxG.random.int(1, 10);
+					comboSpr.cameras = [camHUDier];
+					comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.5));
+					comboSpr.antialiasing = true;
+					add(comboSpr);
+					FlxTween.tween(string1, {y: -2000}, 2.5, {
+						ease: FlxEase.cubeIn,
+					});
+				case 498 | 978 | 1106 | 1234:
+					ralsei.animation.play('snap');
+					susie.animation.play('snap');
+					kris.animation.play('snap');
+					susie.x = -130;
+					susie.y = 60;
+					kris.x -= 9;
+					kris.y -= 0;
+					FlxG.sound.play(Paths.sound('deltarune/snd_damage'), 1);
+					var comboSpr:FlxSprite = new FlxSprite().loadGraphic(Paths.image('snap'));
+					comboSpr.screenCenter();
+					comboSpr.x = dad.x + 200;
+					comboSpr.y = dad.y;
+					comboSpr.acceleration.y = 600;
+					comboSpr.velocity.y -= 150;
+					comboSpr.velocity.x += FlxG.random.int(1, 10);
+					comboSpr.cameras = [camHUDier];
+					comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.5));
+					comboSpr.antialiasing = true;
+					add(comboSpr);
+				case 1042:
+					ralsei.animation.play('snap');
+					susie.animation.play('snap');
+					kris.animation.play('snap');
+					susie.x = -130;
+					susie.y = 60;
+					kris.x -= 9;
+					kris.y -= 0;
+					FlxG.sound.play(Paths.sound('deltarune/snd_damage'), 1);
+					var comboSpr:FlxSprite = new FlxSprite().loadGraphic(Paths.image('snap'));
+					comboSpr.screenCenter();
+					comboSpr.x = dad.x + 200;
+					comboSpr.y = dad.y;
+					comboSpr.acceleration.y = 600;
+					comboSpr.velocity.y -= 150;
+					comboSpr.velocity.x += FlxG.random.int(1, 10);
+					comboSpr.cameras = [camHUDier];
+					comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.5));
+					comboSpr.antialiasing = true;
+					add(comboSpr);
+					FlxTween.tween(string5, {y: -2000}, 2.5, {
+						ease: FlxEase.cubeIn,
+					});
+				case 1328:
+					FlxG.sound.play(Paths.sound('deltarune/gun'), 1);
+					var timepiece = new FlxSprite().loadGraphic(Paths.image('the sunday revolving/timepiece'));
+					timepiece.setGraphicSize(Std.int(mic.width * 3));
+					timepiece.screenCenter(X);
+					timepiece.y = -1500;
+					timepiece.cameras = [camHUDier];
+					add(timepiece);
+					FlxTween.tween(timepiece, {y: dialogueBoxDelta.y - 300, angle: 360}, 1, {
+						onComplete: function(twn:FlxTween)
+						{
+							FlxG.sound.play(Paths.sound('snd_scytheburst'), 1);
+							var BANG:FlxSprite;
+							BANG = new FlxSprite().makeGraphic(FlxG.width,720, FlxColor.WHITE);
+							BANG.cameras = [camHUDier];
+							add(BANG);
+							remove(timepiece);
+							dadAgain.alpha = 1;
+							FlxTween.tween(BANG, {alpha: 0}, 3, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(BANG);
+									dialogue = CoolUtil.coolTextFile(Paths.txt('big-piece/big-piece-EndingDialogue'));
+									var doof:DialogueBoxNormal = new DialogueBoxNormal(false, dialogue);
+									doof.scrollFactor.set();
+									doof.finishThing = funniestfunction;
+									doof.cameras = [camHUD];
+									add(doof);
+								}
+							});
+							dad.alpha = 1;
+							dadAgain.alpha = 1;
+							dadAgain2.alpha = 1;
+							dadAgain3.alpha = 1;
+							
+							railRoad.alpha = 1;
+							railRoad2.alpha = 1;
+							railRoad3.alpha = 1;
+
+							blueSpamton1.alpha = 1;
+							blueSpamton2.alpha = 1;
+		
+							spamtonCart.alpha = 1;
+							spamtonCartThing.alpha = 1;
+							spamtonCart2.alpha = 1;
+							spamtonCartThing2.alpha = 1;
+							spamtonCart3.alpha = 1;
+							spamtonCartThing3.alpha = 1;
+
+							string3.alpha = 1;
+
+							susie.alpha = 1;
+							ralsei.alpha = 1;
+							kris.alpha = 1;
+							gf.alpha = 1;
+		
+							BG2.alpha = 1;
+							BG3.alpha = 1;
+		
+							BG2.alpha = 1;
+							BG3.alpha = 1;
+							FG1.alpha = 1;
+							FG2.alpha = 1;
+							FG3.alpha = 1;
+							FG4.alpha = 1;
 						}
 					});
 			}

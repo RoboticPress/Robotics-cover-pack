@@ -134,6 +134,8 @@ class OutdatedSubState extends MusicBeatState
 		];
 		case 'the sunday revolving':
 			creditsthingy = ['Deltarune', 'VS Sunday [Remastered]\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- The86thPlayer for charting the main vocals (discord: the86thplayer#4426)'];
+		case 'big piece':
+			creditsthingy = ['Deltarune', 'VS Sunday [Remastered]\n- VS Hatsune Miku\n- VS Carol V2\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- The86thPlayer for charting the main vocals (discord: the86thplayer#4426)'];
 		}
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
 			"YO! It'd be great if you credit these mods\\people if you showcase this cover:\n"

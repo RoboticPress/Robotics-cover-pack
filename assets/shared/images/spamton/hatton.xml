@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="hatton.png"><SubTexture name="hatton idle0000" x="0" y="0" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+<SubTexture name="hatton idle0001" x="616" y="0" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+<SubTexture name="hatton idle0002" x="0" y="594" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+<SubTexture name="hatton idle0003" x="616" y="594" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+<SubTexture name="hatton idle0004" x="0" y="1188" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+<SubTexture name="hatton idle0005" x="616" y="1188" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+<SubTexture name="hatton idle0006" x="616" y="1188" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+<SubTexture name="hatton idle0007" x="0" y="1188" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+<SubTexture name="hatton idle0008" x="616" y="594" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+<SubTexture name="hatton idle0009" x="0" y="594" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+<SubTexture name="hatton idle0010" x="616" y="0" width="616" height="594" frameX="0" frameY="0" frameWidth="616" frameHeight="594" />
+</TextureAtlas>

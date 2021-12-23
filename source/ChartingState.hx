@@ -442,7 +442,8 @@ class ChartingState extends MusicBeatState
 				{
 					var thingy = 0;
 					if (note[1] > 7 && note[1] < 16) thingy = 8;
-					else if (note[1] > 15) thingy = 16;
+					else if (note[1] > 15 && note[1] < 24) thingy = 16;
+					else if (note[1] > 23) thingy = 24;
 					note[1] = ((note[1] + 4) % 8) + thingy;
 					_song.notes[curSection].sectionNotes[i] = note;
 				}

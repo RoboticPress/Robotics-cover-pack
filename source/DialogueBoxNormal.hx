@@ -49,16 +49,16 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		bgFade = new FlxSprite(-200, -200).makeGraphic(Std.int(FlxG.width * 1.3), Std.int(FlxG.height * 1.3), 0xFFB3DFd8);
 		bgFade.scrollFactor.set();
 		bgFade.alpha = 0;
-		if (PlayState.SONG.song.toLowerCase() != 'the sunday revolving')
-			add(bgFade);
-
-		new FlxTimer().start(0.83, function(tmr:FlxTimer)
+		if (PlayState.SONG.song.toLowerCase() != 'the sunday revolving' && PlayState.SONG.song.toLowerCase() != 'big piece')
 		{
-			bgFade.alpha += (1 / 5) * 0.7;
-			if (bgFade.alpha > 0.7)
-				bgFade.alpha = 0.7;
-		}, 5);
-
+			add(bgFade);
+			new FlxTimer().start(0.83, function(tmr:FlxTimer)
+			{
+				bgFade.alpha += (1 / 5) * 0.7;
+				if (bgFade.alpha > 0.7)
+					bgFade.alpha = 0.7;
+			}, 5);
+		}
 		box = new FlxSprite(-20, 45);
 		
 		var hasDialog = false;
@@ -67,6 +67,8 @@ class DialogueBoxNormal extends FlxSpriteGroup
 			case 'the sunday revolving':
 				hasDialog = true;
 				box.loadGraphic(Paths.image('the sunday revolving/box'));
+			case 'big piece':
+				hasDialog = true;
 			default:
 				hasDialog = true;
 				box.loadGraphic(Paths.image('robo/robo_text'));
@@ -101,7 +103,9 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitLeft.animation.addByPrefix('susie where', 'port susie where', 24, false);
 		portraitLeft.animation.addByPrefix('susie oh', 'port susie oh', 24, false);
 		portraitLeft.animation.addByPrefix('susie wait', 'port susie wait', 24, false);
-		portraitLeft.animation.addByPrefix('ralsei', 'port ralsei', 24, false);
+		portraitLeft.animation.addByPrefix('ralsei-normal', 'port ralsei-normal', 24, false);
+		portraitLeft.animation.addByPrefix('ralsei', 'port ralsei0', 24, false);
+		portraitLeft.animation.addByPrefix('hk-undertale', 'port hk-spamton', 24, false);
 		portraitLeft.updateHitbox();
 		portraitLeft.scrollFactor.set();
 		portraitLeft.flipX = true;
@@ -131,7 +135,9 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitRight.animation.addByPrefix('susie where', 'port susie where', 24, false);
 		portraitRight.animation.addByPrefix('susie oh', 'port susie oh', 24, false);
 		portraitRight.animation.addByPrefix('susie wait', 'port susie wait', 24, false);
-		portraitRight.animation.addByPrefix('ralsei', 'port ralsei', 24, false);
+		portraitRight.animation.addByPrefix('ralsei-normal', 'port ralsei-normal', 24, false);
+		portraitRight.animation.addByPrefix('ralsei', 'port ralsei0', 24, false);
+		portraitRight.animation.addByPrefix('hk-undertale', 'port hk-spamton', 24, false);
 		portraitRight.updateHitbox();
 		portraitRight.scrollFactor.set();
 		portraitRight.visible = false;
@@ -160,7 +166,9 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		portraitMiddle.animation.addByPrefix('susie where', 'port susie where', 24, false);
 		portraitMiddle.animation.addByPrefix('susie oh', 'port susie oh', 24, false);
 		portraitMiddle.animation.addByPrefix('susie wait', 'port susie wait', 24, false);
-		portraitMiddle.animation.addByPrefix('ralsei', 'port ralsei', 24, false);
+		portraitMiddle.animation.addByPrefix('ralsei-normal', 'port ralsei-normal', 24, false);
+		portraitMiddle.animation.addByPrefix('ralsei', 'port ralsei0', 24, false);
+		portraitMiddle.animation.addByPrefix('hk-undertale', 'port hk-spamton', 24, false);
 		portraitMiddle.updateHitbox();
 		portraitMiddle.scrollFactor.set();
 		portraitMiddle.flipX = true;
@@ -187,6 +195,25 @@ class DialogueBoxNormal extends FlxSpriteGroup
 				add(dropText);
 		
 				swagDialogue = new FlxTypeText(400, 500, Std.int(FlxG.width * 0.5), "", 32);
+				swagDialogue.font = 'Pixel Arial 11 Bold';
+				swagDialogue.color = 0xFF3F2021;
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
+				add(swagDialogue);
+			case 'big piece':
+				add(portraitLeft);
+				add(portraitRight);
+				add(portraitMiddle);
+				portraitLeft.y += 300;
+				portraitRight.y += 300;
+				portraitMiddle.y += 300;
+
+				box.screenCenter(X);
+				portraitMiddle.screenCenter(X);
+				dropText = new FlxText(402, 602, Std.int(FlxG.width * 0.6), "", 32);
+				dropText.font = 'Pixel Arial 11 Bold';
+				dropText.color = 0xFFD89494;
+		
+				swagDialogue = new FlxTypeText(400, 600, Std.int(FlxG.width * 0.6), "", 32);
 				swagDialogue.font = 'Pixel Arial 11 Bold';
 				swagDialogue.color = 0xFF3F2021;
 				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
@@ -235,7 +262,7 @@ class DialogueBoxNormal extends FlxSpriteGroup
 			swagDialogue.color = FlxColor.WHITE;
 			dropText.color = FlxColor.BLACK;
 		}
-		if (PlayState.SONG.song.toLowerCase() == 'the sunday revolving')
+		if (PlayState.SONG.song.toLowerCase() == 'the sunday revolving' || PlayState.SONG.song.toLowerCase() == 'big piece')
 		{
 			swagDialogue.setFormat(Paths.font("DeterminationMonoWebRegular.ttf"), 46, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 			swagDialogue.color = FlxColor.WHITE;
@@ -267,7 +294,7 @@ class DialogueBoxNormal extends FlxSpriteGroup
 					if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns')
 						FlxG.sound.music.fadeOut(2.2, 0);
 
-					if (PlayState.SONG.song.toLowerCase() != 'the sunday revolving')
+					if (PlayState.SONG.song.toLowerCase() != 'the sunday revolving' && PlayState.SONG.song.toLowerCase() != 'big piece')
 					{
 						new FlxTimer().start(0.2, function(tmr:FlxTimer)
 						{
@@ -383,9 +410,14 @@ class DialogueBoxNormal extends FlxSpriteGroup
 			anim = 'susie wait';
 		else if (curCharacter.toLowerCase().startsWith('sus'))
 			anim = 'sus';
+		else if (curCharacter.toLowerCase().startsWith('ralsei-normal'))
+			anim = 'ralsei-normal';
 		else if (curCharacter.toLowerCase().startsWith('ralsei'))
 			anim = 'ralsei';
-		if (PlayState.SONG.song.toLowerCase() == 'the sunday revolving')
+		else if (curCharacter.toLowerCase().startsWith('hk-undertale'))
+			anim = 'hk-undertale';
+		trace(anim);
+		if (PlayState.SONG.song.toLowerCase() == 'the sunday revolving' || PlayState.SONG.song.toLowerCase() == 'big piece' )
 		{
 			swagDialogue.sounds = [FlxG.sound.load(Paths.sound('snd_text'), 1)];
 			if (curCharacter.toLowerCase().startsWith('robo-undertale'))
@@ -402,6 +434,8 @@ class DialogueBoxNormal extends FlxSpriteGroup
 				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('deltarune/snd_txtsus'), 1)];
 			else if (curCharacter.toLowerCase().startsWith('ralsei'))
 				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('deltarune/snd_txtral'), 1)];
+			else if (curCharacter.toLowerCase().startsWith('hk'))
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('deltarune/hk'), 1)];
 		}
 
 		if (curCharacter.toLowerCase().endsWith('left'))

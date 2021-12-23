@@ -18,6 +18,8 @@ class Note extends FlxSprite
 	public var strumTime:Float = 0;
 
 	public var mustPress:Bool = false;
+	public var gottaHITIT:Bool = false;
+	public var spamton:Bool = false;
 	public var noteData:Int = 0;
 	public var canBeHit:Bool = false;
 	public var tooLate:Bool = false;
@@ -28,6 +30,7 @@ class Note extends FlxSprite
 	public var isSustainNote:Bool = false;
 	public var burning:Bool = false;
 	public var burning2:Bool = false;
+	public var burning3:Bool = false;
 	public var dataColor:Array<String> = ['purple', 'blue', 'green', 'red'];
 
 	public var noteScore:Float = 1;
@@ -40,7 +43,7 @@ class Note extends FlxSprite
 
 	public var rating:String = "shit";
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?burning = false, ?burning2 = false)
+	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?burning = false, ?burning2 = false, ?burning3 = false, ?gottaHIT = false, ?spamton = false)
 	{
 		super();
 
@@ -62,18 +65,23 @@ class Note extends FlxSprite
 		if (isSustainNote && prevNote.noteData > 7 && prevNote.noteData < 16)
 		{
 			burning = true;
-			noteData = -99;
 		}
-		if (isSustainNote && prevNote.noteData > 15)
+		if (isSustainNote && prevNote.noteData > 15 && prevNote.noteData < 24)
 		{
 			burning2 = true;
-			noteData = -99;
+		}
+		if (isSustainNote && prevNote.noteData > 23)
+		{
+			burning3 = true;
 		}
 
 		if (isSustainNote && FlxG.save.data.downscroll)
 			flipY = true;
 		this.burning = burning;
 		this.burning2 = burning2;
+		this.burning3 = burning3;
+		this.gottaHITIT = gottaHIT;
+		this.spamton = spamton;
 
 		noteData = noteData % 4;
 
@@ -226,7 +234,7 @@ class Note extends FlxSprite
 				animation.addByPrefix('redhold', 'red hold piece');
 				animation.addByPrefix('bluehold', 'blue hold piece');
 
-				if (burning || burning2)
+				if (burning || burning2 || burning3)
 				{
 					if (PlayState.curStage == 'auditorHell' || PlayState.curStage == 'jevil')
 					{
@@ -236,6 +244,72 @@ class Note extends FlxSprite
 						animation.addByPrefix('blueScroll', 'Blue Arrow');
 						animation.addByPrefix('purpleScroll', 'Purple Arrow');
 						x -= 165;
+					}
+					else if (PlayState.curStage == 'spamton')
+					{
+						//visible = false;
+						if (burning)
+						{
+							if (spamton)
+								frames = Paths.getSparrowAtlas('NOTE_assets_cum', "shared");
+							else if (!gottaHITIT)
+								frames = Paths.getSparrowAtlas('NOTE_assets_miku', "shared");
+							else
+								frames = Paths.getSparrowAtlas('NOTE_assets_robo', "shared");
+							animation.addByPrefix('greenScroll', 'green0');
+							animation.addByPrefix('redScroll', 'red0');
+							animation.addByPrefix('blueScroll', 'blue0');
+							animation.addByPrefix('purpleScroll', 'purple0');
+			
+							animation.addByPrefix('purpleholdend', 'pruple end hold');
+							animation.addByPrefix('greenholdend', 'green hold end');
+							animation.addByPrefix('redholdend', 'red hold end');
+							animation.addByPrefix('blueholdend', 'blue hold end');
+			
+							animation.addByPrefix('purplehold', 'purple hold piece');
+							animation.addByPrefix('greenhold', 'green hold piece');
+							animation.addByPrefix('redhold', 'red hold piece');
+							animation.addByPrefix('bluehold', 'blue hold piece');
+							x -= 165;
+						}
+						else if (burning2)
+						{
+							frames = Paths.getSparrowAtlas('NOTE_assets_sunday', "shared");
+							animation.addByPrefix('greenScroll', 'green0');
+							animation.addByPrefix('redScroll', 'red0');
+							animation.addByPrefix('blueScroll', 'blue0');
+							animation.addByPrefix('purpleScroll', 'purple0');
+			
+							animation.addByPrefix('purpleholdend', 'pruple end hold');
+							animation.addByPrefix('greenholdend', 'green hold end');
+							animation.addByPrefix('redholdend', 'red hold end');
+							animation.addByPrefix('blueholdend', 'blue hold end');
+			
+							animation.addByPrefix('purplehold', 'purple hold piece');
+							animation.addByPrefix('greenhold', 'green hold piece');
+							animation.addByPrefix('redhold', 'red hold piece');
+							animation.addByPrefix('bluehold', 'blue hold piece');
+							x -= 165;
+						}
+						else if (burning3)
+						{
+							frames = Paths.getSparrowAtlas('Note_assets_lmao', "shared");
+							animation.addByPrefix('greenScroll', 'green0');
+							animation.addByPrefix('redScroll', 'red0');
+							animation.addByPrefix('blueScroll', 'blue0');
+							animation.addByPrefix('purpleScroll', 'purple0');
+			
+							animation.addByPrefix('purpleholdend', 'pruple end hold');
+							animation.addByPrefix('greenholdend', 'green hold end');
+							animation.addByPrefix('redholdend', 'red hold end');
+							animation.addByPrefix('blueholdend', 'blue hold end');
+			
+							animation.addByPrefix('purplehold', 'purple hold piece');
+							animation.addByPrefix('greenhold', 'green hold piece');
+							animation.addByPrefix('redhold', 'red hold piece');
+							animation.addByPrefix('bluehold', 'blue hold piece');
+							x -= 165;
+						}
 					}
 					else
 					{
@@ -258,19 +332,44 @@ class Note extends FlxSprite
 
 						x -= 50;
 					}
-					if (PlayState.curStage == 'jevil')
-						visible = false;
+					/*if (PlayState.curStage == 'jevil')
+					{
+						//visible = false;
+						frames = Paths.getSparrowAtlas('Note_assets_lmao', "shared");
+						animation.addByPrefix('greenScroll', 'green0');
+						animation.addByPrefix('redScroll', 'red0');
+						animation.addByPrefix('blueScroll', 'blue0');
+						animation.addByPrefix('purpleScroll', 'purple0');
+		
+						animation.addByPrefix('purpleholdend', 'pruple end hold');
+						animation.addByPrefix('greenholdend', 'green hold end');
+						animation.addByPrefix('redholdend', 'red hold end');
+						animation.addByPrefix('blueholdend', 'blue hold end');
+		
+						animation.addByPrefix('purplehold', 'purple hold piece');
+						animation.addByPrefix('greenhold', 'green hold piece');
+						animation.addByPrefix('redhold', 'red hold piece');
+						animation.addByPrefix('bluehold', 'blue hold piece');
+						x -= 165;
+					}*/
 				}
+				if (PlayState.curStage == 'jevil')
+					visible = false;
 
 				setGraphicSize(Std.int(width * 0.7));
 				updateHitbox();
 				antialiasing = true;
 		}
 
-		if (burning)
-			setGraphicSize(Std.int(width * 0.86));
-		if (burning2)
-			setGraphicSize(Std.int(width * 0.86));
+		if (PlayState.curStage != 'spamton')
+		{
+			if (burning)
+				setGraphicSize(Std.int(width * 0.86));
+			if (burning2)
+				setGraphicSize(Std.int(width * 0.86));
+			if (burning3)
+				setGraphicSize(Std.int(width * 0.86));
+		}
 
 		switch (noteData)
 		{
@@ -346,10 +445,15 @@ class Note extends FlxSprite
 			}
 		}
 		x -= 165;
-		if (burning)
-			x -= 165;
-		if (burning2)
-			x -= 165;
+		if (PlayState.curStage != 'spamton')
+		{
+			if (burning)
+				x -= 165;
+			if (burning2)
+				x -= 165;
+			if (burning3)
+				x -= 165;
+		}
 	}
 
 	override function update(elapsed:Float)
@@ -361,7 +465,7 @@ class Note extends FlxSprite
 		if (mustPress)
 		{
 			// The * 0.5 is so that it's easier to hit them too late, instead of too early
-			if (!burning && !burning2)
+			if (!burning && !burning2 && !burning3)
 			{
 				if (strumTime > Conductor.songPosition - Conductor.safeZoneOffset
 					&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))

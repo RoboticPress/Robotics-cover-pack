@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="blueface.png">
+<SubTexture name="blueface idle0000" x="0" y="0" width="44" height="52" frameX="0" frameY="0" frameWidth="44" frameHeight="52" />
+<SubTexture name="blueface idle0001" x="44" y="0" width="44" height="52" frameX="0" frameY="0" frameWidth="44" frameHeight="52" />
+<SubTexture name="blueface idle0002" x="0" y="52" width="44" height="52" frameX="0" frameY="0" frameWidth="44" frameHeight="52" />
+<SubTexture name="blueface idle0003" x="44" y="52" width="44" height="52" frameX="0" frameY="0" frameWidth="44" frameHeight="52" />
+<SubTexture name="blueface idle0004" x="0" y="0" width="44" height="52" frameX="0" frameY="0" frameWidth="44" frameHeight="52" />
+</TextureAtlas>
