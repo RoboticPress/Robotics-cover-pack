@@ -69,7 +69,8 @@ class OutdatedSubState extends MusicBeatState
 			+ '\n- Sarvente\'s Mid-Fight Masses [FULL WEEK+]'
 			+ '\n- Friday Night Fever'
 			+ '\n- Playable Tankman'
-			+ '\n- VS. Bob & Bosip'
+			+ '\n- Neonight'
+			+ '\n- Lylace'
 			+ '\n- Vs Annie'
 			+ '\n- Smoke em Out Struggle'
 			+ '\n- V.S. TABI Ex Boyfriend'
@@ -99,7 +100,7 @@ class OutdatedSubState extends MusicBeatState
 			+ '\n- Friday Night Funkin\' Soft'
 			+ '\n- Ex-GF Over Mom'
 			+ '\n- literally every fnf mod ever (Vs Bob Week)'
-			+ '\n- VS. Bob & Bosip'
+			+ '\n- Lylace'
 			+ '\n- VS Hex Mod'
 			+ '\n- Whitty full week'
 			+ '\n- Liz Week'
@@ -127,7 +128,6 @@ class OutdatedSubState extends MusicBeatState
 			+ '\n- Starlight Mayhem [Full Week] Vs CJ'
 			+ '\n- The86thPlayer for making the character "rose"'
 			+ '\n- Vs. Lav: Frostbite Frenzy'
-			+ '\n- Friday Night Funkin\' Creamed [FULL WEEK] VS Cream'
 			+ '\n- "Cheesed Bread" on the Robotic Hat discord server for making the featured meme in the cover'
 			+ '\n- GenoX for UTAU voicebanks used'
 			+ '\n- Blantados for UTAU voicebanks used'
@@ -136,6 +136,8 @@ class OutdatedSubState extends MusicBeatState
 			creditsthingy = ['Deltarune', 'VS Sunday [Remastered]\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- The86thPlayer for charting the main vocals (discord: the86thplayer#4426)'];
 		case 'big piece':
 			creditsthingy = ['Deltarune', 'VS Sunday [Remastered]\n- VS Hatsune Miku\n- VS Carol V2\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- The86thPlayer for charting the main vocals (discord: the86thplayer#4426)'];
+		case 'milk':
+			creditsthingy = ['Sonic.exe mod', 'Merg the chad cherry for providing his voice samples for the cover\n- Robotic Press for the cover (check me out on YouTube aaaaaa)\n- LadMcLad for the Merg sprites (i exist ig)'];
 		}
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
 			"YO! It'd be great if you credit these mods\\people if you showcase this cover:\n"

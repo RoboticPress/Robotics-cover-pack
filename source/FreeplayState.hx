@@ -27,6 +27,8 @@ class FreeplayState extends MusicBeatState
 
 	var scoreText:FlxText;
 	var comboText:FlxText;
+	var thefunny:FlxText;
+	var gf:Character;
 	var diffText:FlxText;
 	var lerpScore:Int = 0;
 	var intendedScore:Int = 0;
@@ -100,7 +102,7 @@ class FreeplayState extends MusicBeatState
 		scoreText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
 		// scoreText.alignment = RIGHT;
 
-		var scoreBG:FlxSprite = new FlxSprite(scoreText.x - 6, 0).makeGraphic(Std.int(FlxG.width * 0.35), 66, 0xFF000000);
+		var scoreBG:FlxSprite = new FlxSprite(scoreText.x - 6, 0).makeGraphic(Std.int(FlxG.width * 0.35), 150, 0xFF000000);
 		scoreBG.alpha = 0.6;
 		add(scoreBG);
 
@@ -108,11 +110,26 @@ class FreeplayState extends MusicBeatState
 		diffText.font = scoreText.font;
 		add(diffText);
 
+		thefunny = new FlxText(scoreText.x, scoreText.y + 36 * 2, 0, "", 16);
+		thefunny.font = scoreText.font;
+		add(thefunny);
+
 		comboText = new FlxText(diffText.x + 100, diffText.y, 0, "", 24);
 		comboText.font = diffText.font;
 		add(comboText);
 
 		add(scoreText);
+		gf = new Character(700, 250, 'robo-gf');
+		gf.setGraphicSize(Std.int(gf.width * 0.4));
+		gf.updateHitbox();
+
+		for (anim in gf.animOffsets.keys())
+		{
+			trace(gf.animOffsets.keys());
+			gf.animOffsets[anim] = [gf.animOffsets[anim][0]*0.4,gf.animOffsets[anim][1]*0.4];
+		}
+		gf.dance();
+		add(gf);
 
 		changeSelection();
 		changeDiff();
@@ -169,6 +186,10 @@ class FreeplayState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+		if (gf.animation.curAnim.finished)
+		{
+			if (gf.animation.curAnim.name == 'cheer') gf.playAnim('cheer', true); else gf.dance();
+		}
 		super.update(elapsed);
 
 		if (FlxG.sound.music.volume < 0.7)
@@ -182,6 +203,33 @@ class FreeplayState extends MusicBeatState
 			lerpScore = intendedScore;
 
 		scoreText.text = "PERSONAL BEST:" + lerpScore;
+		switch (songs[curSelected].songName)
+		{
+			case 'Tutorial':
+				thefunny.text = "COVER TYPE:\nNOT EVEN A COVER";
+			case 'Gospel':
+				thefunny.text = "COVER TYPE:\nNORMAL COVER";
+			case 'Expurgation':
+				thefunny.text = "COVER TYPE:\nNORMAL COVER\nDEATH NOTES\nHEALTH DRAIN";
+			case 'Headache':
+				thefunny.text = "COVER TYPE:\nBETADCIU";
+			case 'Release':
+				thefunny.text = "COVER TYPE:\nNOT NORMAL BUT COOL AF";
+			case 'Glitcher':
+				thefunny.text = "COVER TYPE:\nNORMAL COVER\nSAWBLADES";
+			case 'Endless':
+				thefunny.text = "COVER TYPE:\nBETADCIU\nINFINITE";
+			case 'Ejected':
+				thefunny.text = "COVER TYPE:\nBETADCIU\nCOPYRIGHTED AT ROSE AND ROBO'S PART ONLY\nSUS";
+			case 'The Sunday Revolving':
+				thefunny.text = "COVER TYPE:\nNORMAL COVER\nCOPYRIGHTED\nCHAOTIC";
+			case 'Big Piece':
+				thefunny.text = "COVER TYPE:\nNORMAL COVER\nCOPYRIGHTED\nBIG";
+			case 'Pray':
+				thefunny.text = "COVER TYPE:\nNORMAL COVER\nHEALTH DRAIN\nSee you in V2!";
+			case 'Milk':
+				thefunny.text = "COVER TYPE:\nNORMAL COVER\nEXCLUSIVE APPEARANCE\nSee you in V2!";
+		}
 		comboText.text = combo + '\n';
 
 		var upP = controls.UP_P;
@@ -251,7 +299,7 @@ class FreeplayState extends MusicBeatState
 		}
 		else if (songs[curSelected].songName == 'Endless')
 		{
-			curDifficulty = 2;
+			curDifficulty = 9;
 		}
 		else if (songs[curSelected].songName == 'The Sunday Revolving')
 		{
@@ -260,6 +308,14 @@ class FreeplayState extends MusicBeatState
 		else if (songs[curSelected].songName == 'Big Piece')
 		{
 			curDifficulty = 8;
+		}
+		else if (songs[curSelected].songName == 'Pray')
+		{
+			curDifficulty = 10;
+		}
+		else if (songs[curSelected].songName == 'Milk')
+		{
+			curDifficulty = 11;
 		}
 		else
 		{
@@ -302,6 +358,12 @@ class FreeplayState extends MusicBeatState
 				diffText.text = "CHAOS";
 			case 8:
 				diffText.text = "NEO";
+			case 9:
+				diffText.text = "FUN";
+			case 10:
+				diffText.text = "YOU WILL MEET GOD";
+			case 11:
+				diffText.text = "MERG";
 		}
 	}
 
@@ -365,6 +427,35 @@ class FreeplayState extends MusicBeatState
 			}
 		}
 		changeDiff();
+		
+		switch (songs[curSelected].songName.toLowerCase())
+		{
+			case 'tutorial':
+				if (FlxG.save.data.completedTutorial == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'gospel':
+				if (FlxG.save.data.completedGospel == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'expurgation':
+				if (FlxG.save.data.completedExpurgation == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'headache':
+				if (FlxG.save.data.completedHeadache == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'release':
+				if (FlxG.save.data.completedRelease == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'glitcher':
+				if (FlxG.save.data.completedGlitcher == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'endless':
+				if (FlxG.save.data.completedEndless == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'ejected':
+				if (FlxG.save.data.completedEjected == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'the sunday revolving':
+				if (FlxG.save.data.completedRevolving == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'big piece':
+				if (FlxG.save.data.completedBig == true) gf.playAnim('cheer', true); else gf.dance();
+			//case 'Pray':
+				//if (FlxG.save.data.completedTutorial == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'milk':
+				if (FlxG.save.data.completedMilk == true) gf.playAnim('cheer', true); else gf.dance();
+			
+		}
 	}
 }
 

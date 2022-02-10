@@ -15,3 +15,5 @@ sonicfunStage
 ejected
 jevil
 spamton
+trioStage
+halloweenFT

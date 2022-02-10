@@ -342,7 +342,11 @@ class TitleState extends MusicBeatState
 
 		if (pressedEnter && !skippedIntro && initialized)
 		{
-			skipIntro();
+			#if debug
+				FlxG.switchState(new FreeplayState());
+			#else
+				skipIntro();
+			#end
 		}
 
 		super.update(elapsed);

@@ -119,7 +119,18 @@ class AnimationDebug extends FlxState
 			FlxG.switchState(new MainMenuState());
 		if (FlxG.keys.justPressed.Q)
 			FlxG.camera.zoom -= 0.25;
-
+		
+		if (FlxG.keys.justPressed.Z)
+		{
+			if (isDad)
+			{
+				dad.flipX = !dad.flipX;
+			}
+			else
+			{
+				bf.flipX = !bf.flipX;
+			}
+		}
 		if (FlxG.keys.pressed.I || FlxG.keys.pressed.J || FlxG.keys.pressed.K || FlxG.keys.pressed.L)
 		{
 			if (FlxG.keys.pressed.I)

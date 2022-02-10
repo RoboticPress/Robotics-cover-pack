@@ -147,8 +147,6 @@
 	<SubTexture name="sunday title0009" x="6090" y="1658" width="459" height="595" frameX="-127" frameY="-66" frameWidth="593" frameHeight="661"/>
 	<SubTexture name="sunday title0010" x="6549" y="1658" width="442" height="603" frameX="-151" frameY="-58" frameWidth="593" frameHeight="661"/>
 	<SubTexture name="sunday title0011" x="6549" y="1658" width="442" height="603" frameX="-151" frameY="-58" frameWidth="593" frameHeight="661"/>
-	<SubTexture name="sunday up0000" x="6991" y="1658" width="419" height="598" frameX="-63" frameY="-43" frameWidth="542" frameHeight="646"/>
-	<SubTexture name="sunday up0001" x="7410" y="1658" width="475" height="611" frameX="-46" frameY="-35" frameWidth="542" frameHeight="646"/>
 	<SubTexture name="sunday up0002" x="6389" y="0" width="542" height="646" frameX="0" frameY="0" frameWidth="930" frameHeight="646"/>
 	<SubTexture name="sunday up0003" x="6931" y="0" width="419" height="603" frameX="-63" frameY="-43" frameWidth="930" frameHeight="646"/>
 	<SubTexture name="sunday up0004" x="7350" y="0" width="475" height="611" frameX="-46" frameY="-35" frameWidth="930" frameHeight="646"/>

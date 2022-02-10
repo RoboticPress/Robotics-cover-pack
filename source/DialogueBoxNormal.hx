@@ -250,6 +250,8 @@ class DialogueBoxNormal extends FlxSpriteGroup
 
 	var dialogueOpened:Bool = false;
 	var dialogueStarted:Bool = false;
+	var cantUse:Bool = false;
+	var goNext:Bool = false;
 
 	override function update(elapsed:Float)
 	{
@@ -268,6 +270,10 @@ class DialogueBoxNormal extends FlxSpriteGroup
 			swagDialogue.color = FlxColor.WHITE;
 			dropText.color = FlxColor.BLACK;
 		}
+		if (swagDialogue.text == 'YOOOOOO')
+		{
+			goNext = true;
+		}
 
 		dropText.text = swagDialogue.text;
 
@@ -279,8 +285,9 @@ class DialogueBoxNormal extends FlxSpriteGroup
 			dialogueStarted = true;
 		}
 
-		if (FlxG.keys.justPressed.ANY  && dialogueStarted == true)
+		if ((FlxG.keys.justPressed.ANY  && dialogueStarted == true && !cantUse) || goNext)
 		{
+			goNext = false;
 			remove(dialogue);
 				
 			FlxG.sound.play(Paths.sound('clickText'), 0.8);
@@ -365,58 +372,47 @@ class DialogueBoxNormal extends FlxSpriteGroup
 		swagDialogue.start(0.04, true);
 
 		var anim:String = '';
+		var direction:String = '';
 
-		if (curCharacter.toLowerCase().startsWith('garcello'))
-			anim = 'garcello';
-		else if (curCharacter.toLowerCase().startsWith('robo-sick'))
-			anim = 'robo-sick';
-		else if (curCharacter.toLowerCase().startsWith('robo-done-with-your-shit'))
-			anim = 'robo-done-with-your-shit';
-		else if (curCharacter.toLowerCase().startsWith('robo-undertale'))
-			anim = 'robo-undertale';
-		else if (curCharacter.toLowerCase().startsWith('robo'))
-			anim = 'robo';
-		else if (curCharacter.toLowerCase().startsWith('bf-undertale'))
-			anim = 'bf-undertale';
-		else if (curCharacter.toLowerCase().startsWith('bf'))
-			anim = 'bf';
-		else if (curCharacter.toLowerCase().startsWith('pegmepleaseuwu'))
-			anim = 'pegmepleaseuwu';
-		else if (curCharacter.toLowerCase().startsWith('lav3'))
-			anim = 'lav3';
-		else if (curCharacter.toLowerCase().startsWith('gardead'))
-			anim = 'gardead';
-		else if (curCharacter.toLowerCase().startsWith('ded-ron'))
-			anim = 'ded-ron';
-		else if (curCharacter.toLowerCase().startsWith('qt'))
-			anim = 'qt';
-		else if (curCharacter.toLowerCase().startsWith('kb'))
-			anim = 'kb';
-		else if (curCharacter.toLowerCase().startsWith('sonicfun'))
-			anim = 'sonicfun';
-		else if (curCharacter.toLowerCase().startsWith('rose-fall-mad'))
-			anim = 'rose-fall-mad';
-		else if (curCharacter.toLowerCase().startsWith('rose-fall'))
-			anim = 'rose-fall';
-		else if (curCharacter.toLowerCase().startsWith('rose'))
-			anim = 'rose';
-		else if (curCharacter.toLowerCase().startsWith('jevil-sunday'))
-			anim = 'jevil-sunday';
-		else if (curCharacter.toLowerCase().startsWith('susie where'))
-			anim = 'susie where';
-		else if (curCharacter.toLowerCase().startsWith('susie oh'))
-			anim = 'susie oh';
-		else if (curCharacter.toLowerCase().startsWith('susie wait'))
-			anim = 'susie wait';
-		else if (curCharacter.toLowerCase().startsWith('sus'))
-			anim = 'sus';
-		else if (curCharacter.toLowerCase().startsWith('ralsei-normal'))
-			anim = 'ralsei-normal';
-		else if (curCharacter.toLowerCase().startsWith('ralsei'))
-			anim = 'ralsei';
-		else if (curCharacter.toLowerCase().startsWith('hk-undertale'))
-			anim = 'hk-undertale';
-		trace(anim);
+		if (curCharacter.toLowerCase().endsWith('dadchange'))
+		{
+			direction = 'dadchange';
+		}
+		else if (curCharacter.toLowerCase().endsWith('left'))
+		{
+			direction = 'left';
+		}
+		else if (curCharacter.toLowerCase().endsWith('middle'))
+		{
+			direction = 'middle';
+		}
+		else
+		{
+			direction = 'right';
+		}
+
+		trace(curCharacter);
+		trace(direction);
+		if (curCharacter.toLowerCase().endsWith('dadchange'))
+		{
+			curCharacter = curCharacter.substr(0, curCharacter.length - (direction.length + 1));
+		}
+		else if (curCharacter.toLowerCase().endsWith('left'))
+		{
+			curCharacter = curCharacter.substr(0, curCharacter.length - (direction.length + 1));
+		}
+		else if (curCharacter.toLowerCase().endsWith('middle'))
+		{
+			curCharacter = curCharacter.substr(0, curCharacter.length - (direction.length + 1));
+		}
+		else
+		{
+			curCharacter = curCharacter.substr(0, curCharacter.length);
+		}
+		anim = curCharacter;
+		trace(curCharacter);
+		trace(direction);
+		trace(curCharacter.length - (direction.length + 1));
 		if (PlayState.SONG.song.toLowerCase() == 'the sunday revolving' || PlayState.SONG.song.toLowerCase() == 'big piece' )
 		{
 			swagDialogue.sounds = [FlxG.sound.load(Paths.sound('snd_text'), 1)];
@@ -438,26 +434,57 @@ class DialogueBoxNormal extends FlxSpriteGroup
 				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('deltarune/hk'), 1)];
 		}
 
-		if (curCharacter.toLowerCase().endsWith('left'))
+		if (direction == 'dadchange')
+		{
+			PlayState.change = true;
+			PlayState.changeStuff = [curCharacter, 100, 400];
+			cantUse = true;
+			box.visible = false;
+			bgFade.visible = false;
+			portraitLeft.visible = false;
+			portraitRight.visible = false;
+			portraitMiddle.visible = false;
+			swagDialogue.alpha = 0;
+			dropText.alpha = swagDialogue.alpha;
+			new FlxTimer().start(2, function(tmr:FlxTimer)
+			{
+				goNext = true;
+				cantUse = false;
+				box.visible = true;
+				bgFade.visible = true;
+				portraitLeft.visible = false;
+				portraitRight.visible = false;
+				portraitMiddle.visible = true;
+				swagDialogue.alpha = 1;
+				dropText.alpha = swagDialogue.alpha;
+			});
+		}
+		else if (direction == 'left')
 		{
 			portraitLeft.visible = false;
 			portraitMiddle.visible = false;
 			portraitRight.visible = true;
-			portraitRight.animation.play(anim);
+			portraitRight.loadGraphic(Paths.image('robo/$anim'));
+			if (PlayState.SONG.song.toLowerCase() != 'the sunday revolving' && PlayState.SONG.song.toLowerCase() != 'big piece')
+				portraitRight.y = 450 - portraitLeft.height;
 		}
-		else if (curCharacter.toLowerCase().endsWith('middle'))
+		else if (direction == 'middle')
 		{
 			portraitLeft.visible = false;
 			portraitRight.visible = false;
 			portraitMiddle.visible = true;
-			portraitMiddle.animation.play(anim);
+			portraitMiddle.loadGraphic(Paths.image('robo/$anim'));
+			if (PlayState.SONG.song.toLowerCase() != 'the sunday revolving' && PlayState.SONG.song.toLowerCase() != 'big piece')
+				portraitMiddle.y = 450 - portraitMiddle.height;
 		}
 		else
 		{
 			portraitRight.visible = false;
 			portraitMiddle.visible = false;
 			portraitLeft.visible = true;
-			portraitLeft.animation.play(anim);
+			portraitLeft.loadGraphic(Paths.image('robo/$anim'));
+			if (PlayState.SONG.song.toLowerCase() != 'the sunday revolving' && PlayState.SONG.song.toLowerCase() != 'big piece')
+				portraitLeft.y = 450 - portraitLeft.height;
 		}
 	}
 

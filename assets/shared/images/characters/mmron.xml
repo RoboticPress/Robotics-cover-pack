@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="mmron.png">
+<SubTexture name="mmron Idle0000" x="0" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Idle0001" x="724" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Idle0002" x="724" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Idle0003" x="1448" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Idle0004" x="1448" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Idle0005" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Idle0006" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Idle0007" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Idle0008" x="2172" y="0" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Miss Down'0000" x="0" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Down'0001" x="0" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Down'0002" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Down'0003" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Down'0004" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Down'0005" x="754" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Down0000" x="1508" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Down0001" x="1508" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Down0002" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Down0003" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Down0004" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Down0005" x="2262" y="704" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Left0000" x="0" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Left0001" x="0" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Left0002" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Left0003" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Left0004" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Left0005" x="754" y="1408" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Left0000" x="1508" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Left0001" x="1508" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Left0002" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Left0003" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Left0004" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Left0005" x="2232" y="1408" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Miss Right0000" x="0" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Right0001" x="0" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Right0002" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Right0003" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Right0004" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Right0005" x="754" y="2112" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Right0000" x="1508" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Right0001" x="1508" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Right0002" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Right0003" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Right0004" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Right0005" x="2232" y="2112" width="724" height="704" frameX="0" frameY="0" frameWidth="724" frameHeight="704" />
+<SubTexture name="mmron Miss Up0000" x="0" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Up0001" x="0" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Up0002" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Up0003" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Up0004" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Miss Up0005" x="754" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Up0000" x="1508" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Up0001" x="1508" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Up0002" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Up0003" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Up0004" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+<SubTexture name="mmron Up0005" x="2262" y="2816" width="754" height="704" frameX="0" frameY="0" frameWidth="754" frameHeight="704" />
+</TextureAtlas>

@@ -57,6 +57,8 @@ class MainMenuState extends MusicBeatState
 		{
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
 		}
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
 
 		persistentUpdate = persistentDraw = true;
 
