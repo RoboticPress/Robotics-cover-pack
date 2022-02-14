@@ -700,6 +700,12 @@ class PlayState extends MusicBeatState
 				storyDifficultyText = "CHAOS";
 			case 8:
 				storyDifficultyText = "NEO";
+			case 9:
+				storyDifficultyText = "FUN";
+			case 10:
+				storyDifficultyText = "YOU WILL MEET GOD";
+			case 11:
+				storyDifficultyText = "MERG";
 		}
 
 		iconRPC = SONG.player2;
@@ -803,6 +809,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('big-piece/big-pieceDialogue'));
 			case 'milk':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('milk/milkDialogue'));
+			case 'pray':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('pray/prayDialogue'));
 		}
 
 		//defaults if no stage was found in chart
@@ -1546,7 +1554,6 @@ class PlayState extends MusicBeatState
 					kb_attack_saw.setPosition(2000, -1150);
 					kb_attack_saw.angle += 135;
 			}
-
 			case 'sonicfunStage':
 			{
 					defaultCamZoom = 0.9;
@@ -1763,7 +1770,6 @@ class PlayState extends MusicBeatState
 				amogos.scrollFactor.set(0.7, 1);
 				//add(amogos);*/
 			}
-
 			case 'jevil':
 			{
 					defaultCamZoom = 0.9;
@@ -1958,7 +1964,6 @@ class PlayState extends MusicBeatState
 				ralsei = new FlxSprite();
 				kris = new FlxSprite();
 			}
-
 			case 'fakerStage': // i fixed the bgs and shit!!! - razencro part 1
 			{
 				defaultCamZoom = .95;
@@ -2084,7 +2089,51 @@ class PlayState extends MusicBeatState
 				bg.active = false;
 				add(bg);
 			}
+			case 'EDD':
+			{
+					defaultCamZoom = 0.7;
+					curStage = 'stage';
+					var sky:FlxSprite = new FlxSprite(-1790, -800).loadGraphic(Paths.image('EDD/SkyBox'));
+					sky.antialiasing = true;
+					sky.scrollFactor.set(0.1, 0.5);
+					sky.active = false;
+					add(sky);
 
+					var clouds:FlxSprite = new FlxSprite(-2590, -500).loadGraphic(Paths.image('EDD/Clouds'));
+					clouds.updateHitbox();
+					clouds.antialiasing = true;
+					clouds.scrollFactor.set(0.1, 0.3);
+					clouds.active = false;
+					add(clouds);
+
+					var housesAndFloor:FlxSprite = new FlxSprite(-1790, -600).loadGraphic(Paths.image('EDD/HousesAndFloor'));
+					housesAndFloor.updateHitbox();
+					housesAndFloor.antialiasing = true;
+					housesAndFloor.scrollFactor.set(1, 1);
+					housesAndFloor.active = false;
+					add(housesAndFloor);
+
+					var car:FlxSprite = new FlxSprite(-1790, -600).loadGraphic(Paths.image('EDD/Car'));
+					car.updateHitbox();
+					car.antialiasing = true;
+					car.scrollFactor.set(1.15, 1.15);
+					car.active = false;
+					add(car);
+
+					var plane:FlxSprite = new FlxSprite(-890, 0).loadGraphic(Paths.image('EDD/Plane'));
+					plane.updateHitbox();
+					plane.antialiasing = true;
+					plane.scrollFactor.set(0.2, 0.6);
+					plane.active = false;
+					add(plane);
+
+					var fence:FlxSprite = new FlxSprite(-1790, -600).loadGraphic(Paths.image('EDD/Fence'));
+					fence.updateHitbox();
+					fence.antialiasing = true;
+					fence.scrollFactor.set(1, 1);
+					fence.active = false;
+					add(fence);
+			}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -2275,6 +2324,13 @@ class PlayState extends MusicBeatState
 				add(evilTrailTaki);
 			case 'sunkStage':
 				dad.y += 300;
+			case 'EDD':
+				boyfriend.x = 1060;
+				boyfriend.y = 120;
+				gf.x = 460;
+				gf.y = 130;
+				boyfriend.x = 245;
+				boyfriend.y = 240;
 		}
 
 
@@ -2460,7 +2516,7 @@ class PlayState extends MusicBeatState
 		add(healthBar);
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 8 ? "NEO" : storyDifficulty == 7 ? "CHAOS" : storyDifficulty == 6 ? "Unfair" : storyDifficulty == 5 ? "Alt-alpha" : storyDifficulty == 4 ? "Hard-alpha" : storyDifficulty == 3 ? "Alt" : storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - KE " + MainMenuState.kadeEngineVer : ""), 16);
+		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 11 ? "MERG" : storyDifficulty == 10 ? "YOU WILL MEET GOD" : storyDifficulty == 9 ? "FUN" : storyDifficulty == 8 ? "NEO" : storyDifficulty == 7 ? "CHAOS" : storyDifficulty == 6 ? "Unfair" : storyDifficulty == 5 ? "Alt-alpha" : storyDifficulty == 4 ? "Hard-alpha" : storyDifficulty == 3 ? "Alt" : storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - KE " + MainMenuState.kadeEngineVer : ""), 16);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
@@ -2658,6 +2714,8 @@ class PlayState extends MusicBeatState
 					add(doofus);
 				case 'big piece':
 					add(doofus);
+				case 'pray':
+					add(doofus);
 				default:
 					startCountdown();
 			}
@@ -2731,6 +2789,8 @@ class PlayState extends MusicBeatState
 						FlxTween.tween(startText, {alpha: 0}, 1);
 						FlxTween.tween(blackFuck, {alpha: 0}, 1);
 					});
+				case 'pray':
+					add(doofus);
 				default:
 					startCountdown();
 			}
@@ -5809,20 +5869,20 @@ class PlayState extends MusicBeatState
 		}
 		if (camAdditionX > 0)
 		{
-			camAdditionX -= 0.05;
+			camAdditionX -= 0.1;
 		}
 		if (camAdditionY > 0)
 		{
-			camAdditionY -= 0.05;
+			camAdditionY -= 0.1;
 		}
 		trace(camAdditionY);
 		if (camAdditionX < 0)
 		{
-			camAdditionX += 0.05;
+			camAdditionX += 0.1;
 		}
 		if (camAdditionY < 0)
 		{
-			camAdditionY += 0.05;
+			camAdditionY += 0.1;
 		}
 		trace(camAdditionY);
 		if (change)
@@ -5865,8 +5925,8 @@ class PlayState extends MusicBeatState
 				FlxG.save.data.completedRevolving = true;
 			case 'big piece':
 				FlxG.save.data.completedBig = true;
-			//case 'Pray':
-				//thefunny.text = "COVER TYPE:\nNORMAL COVER\nHEALTH DRAIN\nSee you in V2!";
+			case 'Pray':
+				FlxG.save.data.completedPray = true;
 			case 'milk':
 				FlxG.save.data.completedMilk = true;
 		}

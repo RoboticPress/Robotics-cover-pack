@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="badbeepie.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="beepie mad idle0000" x="0" y="1759" width="635" height="546" pivotX="-494.65" pivotY="-218.4" frameX="-28" frameY="0" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepie mad idle0001" x="635" y="1759" width="669" height="542" frameX="-11" frameY="-4" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepie mad idle0002" x="1304" y="1759" width="643" height="527" frameX="-23" frameY="-20" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepie mad idle0003" x="1947" y="1759" width="648" height="527" frameX="-19" frameY="-20" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepie mad idle0004" x="2595" y="1759" width="539" height="532" frameX="-75" frameY="-18" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepie mad idle0005" x="3134" y="1759" width="544" height="538" frameX="-70" frameY="-16" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepie mad idle0006" x="0" y="2305" width="635" height="548" frameX="-19" frameY="-6" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepie mad idle0007" x="635" y="2305" width="670" height="549" frameX="0" frameY="-11" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepie mad idle0008" x="1305" y="2305" width="642" height="546" frameX="-13" frameY="-14" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepie mad idle0009" x="1947" y="2305" width="648" height="543" frameX="-10" frameY="-14" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepie mad idle0010" x="2595" y="2305" width="545" height="543" frameX="-67" frameY="-14" frameWidth="680" frameHeight="560"/>
+	<SubTexture name="beepiedemonio derecha0000" x="3140" y="2305" width="588" height="559" pivotX="-69.55" pivotY="24.9" frameX="0" frameY="0" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0001" x="3140" y="2305" width="588" height="559" frameX="0" frameY="0" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0002" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0003" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0004" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0005" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0006" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0007" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0008" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0009" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0010" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0011" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0012" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiedemonio derecha0013" x="0" y="2864" width="589" height="561" frameX="0" frameY="-1" frameWidth="589" frameHeight="562"/>
+	<SubTexture name="beepiemala izquierda0000" x="589" y="2864" width="627" height="522" pivotX="201.1" pivotY="-76.1" frameX="0" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0001" x="589" y="2864" width="627" height="522" frameX="0" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0002" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0003" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0004" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0005" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0006" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0007" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0008" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0009" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0010" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0011" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0012" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0013" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0014" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemala izquierda0015" x="1216" y="2864" width="627" height="521" frameX="-8" frameY="0" frameWidth="635" frameHeight="522"/>
+	<SubTexture name="beepiemalaabajo0000" x="1843" y="2864" width="633" height="575" pivotX="35.8" pivotY="-0.4" frameX="-10" frameY="0" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0001" x="1843" y="2864" width="633" height="575" frameX="-10" frameY="0" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0002" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0003" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0004" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0005" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0006" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0007" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0008" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0009" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0010" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0011" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0012" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0013" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0014" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0015" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0016" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0017" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0018" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepiemalaabajo0019" x="2476" y="2864" width="657" height="573" frameX="0" frameY="-2" frameWidth="657" frameHeight="575"/>
+	<SubTexture name="beepimalaup0000" x="0" y="0" width="625" height="586" pivotX="131.2" pivotY="-34.4" frameX="-6" frameY="0" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0001" x="0" y="0" width="625" height="586" frameX="-6" frameY="0" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0002" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0003" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0004" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0005" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0006" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0007" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0008" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0009" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0010" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0011" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0012" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0013" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="beepimalaup0014" x="625" y="0" width="637" height="599" frameX="0" frameY="-5" frameWidth="637" frameHeight="604"/>
+	<SubTexture name="get ready sweaty0000" x="1262" y="0" width="553" height="517" pivotX="264.3" pivotY="69.2" frameX="-127" frameY="-79" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0001" x="1262" y="0" width="553" height="517" frameX="-127" frameY="-79" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0002" x="1815" y="0" width="551" height="512" frameX="-131" frameY="-84" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0003" x="1815" y="0" width="551" height="512" frameX="-131" frameY="-84" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0004" x="2366" y="0" width="728" height="586" frameX="-1" frameY="0" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0005" x="2366" y="0" width="728" height="586" frameX="-1" frameY="0" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0006" x="3094" y="0" width="728" height="581" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0007" x="3094" y="0" width="728" height="581" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0008" x="0" y="599" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0009" x="0" y="599" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0010" x="728" y="599" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0011" x="728" y="599" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0012" x="1456" y="599" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0013" x="1456" y="599" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0014" x="2184" y="599" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0015" x="2184" y="599" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0016" x="2912" y="599" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0017" x="2912" y="599" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0018" x="0" y="1179" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0019" x="0" y="1179" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0020" x="728" y="1179" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0021" x="728" y="1179" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0022" x="1456" y="1179" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0023" x="1456" y="1179" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0024" x="2184" y="1179" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0025" x="2184" y="1179" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0026" x="2912" y="1179" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+	<SubTexture name="get ready sweaty0027" x="2912" y="1179" width="728" height="580" frameX="0" frameY="-13" frameWidth="729" frameHeight="596"/>
+</TextureAtlas>

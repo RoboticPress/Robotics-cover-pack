@@ -35,6 +35,10 @@ class FreeplayState extends MusicBeatState
 	var combo:String = '';
 
 	private var grpSongs:FlxTypedGroup<Alphabet>;
+	private var songBeforeGospelSong:Alphabet;
+	private var songBeforePraySong:Alphabet;
+	private var theV1:FlxSprite;
+	private var theV2:FlxSprite;
 	private var curPlaying:Bool = false;
 
 	private var iconArray:Array<HealthIcon> = [];
@@ -82,7 +86,15 @@ class FreeplayState extends MusicBeatState
 		{
 			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, songs[i].songName, true, false, true);
 			songText.isMenuItem = true;
-			songText.targetY = i;
+			var theJ = 0;
+			songText.ID = i;
+			if (songText.ID > 9)
+				theJ = 2;
+			if (songText.ID == 0)
+				songBeforeGospelSong = songText;
+			if (songText.ID == 9)
+				songBeforePraySong = songText;
+			songText.targetY = i + theJ;
 			grpSongs.add(songText);
 
 			var icon:HealthIcon = new HealthIcon(songs[i].songCharacter);
@@ -96,6 +108,10 @@ class FreeplayState extends MusicBeatState
 			// DONT PUT X IN THE FIRST PARAMETER OF new ALPHABET() !!
 			// songText.screenCenter(X);
 		}
+		theV1 = new FlxSprite().loadGraphic(Paths.image('v1'));
+		add(theV1);
+		theV2 = new FlxSprite().loadGraphic(Paths.image('v2'));
+		add(theV2);
 
 		scoreText = new FlxText(FlxG.width * 0.7, 5, 0, "", 32);
 		// scoreText.autoSize = false;
@@ -186,6 +202,8 @@ class FreeplayState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+		theV1.y = songBeforeGospelSong.y + 200;
+		theV2.y = songBeforePraySong.y + 350;
 		if (gf.animation.curAnim.finished)
 		{
 			if (gf.animation.curAnim.name == 'cheer') gf.playAnim('cheer', true); else gf.dance();
@@ -226,7 +244,7 @@ class FreeplayState extends MusicBeatState
 			case 'Big Piece':
 				thefunny.text = "COVER TYPE:\nNORMAL COVER\nCOPYRIGHTED\nBIG";
 			case 'Pray':
-				thefunny.text = "COVER TYPE:\nNORMAL COVER\nHEALTH DRAIN\nSee you in V2!";
+				thefunny.text = "COVER TYPE:\nBETADCIU\nHEALTH DRAIN\nWelcome to V2!";
 			case 'Milk':
 				thefunny.text = "COVER TYPE:\nNORMAL COVER\nEXCLUSIVE APPEARANCE\nSee you in V2!";
 		}
@@ -414,17 +432,26 @@ class FreeplayState extends MusicBeatState
 
 		for (item in grpSongs.members)
 		{
-			item.targetY = bullShit - curSelected;
+			var theJ = 0;
+			if (item.ID > 0)
+				theJ += 2;
+			if (item.ID > 10)
+				theJ += 2;
+			item.targetY = bullShit - curSelected + theJ;
 			bullShit++;
 
 			item.alpha = 0.6;
 			// item.setGraphicSize(Std.int(item.width * 0.8));
 
-			if (item.targetY == 0)
+			if (item.targetY == 0 + theJ)
 			{
 				item.alpha = 1;
 				// item.setGraphicSize(Std.int(item.width));
 			}
+			if (curSelected > 0)
+				item.targetY = item.targetY - 2;
+			if (curSelected > 10)
+				item.targetY = item.targetY - 2;
 		}
 		changeDiff();
 		
@@ -450,8 +477,8 @@ class FreeplayState extends MusicBeatState
 				if (FlxG.save.data.completedRevolving == true) gf.playAnim('cheer', true); else gf.dance();
 			case 'big piece':
 				if (FlxG.save.data.completedBig == true) gf.playAnim('cheer', true); else gf.dance();
-			//case 'Pray':
-				//if (FlxG.save.data.completedTutorial == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'Pray':
+				if (FlxG.save.data.completedPray == true) gf.playAnim('cheer', true); else gf.dance();
 			case 'milk':
 				if (FlxG.save.data.completedMilk == true) gf.playAnim('cheer', true); else gf.dance();
 			

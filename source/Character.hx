@@ -503,6 +503,7 @@ class Character extends FlxSprite
 				spawnOffsetBfX = -13;
 				spawnOffsetBfY = -387;
 				// DAD ANIMATION LOADING CODE
+				fileLocation = ['characters/HEX', 'shared'];
 				tex = Paths.getSparrowAtlas('characters/HEX', 'shared');
 				frames = tex;
 				animation.addByPrefix('idle', 'Dad idle dance', 24);
@@ -4271,6 +4272,7 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'bfdemoncesar':
+				hasFail = true;
 				healthColor = 0xFFC353E3;
 				fileLocation = ['characters/prayBETADCIU/demonCesar', 'shared'];
 				var tex = Paths.getSparrowAtlas('characters/prayBETADCIU/demonCesar', 'shared');
@@ -4358,6 +4360,24 @@ class Character extends FlxSprite
 				spawnOffsetDadX = -218 * 4;
 				spawnOffsetDadY = -238 * 3;
 				tex = Paths.getSparrowAtlas('characters/sanic');
+				frames = tex;
+				animation.addByPrefix('idle', 'sanic idle', 24);
+				animation.addByPrefix('singUP', 'sanic up', 24);
+				animation.addByPrefix('singRIGHT', 'sanic right', 24);
+				animation.addByPrefix('singDOWN', 'sanic down', 24);
+				animation.addByPrefix('singLEFT', 'sanic left', 24);
+
+				addOffset('idle', 0, 0);
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+
+				setGraphicSize(Std.int(width * 0.3));
+				updateHitbox();
+
+			case 'edd':
+				tex = Paths.getSparrowAtlas('characters/challengeddBETADCIU/Edd');
 				frames = tex;
 				animation.addByPrefix('idle', 'sanic idle', 24);
 				animation.addByPrefix('singUP', 'sanic up', 24);
