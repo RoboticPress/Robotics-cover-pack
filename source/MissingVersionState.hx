@@ -25,7 +25,7 @@ class MissingVersionState extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		add(bg);
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
-			"IT SEEMS YOU'RE MISSING V1 OF THE MOD!\nGo download it from the gamebanana page and extract this version of the mod over it and enjoy!\n\nPress any button to exit",
+			"IT SEEMS YOU'RE MISSING V1 OF THE MOD!\nGo download it from the Gamebanana page and extract this version of the mod over it and enjoy!\n\nPress any button to exit and open the GB page",
 			32);
 		txt.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, CENTER);
 		txt.screenCenter();
@@ -36,6 +36,7 @@ class MissingVersionState extends MusicBeatState
 	{
 		if (FlxG.keys.justPressed.ANY)
 		{
+			FlxG.openURL('https://gamebanana.com/mods/303138');
 			System.exit(0);
 		}
 		super.update(elapsed);

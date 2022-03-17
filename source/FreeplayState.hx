@@ -247,6 +247,8 @@ class FreeplayState extends MusicBeatState
 				thefunny.text = "COVER TYPE:\nBETADCIU\nHEALTH DRAIN\nWelcome to V2!";
 			case 'Milk':
 				thefunny.text = "COVER TYPE:\nNORMAL COVER\nEXCLUSIVE APPEARANCE\nSee you in V2!";
+			case 'Cycles':
+				thefunny.text = "COVER TYPE:\nBETADDIU\nEXE SPRITES I GUESS?";
 		}
 		comboText.text = combo + '\n';
 
@@ -335,6 +337,10 @@ class FreeplayState extends MusicBeatState
 		{
 			curDifficulty = 11;
 		}
+		else if (songs[curSelected].songName == 'Cycles')
+		{
+			curDifficulty = 12;
+		}
 		else
 		{
 			if (curDifficulty < 0)
@@ -382,6 +388,8 @@ class FreeplayState extends MusicBeatState
 				diffText.text = "YOU WILL MEET GOD";
 			case 11:
 				diffText.text = "MERG";
+			case 12:
+				diffText.text = "X";
 		}
 	}
 
@@ -477,10 +485,12 @@ class FreeplayState extends MusicBeatState
 				if (FlxG.save.data.completedRevolving == true) gf.playAnim('cheer', true); else gf.dance();
 			case 'big piece':
 				if (FlxG.save.data.completedBig == true) gf.playAnim('cheer', true); else gf.dance();
-			case 'Pray':
+			case 'pray':
 				if (FlxG.save.data.completedPray == true) gf.playAnim('cheer', true); else gf.dance();
 			case 'milk':
 				if (FlxG.save.data.completedMilk == true) gf.playAnim('cheer', true); else gf.dance();
+			case 'cycles':
+				if (FlxG.save.data.completedCycles == true) gf.playAnim('cheer', true); else gf.dance();
 			
 		}
 	}

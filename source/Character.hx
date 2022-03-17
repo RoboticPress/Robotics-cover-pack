@@ -15,6 +15,7 @@ class Character extends FlxSprite
 
 	public var isPlayer:Bool = false;
 	public var hasFail:Bool = false;
+	public var isFlying:Bool = false;
 	public var curCharacter:String = 'bf';
 	public var spawnOffsetDadX:Float = 0;
 	public var spawnOffsetDadY:Float = 0;
@@ -562,6 +563,8 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'zardy':
+				spawnOffsetBfX = -174;
+				spawnOffsetBfY = -345;
 				// GARCELLO ANIMATION LOADING CODE
 				healthColor = 0xFFBA7B42;
 				tex = Paths.getSparrowAtlas('characters/Zardy');
@@ -577,6 +580,27 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", 5, 5);
 				addOffset("singLEFT", 210, 25);
 				addOffset("singDOWN", 8, -45);
+
+				playAnim('idle');
+			case 'zardy-playable':
+				spawnOffsetBfX = -174;
+				spawnOffsetBfY = -345;
+				// GARCELLO ANIMATION LOADING CODE
+				healthColor = 0xFFBA7B42;
+				fileLocation = ['characters/Zardy', 'shared'];
+				tex = Paths.getSparrowAtlas(fileLocation[0], fileLocation[1]);
+				frames = tex;
+				animation.addByPrefix('idle', 'Idle', 24);
+				animation.addByPrefix('singUP', 'Sing Up', 24);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24);
+				animation.addByPrefix('singLEFT', 'Sing Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 110, 110);
+				addOffset("singRIGHT", 85, -15);
+				addOffset("singLEFT", 10, 5);
+				addOffset("singDOWN", 8, -15);
 
 				playAnim('idle');
 
@@ -620,8 +644,11 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'spooky':
+				spawnOffsetBfX = 0;
+				spawnOffsetBfY = -100;
 				healthColor = 0xFFD58016;
-				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
+				fileLocation = ['characters/spooky_kids_assets', 'shared'];
+				tex = Paths.getSparrowAtlas(fileLocation[0], fileLocation[1]);
 				frames = tex;
 				animation.addByPrefix('singUP', 'spooky UP NOTE', 24, false);
 				animation.addByPrefix('singDOWN', 'spooky DOWN note', 24, false);
@@ -959,6 +986,32 @@ class Character extends FlxSprite
 
 				flipX = true;
 
+			case 'ROBO STRESS':
+				spawnOffsetDadX = 30;
+				spawnOffsetDadY = 347;
+				healthColor = 0xFF4EE1C6;
+				fileLocation = ['characters/cyclesBETADCIU/ROBO STRESS', 'shared'];
+				var tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/ROBO STRESS', 'shared');
+				frames = tex;
+
+				trace(tex.frames.length);
+
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+
+				addOffset('idle', -5);
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -38, -7);
+				addOffset("singLEFT", 12, -6);
+				addOffset("singDOWN", -10, -50);
+
+				playAnim('idle');
+
+				flipX = true;
+
 			case 'bf-flipped':
 				healthColor = 0xFF31B0D1;
 				hasFail = true;
@@ -1187,7 +1240,8 @@ class Character extends FlxSprite
 			case 'kapi':
 				healthColor = 0xFF747585;
 				hasFail = true;
-				var tex = Paths.getSparrowAtlas('characters/KAPI', 'shared');
+				fileLocation = ['characters/KAPI', 'shared'];
+				var tex = Paths.getSparrowAtlas(fileLocation[0], fileLocation[1]);
 				frames = tex;
 
 				trace(tex.frames.length);
@@ -1231,7 +1285,8 @@ class Character extends FlxSprite
 			case 'tankman-playable':
 				healthColor = 0xFF000000;
 				hasFail = true;
-				var tex = Paths.getSparrowAtlas('characters/TANKMAN', 'shared');
+				fileLocation = ['characters/TANKMAN', 'shared'];
+				tex = Paths.getSparrowAtlas(fileLocation[0], fileLocation[1]);
 				frames = tex;
 
 				trace(tex.frames.length);
@@ -1416,6 +1471,8 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'agoti':
+				spawnOffsetBfX = 25;
+				spawnOffsetBfY = -433;
 				healthColor = 0xFFB91D27;
 				spawnOffsetDadX = -55;
 				spawnOffsetDadY = -89;
@@ -1433,6 +1490,29 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", 70, -40);
 				addOffset("singLEFT", 70, 40);
 				addOffset("singDOWN", 0, -180);
+
+				playAnim('idle');
+
+			case 'agoti-playable':
+				spawnOffsetBfX = 25;
+				spawnOffsetBfY = -433;
+				healthColor = 0xFFB91D27;
+				spawnOffsetDadX = -55;
+				spawnOffsetDadY = -89;
+				fileLocation = ['characters/AGOTI', 'shared'];
+				frames = Paths.getSparrowAtlas('characters/AGOTI');
+				animation.addByPrefix('idle', 'Agoti_Idle', 24, false);
+				animation.addByPrefix('singUP', 'Agoti_Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Agoti_Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Agoti_Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Agoti_Right', 24, false);
+
+				addOffset('idle');
+
+				addOffset("singUP", 10, 70);
+				addOffset("singRIGHT", 270, -40);
+				addOffset("singLEFT", 40, 10);
+				addOffset("singDOWN", 143, -190);
 
 				playAnim('idle');
 
@@ -1845,8 +1925,11 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'hat-kid':
+				spawnOffsetDadX = 0;
+				spawnOffsetDadY = 335;
 				healthColor = 0xFF9277D7;
-				var tex = Paths.getSparrowAtlas('HATKID_HATTED');
+				fileLocation = ['HATKID_HATTED', 'shared'];
+				tex = Paths.getSparrowAtlas(fileLocation[0], fileLocation[1]);
 				frames = tex;
 				animation.addByPrefix('idle', 'BF idle dance', 24, false);
 				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
@@ -2816,7 +2899,10 @@ class Character extends FlxSprite
 
 			case 'cableCrowPog-playable':
 				healthColor = 0xFFBA7B42;
-				tex = Paths.getSparrowAtlas('characters/Cablecrow');
+				spawnOffsetBfX = -261;
+				spawnOffsetBfY = -512;
+				fileLocation = ['characters/Cablecrow', 'shared'];
+				tex = Paths.getSparrowAtlas(fileLocation[0], fileLocation[1]);
 				frames = tex;
 				animation.addByPrefix('idle', 'Idle', 14);
 				animation.addByPrefix('singUP', 'Sing Up', 24);
@@ -4184,6 +4270,7 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'badeline':
+				isFlying = true;
 				healthColor = 0xFF834891;
 				// damn she crazy
 				spawnOffsetBfX = 96;
@@ -4206,9 +4293,11 @@ class Character extends FlxSprite
 				playAnim('idle');
 				
 			case 'beepie-demon':
+				isFlying = true;
 				healthColor = 0xFF251E23;
 				spawnOffsetDadX = -390;
 				spawnOffsetDadY = -180;
+				spawnOffsetBfY = -424;
 				fileLocation = ['characters/prayBETADCIU/badbeepie', 'shared'];
 				tex = Paths.getSparrowAtlas('characters/prayBETADCIU/badbeepie');
 				frames = tex;
@@ -4393,6 +4482,529 @@ class Character extends FlxSprite
 
 				setGraphicSize(Std.int(width * 0.3));
 				updateHitbox();
+			case 'sonicLordX':
+				fileLocation = ['characters/cyclesBETADCIU/SONIC_X', 'shared'];
+				frames = Paths.getSparrowAtlas('characters/cyclesBETADCIU/SONIC_X');
+				animation.addByPrefix('idle', 'X_Idle', 24, false);
+				animation.addByPrefix('singUP', 'X_Up', 24, false);
+				animation.addByPrefix('singDOWN', 'X_Down', 24, false);
+				animation.addByPrefix('singLEFT', 'X_Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'X_Right', 24, false);
+
+				addOffset('idle', -18, 0);
+				addOffset("singUP", 34, 121);
+				addOffset("singRIGHT", -86, 40);
+				addOffset("singLEFT", 17, 20);
+				addOffset("singDOWN", 77, -21);
+
+				setGraphicSize(Std.int(width * 1.2));
+
+				updateHitbox();
+			case 'monika.exe':
+				fileLocation = ['characters/cyclesBETADCIU/Doki_BigMonikaNonPixel_AssetsUHOH', 'shared'];
+				frames = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Doki_BigMonikaNonPixel_AssetsUHOH');
+				animation.addByPrefix('idle', 'Big Monika Idle', 24, false);
+				animation.addByPrefix('singUP', 'Big Monika Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Big Monika Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Big Monika Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Big Monika Right', 24, false);
+
+				addOffset('idle', 0, 0);
+				addOffset("singUP", 0, 16);
+				addOffset("singRIGHT", 0, -2);
+				addOffset("singLEFT", -1, -18);
+				addOffset("singDOWN", 0, -59);
+
+				setGraphicSize(Std.int(width * 1.2));
+
+				updateHitbox();
+			case 'sayori.exe':
+				fileLocation = ['characters/cyclesBETADCIU/Doki_Sayo_Assets Kill me', 'shared'];
+				frames = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Doki_Sayo_Assets Kill me');
+				animation.addByPrefix('idle', 'Sayo Idle nrw test', 24, false);
+				animation.addByPrefix('singUP', 'Sayo Sing Note Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Sayo Sing Note Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Sayo Sing Note Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Sayo Sing Note Right', 24, false);
+
+				addOffset('idle', 0, 0);
+				addOffset("singUP", 80, 76);
+				addOffset("singRIGHT", -40, -2);
+				addOffset("singLEFT", 79, 2);
+				addOffset("singDOWN", 0, -60);
+
+				setGraphicSize(Std.int(width * 1.2));
+
+				updateHitbox();
+			case 'arch.exe':
+				spawnOffsetDadX = 0;
+				spawnOffsetDadY = 130;
+				fileLocation = ['characters/cyclesBETADCIU/arch_assets', 'shared'];
+				frames = Paths.getSparrowAtlas('characters/cyclesBETADCIU/arch_assets');
+				trace(frames);
+				animation.addByIndices('idle', 'arch', [0], "", 24, false);
+				animation.addByIndices('singRIGHT', 'arch', [1], "", 24, false);
+				animation.addByIndices('singUP', 'arch', [2], "", 24, false);
+				animation.addByIndices('singLEFT', 'arch', [3], "", 24, false);
+				animation.addByIndices('singDOWN', 'arch', [4], "", 24, false);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+
+				updateHitbox();
+			case 'account.exe':
+				spawnOffsetDadX = 142;
+				spawnOffsetDadY = 143;
+				fileLocation = ['characters/cyclesBETADCIU/bb', 'shared'];
+				frames = Paths.getSparrowAtlas('characters/cyclesBETADCIU/bb');
+				trace(frames);
+				animation.addByIndices('idle', 'bb', [0], "", 24, false);
+				animation.addByIndices('singRIGHT', 'bb', [1], "", 24, false);
+				animation.addByIndices('singUP', 'bb', [2], "", 24, false);
+				animation.addByIndices('singLEFT', 'bb', [3], "", 24, false);
+				animation.addByIndices('singDOWN', 'bb', [4], "", 24, false);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+
+				updateHitbox();
+
+				flipX = true;
+
+			case 'astro.exe':
+				spawnOffsetDadX = 0;
+				spawnOffsetDadY = 70;
+				healthColor = 0xFFA93BD0;
+				fileLocation = ['characters/cyclesBETADCIU/Astro_Remastered_Corrupted Robo version', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Astro_Remastered_Corrupted Robo version');
+				frames = tex;
+				animation.addByPrefix('idle', 'Astro idle', 24);
+				animation.addByPrefix('singUP', 'Astro UP', 24);
+				animation.addByPrefix('singRIGHT', 'Astro right', 24);
+				animation.addByPrefix('singDOWN', 'Astro down', 24);
+				animation.addByPrefix('singLEFT', 'Astro left', 24);
+
+				addOffset('idle', 0, 0);
+				addOffset("singUP", 47, -3);
+				addOffset("singRIGHT", 16, -21);
+				addOffset("singLEFT", 5, 0);
+				addOffset("singDOWN", 0, 0);
+
+				playAnim('idle');
+
+			case 'Blantadohno':
+				healthColor = 0xFF61AEF8;
+				spawnOffsetBfX = 10;
+				spawnOffsetBfY = -356;
+				// DAD ANIMATION LOADING CODE
+				fileLocation = ['characters/cyclesBETADCIU/blantados.EXE', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/blantados.EXE', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24);
+				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 31, 16);
+				addOffset("singRIGHT", 77, -5);
+				addOffset("singLEFT", 40, 0);
+				addOffset("singDOWN", 38, -14);
+
+				playAnim('idle');
+
+			case 'AjtheFreaky':
+				spawnOffsetDadX = -70;
+				spawnOffsetDadY = -20;
+				healthColor = 0xFFA93BD0;
+				fileLocation = ['characters/cyclesBETADCIU/AjEXE', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/AjEXE');
+				frames = tex;
+				animation.addByPrefix('idle', 'BF idle dance', 24);
+				animation.addByPrefix('singUP', 'BF NOTE UP', 24);
+				animation.addByPrefix('singLEFT', 'BF NOTE RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN', 24);
+				animation.addByPrefix('singRIGHT', 'BF NOTE LEFT', 24);
+
+				addOffset('idle', 0, 0);
+				addOffset("singUP", -9, -30);
+				addOffset("singLEFT", -20, -8);
+				addOffset("singRIGHT", 6, -5);
+				addOffset("singDOWN", 30, -165);
+
+				playAnim('idle');
+				flipX = true;
+
+			case 'dad.exe':
+				healthColor = 0xFFAF66CE;
+				// DAD ANIMATION LOADING CODE
+				
+				fileLocation = ['characters/cyclesBETADCIU/Dad_assets', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Dad_assets', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24);
+				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+				animation.addByPrefix('singRIGHT', 'Dad Sing Note LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", -10, 10);
+				addOffset("singLEFT", 0, 27);
+				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
+
+			case 'mom.exe':
+				healthColor = 0xFFD8558E;
+				fileLocation = ['characters/cyclesBETADCIU/Mom_Assets', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Mom_Assets', 'shared');
+				frames = tex;
+
+				animation.addByPrefix('idle', "Mom Idle", 24, false);
+				animation.addByPrefix('singUP', "Mom Up Pose", 24, false);
+				animation.addByPrefix('singDOWN', "MOM DOWN POSE", 24, false);
+				animation.addByPrefix('singLEFT', 'Mom Left Pose', 24, false);
+				// ANIMATION IS CALLED MOM LEFT POSE BUT ITS FOR THE RIGHT
+				// CUZ DAVE IS DUMB!
+				animation.addByPrefix('singRIGHT', 'Mom Pose Left', 24, false);
+
+				addOffset('idle', 10, -10);
+				addOffset("singUP", 30, 58);
+				addOffset("singRIGHT", 120, -70);
+				addOffset("singLEFT", 270, -37);
+				addOffset("singDOWN", 20, -184);
+
+				playAnim('idle');
+
+			case 'sonic':
+				spawnOffsetDadX = 90;
+				spawnOffsetDadY = 154;
+				fileLocation = ['characters/cyclesBETADCIU/Sonic_EXE_Assets', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Sonic_EXE_Assets');
+				frames = tex;
+				animation.addByPrefix('idle', 'SONICmoveIDLE', 24);
+				animation.addByPrefix('singUP', 'SONICmoveUP', 24);
+				animation.addByPrefix('singRIGHT', 'SONICmoveRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'SONICmoveDOWN', 24);
+				animation.addByPrefix('singLEFT', 'SONICmoveLEFT', 24);
+				animation.addByPrefix('iamgod', 'sonicImmagetya', 24, false);
+
+				animation.addByPrefix('singDOWN-alt', 'SONIClaugh', 24);
+
+				animation.addByPrefix('singLAUGH', 'SONIClaugh', 24);
+
+				addOffset('idle');
+				addOffset('iamgod', 127, 10);
+				addOffset("singUP", 14, 47);
+				addOffset("singRIGHT", 16, 14);
+				addOffset("singLEFT", 152, -15);
+				addOffset("singDOWN", 77, -12);
+				addOffset("singLAUGH", 50, -10);
+
+				addOffset("singDOWN-alt", 50, -10);
+
+				playAnim('idle');
+
+			case 'Hacktical Cupcakes':
+				spawnOffsetDadX = -63;
+				spawnOffsetDadY = 111;
+				healthColor = 0xFFA93BD0;
+				fileLocation = ['characters/cyclesBETADCIU/TCexe', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/TCexe');
+				frames = tex;
+				animation.addByPrefix('idle', 'TC idle dance', 24);
+				animation.addByPrefix('singUP', 'TC NOTE UP', 24);
+				animation.addByPrefix('singLEFT', 'TC NOTE RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'TC NOTE DOWN', 24);
+				animation.addByPrefix('singRIGHT', 'TC NOTE LEFT', 24);
+
+				addOffset('idle', 0, 0);
+				addOffset("singUP", 11, -25);
+				addOffset("singLEFT", 23, -21);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singDOWN", 4, -39);
+
+				playAnim('idle');
+				flipX = true;
+
+			case 'overcoded':
+				spawnOffsetDadX = -103;
+				spawnOffsetDadY = -274;
+				fileLocation = ['characters/cyclesBETADCIU/TaeYai_Sprites.EXE', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/TaeYai_Sprites.EXE', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'TaeYai fly 0', 24);
+				animation.addByPrefix('singUP', 'TaeYai fly up', 24);
+				animation.addByPrefix('singRIGHT', 'TaeYai fly right', 24);
+				animation.addByPrefix('singDOWN', 'TaeYai fly down', 24);
+				animation.addByPrefix('singLEFT', 'TaeYai fly left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 4, 60);
+				addOffset("singRIGHT", -100, -23);
+				addOffset("singLEFT", 40, 0);
+				addOffset("singDOWN", 0, -96);
+
+				playAnim('idle');
+			case 'Nonsense.exe':
+				spawnOffsetDadY = -183;
+				fileLocation = ['characters/cyclesBETADCIU/Nonsense_Assets EXE', 'shared'];
+				frames = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Nonsense_Assets EXE');
+				animation.addByPrefix('idle', 'idle god', 24, false);
+				animation.addByPrefix('singUP', 'god right', 24, false);
+				animation.addByPrefix('singLEFT', 'left god', 24, false);
+				animation.addByPrefix('singRIGHT', 'god right', 24, false);
+				animation.addByPrefix('singDOWN', 'God down', 24, false);
+				animation.addByPrefix('die', 'die god', 24, false);
+				animation.addByIndices('singUP-alt', 'god up long note', [0, 2, 3, 4, 5, 6, 7], "", 24, false);
+				animation.addByPrefix('singDOWN-alt', 'God down', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'left god', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'god right', 24, false);
+				addOffset('idle', 1, 1);
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				addOffset("die", 718, 302);
+				addOffset("singUP-alt", 0, 6);
+				addOffset("singRIGHT-alt");
+				addOffset("singLEFT-alt");
+				addOffset("singDOWN-alt");
+					
+				playAnim('idle');
+
+			case 'lylace.exe':
+				healthColor = 0xFFE98309;
+				spawnOffsetDadX = -284;
+				spawnOffsetDadY = 28;
+				fileLocation = ['characters/cyclesBETADCIU/Lylace EXE', 'shared'];
+				var tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Lylace EXE', 'shared');
+				frames = tex;
+
+				trace(tex.frames.length);
+
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 10, 37);
+				addOffset("singRIGHT", -44, 4);
+				addOffset("singLEFT", 55, 8);
+				addOffset("singDOWN", -6, -27);
+
+				playAnim('idle');
+
+			case 'Neofright':
+				healthColor = 0xFFCC3399;
+				spawnOffsetDadX = -94;
+				spawnOffsetDadY = 124;
+				fileLocation = ['characters/cyclesBETADCIU/Neonight.EXE', 'shared'];
+				var tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Neonight.EXE', 'shared');
+				frames = tex;
+
+				trace(tex.frames.length);
+
+				animation.addByPrefix('idle', 'Neo idle', 24, false);
+				animation.addByPrefix('singUP', 'Neo up', 24, false);
+				animation.addByPrefix('singLEFT', 'Neo left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Neo right', 24, false);
+				animation.addByPrefix('singDOWN', 'Neo down', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+
+				playAnim('idle');
+
+			case 'Snow':
+				healthColor = 0xFF31B0D1;
+				hasFail = true;
+				fileLocation = ['characters/cyclesBETADCIU/Snow', 'shared'];
+				var tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Snow', 'shared');
+				frames = tex;
+
+				trace(tex.frames.length);
+
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+				animation.addByPrefix('hey', 'BF HEY', 24, false);
+
+				animation.addByPrefix('firstDeath', "BF dies", 24, false);
+				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+
+				animation.addByPrefix('scared', 'BF idle shaking', 24);
+
+				addOffset('idle', -5);
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -38, -7);
+				addOffset("singLEFT", 12, -6);
+				addOffset("singDOWN", -10, -50);
+				addOffset("singUPmiss", -29, 27);
+				addOffset("singRIGHTmiss", -30, 21);
+				addOffset("singLEFTmiss", 12, 24);
+				addOffset("singDOWNmiss", -11, -19);
+				addOffset("hey", 7, 4);
+				addOffset('firstDeath', 37, 11);
+				addOffset('deathLoop', 37, 5);
+				addOffset('deathConfirm', 37, 69);
+				addOffset('scared', -4);
+
+				playAnim('idle');
+
+				flipX = true;
+
+			case 'Tails':
+				spawnOffsetBfX = -106;
+				spawnOffsetBfY = -354;
+				healthColor = 0xFFAF66CE;
+				// DAD ANIMATION LOADING CODE
+				fileLocation = ['characters/cyclesBETADCIU/tails', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/tails', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('singUP', 'up', 24);
+				animation.addByPrefix('singRIGHT', 'right', 24);
+				animation.addByPrefix('singDOWN', 'down', 24);
+				animation.addByPrefix('singLEFT', 'left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -40, 13);
+				addOffset("singRIGHT", -7, -36);
+				addOffset("singLEFT", -11, -6);
+				addOffset("singDOWN", -21, -11);
+				setGraphicSize(Std.int(width * 0.7));
+
+				playAnim('idle');
+
+			case 'sharv':
+				healthColor = 0xFF31B0D1;
+				fileLocation = ['characters/cyclesBETADCIU/sharv', 'shared'];
+				var tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/sharv', 'shared');
+				frames = tex;
+
+				trace(tex.frames.length);
+
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+				animation.addByPrefix('hey', 'BF HEY', 24, false);
+
+				animation.addByPrefix('firstDeath', "BF dies", 24, false);
+				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+
+				animation.addByPrefix('scared', 'BF idle shaking', 24);
+
+				addOffset('idle', -5);
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", 12, -6);
+				addOffset("singLEFT", -38, -7);
+				addOffset("singDOWN", -10, -50);
+				addOffset("singUPmiss", -29, 27);
+				addOffset("singRIGHTmiss", -30, 21);
+				addOffset("singLEFTmiss", 12, 24);
+				addOffset("singDOWNmiss", -11, -19);
+				addOffset("hey", 7, 4);
+				addOffset('firstDeath', 37, 11);
+				addOffset('deathLoop', 37, 5);
+				addOffset('deathConfirm', 37, 69);
+				addOffset('scared', -4);
+
+				playAnim('idle');
+
+				flipX = true;
+
+			case 'cg':
+				healthColor = 0xFFAF66CE;
+				spawnOffsetBfX = -76;
+				spawnOffsetBfY = -294;
+				fileLocation = ['characters/cyclesBETADCIU/cassettegirl', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/cassettegirl', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'cassettegirl idle', 24);
+				animation.addByPrefix('singUP', 'cassettegirl up', 24);
+				animation.addByPrefix('singRIGHT', 'cassettegirl right', 24);
+				animation.addByPrefix('singDOWN', 'cassettegirl down', 24);
+				animation.addByPrefix('singLEFT', 'cassettegirl left', 24);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+
+				playAnim('idle');
+
+			case 'ALDRYX':
+				spawnOffsetBfX = -246;
+				spawnOffsetBfY = -372;
+				healthColor = 0xFFAF66CE;
+				fileLocation = ['characters/cyclesBETADCIU/ALDRYX', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/ALDRYX', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'ALDRYX_IDLE', 24);
+				animation.addByPrefix('singUP', 'up', 24);
+				animation.addByPrefix('singRIGHT', 'right', 24);
+				animation.addByPrefix('singDOWN', 'down', 24);
+				animation.addByPrefix('singLEFT', 'left', 24);
+
+				addOffset('idle', -225, 161);
+				addOffset("singUP", -176, 495);
+				addOffset("singRIGHT", -88, 207);
+				addOffset("singLEFT", -44, 175);
+				addOffset("singDOWN", -207, -32);
+
+				playAnim('idle');
+
+			case 'eduardo':
+				spawnOffsetBfX = -246;
+				spawnOffsetBfY = -372;
+				healthColor = 0xFF11712B;
+				fileLocation = ['characters/cyclesBETADCIU/Eduardo', 'shared'];
+				tex = Paths.getSparrowAtlas('characters/cyclesBETADCIU/Eduardo', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'EduardoIdle', 24);
+				animation.addByPrefix('singUP', 'EduardoUp', 24);
+				animation.addByPrefix('singRIGHT', 'EduardoRight', 24);
+				animation.addByPrefix('singDOWN', 'EduardoDown', 24);
+				animation.addByPrefix('singLEFT', 'EduardoLeft', 24);
+				animation.addByPrefix('well', 'EduardoWell', 24);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+
+				playAnim('idle');
 
 			case 'exTricky-hat-kid':
 				healthColor = 0xFFC8476B;
@@ -4410,6 +5022,42 @@ class Character extends FlxSprite
 				healthColor = 0xFF414166;
 			case 'monika-not-sky-mad':
 				healthColor = 0xFF79B67E;
+			case 'monika.exe-sayori.exe':
+				healthColor = 0xFF9F8B20;
+			case 'sonicLordX-AjTheFreaky':
+				healthColor = 0xFF7879B0;
+			case 'astro.exe-Blantadohno':
+				healthColor = 0xFF212A5E;
+			case 'arch.exe-account.exe':
+				healthColor = 0xFFB23232;
+			case 'dad.exe-mom.exe':
+				healthColor = 0xFF000000;
+			case 'ROBO STRESS-hat-kid':
+				healthColor = 0xFFC93A6A;
+			case 'overcoded-Nonsense.exe':
+				healthColor = 0xFF333333;
+			case 'sonic-Hacktical Cupcakes':
+				healthColor = 0xFF3C2E7C;
+			case 'lylace.exe-Neofright':
+				healthColor = 0xFF672D2D;
+			case 'bf-pico':
+				healthColor = 0xFF72C394;
+			case 'beepie-demon-badeline':
+				healthColor = 0xFFDBB83B;
+			case 'Snow-kapi':
+				healthColor = 0xFFB78C8D;
+			case 'tankman-spooky':
+				healthColor = 0xFFD58016;
+			case 'yuri-sayori':
+				healthColor = 0xFFCC83D2;
+			case 'whitty-HCcarol':
+				healthColor = 0xFF8E5D1A;
+			case 'agoti-ALDRYX':
+				healthColor = 0xFF732629;
+			case 'sharv-cg':
+				healthColor = 0xFF3A3CA4;
+			case 'cableCrowPog-zardy':
+				healthColor = 0xFFDBB83B;
 			case 'SUS AAAAAAAAAAA':
 				healthColor = 0xFF79B67E;
 				loadGraphic(Paths.image('characters/SUS'));

@@ -6,7 +6,7 @@ using StringTools;
 
 class CoolUtil
 {
-	public static var difficultyArray:Array<String> = ['EASY', "NORMAL", "HARD", "Alt", "Hard-alpha", "Alt-alpha", "Unfair", "CHAOS", "NEO", "FUN", "YOU WILL MEET GOD", "MERG"];
+	public static var difficultyArray:Array<String> = ['EASY', "NORMAL", "HARD", "Alt", "Hard-alpha", "Alt-alpha", "Unfair", "CHAOS", "NEO", "FUN", "YOU WILL MEET GOD", "MERG", "X"];
 	public static function difficultyString():String
 	{
 		return difficultyArray[PlayState.storyDifficulty];

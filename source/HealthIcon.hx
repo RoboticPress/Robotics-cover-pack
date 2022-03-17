@@ -151,6 +151,7 @@ class HealthIcon extends FlxSprite
 		animation.add('nonsense', [198, 199], 0, false, isPlayer);
 		animation.add('cyrix', [200, 201], 0, false, isPlayer);
 		animation.add('agoti', [202, 203], 0, false, isPlayer);
+		animation.add('agoti-playable', [202, 203], 0, false, isPlayer);
 		animation.add('retro2', [204, 205], 0, false, isPlayer);
 		animation.add('miku', [206, 207], 0, false, isPlayer);
 		animation.add('doxxie', [208, 209], 0, false, isPlayer);
@@ -183,6 +184,39 @@ class HealthIcon extends FlxSprite
 		animation.add('merg', [248, 249], 0, false, isPlayer);
 		animation.add('nikusa', [250, 251], 0, false, isPlayer);
 		animation.add('sanic', [252, 253], 0, false, isPlayer);
+		animation.add('monika.exe', [254, 255], 0, false, isPlayer);
+		animation.add('sayori.exe', [256, 257], 0, false, isPlayer);
+		animation.add('monika.exe-sayori.exe', [258, 259], 0, false, isPlayer);
+		animation.add('sonicLordX', [260, 261], 0, false, isPlayer);
+		animation.add('sonicLordX-AjTheFreaky', [260, 261], 0, false, isPlayer);
+		animation.add('astro.exe', [262, 263], 0, false, isPlayer);
+		animation.add('Blantadohno', [264, 265], 0, false, isPlayer);
+		animation.add('astro.exe-Blantadohno', [266, 267], 0, false, isPlayer);
+		animation.add('arch.exe', [268, 269], 0, false, isPlayer);
+		animation.add('account.exe', [270, 271], 0, false, isPlayer);
+		animation.add('arch.exe-account.exe', [272, 273], 0, false, isPlayer);
+		animation.add('mom.exe', [274], 0, false, isPlayer);
+		animation.add('dad.exe-mom.exe', [274], 0, false, isPlayer);
+		animation.add('ROBO STRESS', [275, 276], 0, false, isPlayer);
+		animation.add('ROBO STRESS-hat-kid', [277, 278], 0, false, isPlayer);
+		animation.add('overcoded', [280, 281], 0, false, isPlayer);
+		animation.add('overcoded-Nonsense.exe', [280, 281], 0, false, isPlayer);
+		animation.add('sonic-Hacktical Cupcakes', [282, 283], 0, false, isPlayer);
+		animation.add('lylace.exe', [284, 285], 0, false, isPlayer);
+		animation.add('Neofright', [286, 287], 0, false, isPlayer);
+		animation.add('lylace.exe-Neofright', [288, 289], 0, false, isPlayer);
+		animation.add('bf-pico', [290, 291], 0, false, isPlayer);
+		animation.add('beepie-demon-badeline', [292, 293], 0, false, isPlayer);
+		animation.add('Snow', [294, 295], 0, false, isPlayer);
+		animation.add('Snow-kapi', [294, 295], 0, false, isPlayer);
+		animation.add('tankman-spooky', [296, 297], 0, false, isPlayer);
+		animation.add('yuri-sayori', [298, 299], 0, false, isPlayer);
+		animation.add('whitty-HCcarol', [300, 301], 0, false, isPlayer);
+		animation.add('agoti-ALDRYX', [302, 303], 0, false, isPlayer);
+		animation.add('sharv', [304, 305], 0, false, isPlayer);
+		animation.add('sharv-cg', [304, 305], 0, false, isPlayer);
+		animation.add('cableCrowPog-zardy', [306, 307], 0, false, isPlayer);
+		animation.add('eduardo', [308, 309], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)

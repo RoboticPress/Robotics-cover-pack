@@ -172,7 +172,35 @@ class OutdatedSubState extends MusicBeatState
 				+ '\n- FNF DOXXIE'
 				+ '\n- VS Hex Mod'
 				+ '\n- Friday Night Funkin\' VS Cyrix - Full Week'
-				];
+			];
+			case 'cycles':
+				creditsthingy = ['Robotic Press for the cover (check me out on YouTube aaaaaa)', 'Sonic.exe mod'
+				+ '\n- @AjtheFunky for AJ ig'
+				+ '\n- Blantados Sprites Remake by MadBitch'
+				+ '\n- FNF: Space Journey [Full Week Beta]'
+				+ '\n- FNF: Cliff Clash'
+				+ '\n- Vs. Beepie BF Lover - Friday Night Funkin\''
+				+ '\n- Kimakurus Music for Beepie chromatic scale'
+				+ '\n- Vs Arch'
+				+ '\n- Blizzard Battle - V.S. Snow (DEMO)'
+				+ '\n- VS. KAPI - Arcade Showdown'
+				+ '\n- Playable Kapi+'
+				+ '\n- Friday Night Funkin\': Doki Doki Takeover!'
+				+ '\n- Friday Night Funkin\' ONLINE VS. [EDD & UBERKIDS]'
+				+ '\n- Hat Kid - A Hat In Time BF + Week 1 Replacements'
+				+ '\n- Hellchart Carol'
+				+ '\n- Whitty full week'
+				+ '\n- Vs Nonsense [Full Week]'
+				+ '\n- Cyber Sensation'
+				+ '\n- V.S. AGOTI Full Week'
+				+ '\n- Muted Melodies Vs. Tactical Cupcakes/T.C.'
+				+ '\n- VS. Cassette Girl'
+				+ '\n- Sharv'
+				+ '\n- Lylace'
+				+ '\n- Neonight'
+				+ '\n- V.S Zardy - Foolhardy'
+				+ '\n- Zardy Foolhardy Reanimated'
+			];
 
 		}
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
