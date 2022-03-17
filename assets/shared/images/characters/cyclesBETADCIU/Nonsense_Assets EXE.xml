@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Nonsense_Assets EXE.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="God down instance 10000" x="0" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10001" x="483" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10002" x="966" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10003" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10004" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10005" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10006" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10007" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10008" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10009" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10010" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10011" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10012" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10013" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10014" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10015" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10016" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10017" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10018" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10019" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10020" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10021" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="God down instance 10022" x="1449" y="0" width="483" height="666"/>
+	<SubTexture name="god right instance 10000" x="1932" y="0" width="483" height="666"/>
+	<SubTexture name="god right instance 10001" x="2415" y="0" width="483" height="666"/>
+	<SubTexture name="god right instance 10002" x="2898" y="0" width="483" height="666"/>
+	<SubTexture name="god right instance 10003" x="3381" y="0" width="483" height="666"/>
+	<SubTexture name="god right instance 10004" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10005" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10006" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10007" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10008" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10009" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10010" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10011" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10012" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10013" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10014" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10015" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10016" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10017" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10018" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10019" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10020" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10021" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god right instance 10022" x="0" y="666" width="483" height="666"/>
+	<SubTexture name="god up long note instance 10000" x="483" y="666" width="483" height="673"/>
+	<SubTexture name="god up long note instance 10001" x="483" y="666" width="483" height="673"/>
+	<SubTexture name="god up long note instance 10002" x="966" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10003" x="966" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10004" x="1449" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10005" x="1449" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10006" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10007" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10008" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10009" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10010" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10011" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10012" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10013" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10014" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10015" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10016" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10017" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10018" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10019" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10020" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="god up long note instance 10021" x="1932" y="666" width="483" height="669" frameX="0" frameY="-4" frameWidth="483" frameHeight="673"/>
+	<SubTexture name="idle god instance 10000" x="2415" y="666" width="474" height="656" frameX="-5" frameY="-8" frameWidth="484" frameHeight="667"/>
+	<SubTexture name="idle god instance 10001" x="2889" y="666" width="476" height="653" frameX="-5" frameY="-10" frameWidth="484" frameHeight="667"/>
+	<SubTexture name="idle god instance 10002" x="2889" y="666" width="476" height="653" frameX="-5" frameY="-10" frameWidth="484" frameHeight="667"/>
+	<SubTexture name="idle god instance 10003" x="3365" y="666" width="480" height="658" frameX="-4" frameY="-6" frameWidth="484" frameHeight="667"/>
+	<SubTexture name="idle god instance 10004" x="0" y="1339" width="480" height="664" frameX="-3" frameY="-3" frameWidth="484" frameHeight="667"/>
+	<SubTexture name="idle god instance 10005" x="0" y="1339" width="480" height="664" frameX="-3" frameY="-3" frameWidth="484" frameHeight="667"/>
+	<SubTexture name="idle god instance 10006" x="480" y="1339" width="482" height="666" frameX="-1" frameY="-1" frameWidth="484" frameHeight="667"/>
+	<SubTexture name="idle god instance 10007" x="480" y="1339" width="482" height="666" frameX="-1" frameY="-1" frameWidth="484" frameHeight="667"/>
+	<SubTexture name="idle god instance 10008" x="480" y="1339" width="482" height="666" frameX="-1" frameY="-1" frameWidth="484" frameHeight="667"/>
+	<SubTexture name="idle god instance 10009" x="962" y="1339" width="484" height="667"/>
+	<SubTexture name="idle god instance 10010" x="962" y="1339" width="484" height="667"/>
+	<SubTexture name="idle god instance 10011" x="962" y="1339" width="484" height="667"/>
+	<SubTexture name="idle god instance 10012" x="962" y="1339" width="484" height="667"/>
+	<SubTexture name="idle god instance 10013" x="962" y="1339" width="484" height="667"/>
+	<SubTexture name="idle god instance 10014" x="962" y="1339" width="484" height="667"/>
+	<SubTexture name="left god instance 10000" x="1446" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10001" x="1929" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10002" x="2412" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10003" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10004" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10005" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10006" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10007" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10008" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10009" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10010" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10011" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10012" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10013" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10014" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10015" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10016" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10017" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10018" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10019" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10020" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10021" x="2895" y="1339" width="483" height="666"/>
+	<SubTexture name="left god instance 10022" x="2895" y="1339" width="483" height="666"/>
+</TextureAtlas>
