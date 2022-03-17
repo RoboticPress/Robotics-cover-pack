@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="arch_assets V2.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="arch0000" x="0" y="0" width="540" height="644"/>
+	<SubTexture name="arch0001" x="540" y="0" width="540" height="644"/>
+	<SubTexture name="arch0002" x="1080" y="0" width="540" height="644"/>
+	<SubTexture name="arch0003" x="0" y="644" width="540" height="644"/>
+	<SubTexture name="arch0004" x="540" y="644" width="540" height="632" frameX="0" frameY="-12" frameWidth="540" frameHeight="644"/>
+</TextureAtlas>
