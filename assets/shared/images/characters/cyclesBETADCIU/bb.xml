@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Better arch attempt.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bb0000" x="0" y="0" width="404" height="593"/>
+	<SubTexture name="bb0001" x="404" y="0" width="404" height="593"/>
+	<SubTexture name="bb0002" x="808" y="0" width="404" height="593"/>
+	<SubTexture name="bb0003" x="1212" y="0" width="404" height="593"/>
+	<SubTexture name="bb0004" x="1616" y="0" width="404" height="593"/>
+	<SubTexture name="bb0005" x="2020" y="0" width="6" height="6" frameX="0" frameY="0" frameWidth="404" frameHeight="593"/>
+	<SubTexture name="bb0006" x="2020" y="0" width="6" height="6" frameX="0" frameY="0" frameWidth="404" frameHeight="593"/>
+	<SubTexture name="bb0007" x="2020" y="0" width="6" height="6" frameX="0" frameY="0" frameWidth="404" frameHeight="593"/>
+	<SubTexture name="bb0008" x="2020" y="0" width="6" height="6" frameX="0" frameY="0" frameWidth="404" frameHeight="593"/>
+	<SubTexture name="bb0009" x="2020" y="0" width="6" height="6" frameX="0" frameY="0" frameWidth="404" frameHeight="593"/>
+	<SubTexture name="bb0010" x="2020" y="0" width="6" height="6" frameX="0" frameY="0" frameWidth="404" frameHeight="593"/>
+	<SubTexture name="bb0011" x="2020" y="0" width="6" height="6" frameX="0" frameY="0" frameWidth="404" frameHeight="593"/>
+	<SubTexture name="bb0012" x="2020" y="0" width="6" height="6" frameX="0" frameY="0" frameWidth="404" frameHeight="593"/>
+	<SubTexture name="bb0013" x="2020" y="0" width="6" height="6" frameX="0" frameY="0" frameWidth="404" frameHeight="593"/>
+	<SubTexture name="bb0014" x="2020" y="0" width="6" height="6" frameX="0" frameY="0" frameWidth="404" frameHeight="593"/>
+</TextureAtlas>
